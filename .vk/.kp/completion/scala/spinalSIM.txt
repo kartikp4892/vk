@@ -1,0 +1,215 @@
+# word	        the text that will be inserted, mandatory
+# abbr	        abbreviation of "word"; when not empty it is used in
+# 	        the menu instead of "word"
+# menu	        extra text for the popup menu, displayed after "word"
+# 	        or "abbr"
+# info	        more information about the item, can be displayed in a
+# 	        preview window
+# kind	        single letter indicating the type of completion
+# icase	        when non-zero case is to be ignored when comparing
+# 	        items to be equal; when omitted zero is used, thus
+# 	        items that only differ in case are added
+# dup	        when non-zero this match will be added even when an
+# 	        item with the same word is already present.
+# 
+
+#################################################################################
+# UVM
+#################################################################################
+# 
+--
+word  ~> =scala#spinalSIM#do_sim() 
+abbr  ~> ^%[spinal]%[sim]d%[o]s%[im]$
+menu  ~> doSim
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> =scala#spinalSIM#do_sim_multiple_tests() 
+abbr  ~> ^%[spinal]%[sim]d%[o]s%[im]%[tests]$
+menu  ~> doSim("Test1")
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> =scala#spinalSIM#do_sim_until_void() 
+abbr  ~> ^%[spinal]%[sim]d%[o]s%[im]%[until]%[void]$
+menu  ~> doSim
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> dut.clockDomain.forkStimulus(period = 10) 
+abbr  ~> ^%[spinal]%[sim]f%[ork]s%[timulus]$
+menu  ~> forkStimulus
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> dut.clockDomain.assertReset()
+abbr  ~> ^%[spinal]%[sim]a%[ssert]r%[eset]$
+menu  ~> assertReset
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~>   dut.clockDomain.fallingEdge()
+abbr  ~> ^%[spinal]%[sim]f%[alling]e%[dge]$
+menu  ~> fallingEdge
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~>   dut.clockDomain.clockToggle()
+abbr  ~> ^%[spinal]%[sim]c%[lock]t%[oggle]$
+menu  ~> clockToggle
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> dut.clockDomain.disassertReset()
+abbr  ~> ^%[spinal]%[sim]d%[is]%[assert]r%[eset]$
+menu  ~> disassertReset
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> dut.clockDomain.assertClockEnable()
+abbr  ~> ^%[spinal]%[sim]a%[ssert]c%[lock]e%[nable]$
+menu  ~> assertClockEnable
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> dut.clockDomain.disassertClockEnable()
+abbr  ~> ^%[spinal]%[sim]d%[is]%[assert]c%[lock]e%[nable]$
+menu  ~> disassertClockEnable
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> dut.clockDomain.assertSoftReset()
+abbr  ~> ^%[spinal]%[sim]a%[ssert]s%[oft]r%[eset]$
+menu  ~> assertSoftReset
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> dut.clockDomain.disassertSoftReset()
+abbr  ~> ^%[spinal]%[sim]d%[is]%[assert]s%[oft]r%[eset]$
+menu  ~> disassertSoftReset
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> dut.clockDomain.waitSampling(cyclesCount = 1)
+abbr  ~> ^%[spinal]%[sim]w%[ait]s%[ampling]$
+menu  ~> waitSampling
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> dut.clockDomain.waitRisingEdge(cyclesCount = 1)
+abbr  ~> ^%[spinal]%[sim]w%[ait]r%[ising]%[edge]$
+menu  ~> waitRisingEdge
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> dut.clockDomain.waitFallingEdge(cyclesCount = 1)
+abbr  ~> ^%[spinal]%[sim]w%[ait]f%[alling]%[edge]$
+menu  ~> waitFallingEdge
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> dut.clockDomain.waitActiveEdge(cyclesCount = 1)
+abbr  ~> ^%[spinal]%[sim]w%[ait]a%[ctive]%[edge]$
+menu  ~> waitActiveEdge
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> dut.clockDomain.waitRisingEdgeWhere(maa)`aa
+abbr  ~> ^%[spinal]%[sim]w%[ait]r%[ising]%[edge]w%[here]$
+menu  ~> waitRisingEdgeWhere
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> dut.clockDomain.waitFallingEdgeWhere(maa)`aa
+abbr  ~> ^%[spinal]%[sim]w%[ait]f%[alling]%[edge]w%[here]$
+menu  ~> waitFallingEdgeWhere
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> dut.clockDomain.waitActiveEdgeWhere(maa)`aa
+abbr  ~> ^%[spinal]%[sim]w%[ait]a%[ctive]%[edge]w%[here]$
+menu  ~> waitActiveEdgeWhere
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> waitUntil(maa)`aa
+abbr  ~> ^%[spinal]%[sim]w%[ait]u%[ntil]$
+menu  ~> waitUntil
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> sleep(maa)`aa
+abbr  ~> ^%[spinal]%[sim]s%[leep]$
+menu  ~> sleep
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> =scala#spinalSIM#function() 
+abbr  ~> ^%[spinal]%[sim]d%[ef]$
+menu  ~> def
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> =scala#spinalSIM#fork() 
+abbr  ~> ^%[spinal]%[sim]f%[ork]$
+menu  ~> fork
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> =scala#spinalSIM#foreach() 
+abbr  ~> ^%[spinal]%[sim]f%[or]e%[ach]$
+menu  ~> foreach
+#info  ~> 
+kind  ~> c
+icase ~>
+dup   ~>
+--
+
+
+

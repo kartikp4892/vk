@@ -1,0 +1,7 @@
+#============================================================
+# Variables
+--langmap=make:+.make
+--regex-make=/^[ \t]*([a-zA-Z_0-9]+)[ \t]*:/\1/t,target/
+--regex-make=/^[ \t]*([a-zA-Z_0-9]+)[ \t]*\+=/\1/v,variable/
+
+

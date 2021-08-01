@@ -1,0 +1,135 @@
+# word          the text that will be inserted, mandatory
+# abbr          abbreviation of "word"; when not empty it is used in
+#               the menu instead of "word"
+# menu          extra text for the popup menu, displayed after "word"
+#               or "abbr"
+# info          more information about the item, can be displayed in a
+#               preview window
+# kind          single letter indicating the type of completion
+# icase         when non-zero case is to be ignored when comparing
+#               items to be equal; when omitted zero is used, thus
+#               items that only differ in case are added
+# dup           when non-zero this match will be added even when an
+#               item with the same word is already present.
+# 
+
+--
+word ~> =vba#vba#function() 
+abbr ~> fun
+menu ~> Function
+#info ~> 
+--
+word ~> =vba#vba#sub() 
+abbr ~> sub
+menu ~> sub
+#info ~> 
+--
+word ~> =vba#vba#if() 
+abbr ~> if
+menu ~> If
+#info ~> 
+--
+word ~> =vba#vba#else_if() 
+abbr ~> ef
+menu ~> Else If
+#info ~> 
+--
+word ~> =vba#vba#for() 
+abbr ~> for
+menu ~> for
+#info ~> 
+--
+word ~> =vba#vba#for_each() 
+abbr ~> fe
+menu ~> For Each
+#info ~> 
+--
+word ~> =vba#vba#while() 
+abbr ~> while
+menu ~> While
+#info ~> 
+--
+word ~> =vba#vba#until() 
+abbr ~> until
+menu ~> Until
+#info ~> 
+--
+word ~> =vba#vba#do_while() 
+abbr ~> dw
+menu ~> Do While
+#info ~> 
+--
+word ~> =vba#vba#do_until() 
+abbr ~> du
+menu ~> Do Until
+#info ~> 
+--
+word ~> =vba#vba#map() 
+abbr ~> map
+menu ~> Application.OnKey
+#menu ~> Application.MacroOptions Macro:="Test", HasShortcutKey:=True,ShortcutKey:="A"
+info ~> Application.OnKey "%b", "ToWord" is used to trigger the "ToWord" subroutine whenever Alt+b is pressed . 
+Percentage symbol is used to substitute Alt key 
+ 
+Use the Caret (^) to symbol for Ctrl key and plus (+) for Shiftkey 
+ 
+Application.OnKey "^b", "ToWord" 
+ 
+Is for Ctrl + b 
+ 
+Other keys are : 
+ 
+Key                     Code 
+BACKSPACE               {BACKSPACE} or {BS} 
+BREAK                   {BREAK} 
+CAPS LOCK               {CAPSLOCK} 
+CLEAR                   {CLEAR} 
+DELETE or DEL           {DELETE} or {DEL} 
+DOWN ARROW              {DOWN} 
+END                     {END} 
+ENTER (numeric keypad)  {ENTER} 
+ENTER                   ~ (tilde) 
+ESC                     {ESCAPE} or {ESC} 
+HELP                    {HELP} 
+HOME                    {HOME} 
+INS                     {INSERT} 
+LEFT ARROW              {LEFT} 
+NUM LOCK                {NUMLOCK} 
+PAGE DOWN               {PGDN} 
+PAGE UP                 {PGUP} 
+RETURN                  {RETURN} 
+RIGHT ARROW             {RIGHT} 
+SCROLL LOCK             {SCROLLLOCK} 
+TAB                     {TAB} 
+UP ARROW                {UP} 
+F1 through F15          {F1} through {F15} 
+ 
+To deassign/release the shortcut leave the Procedure empty 
+ 
+Application.OnKey "%b", "" 
+ 
+ 
+Disable Save (Ctrl S) 
+ 
+Application.OnKey "^s", "" 
+--
+word ~> =vba#vba#msg() 
+abbr ~> msg
+menu ~> MsgBox
+#info ~> 
+--
+word ~> =vba#vba#inp() 
+abbr ~> inp
+menu ~> InputBox
+#info ~> 
+--
+word ~> =vba#vba#with() 
+abbr ~> with
+menu ~> With
+#info ~> 
+--
+word ~> =vba#vba#case() 
+abbr ~> case
+menu ~> Case
+#info ~> 
+--

@@ -1,0 +1,161 @@
+# word	        the text that will be inserted, mandatory
+# abbr	        abbreviation of "word"; when not empty it is used in
+# 	        the menu instead of "word"
+# menu	        extra text for the popup menu, displayed after "word"
+# 	        or "abbr"
+# info	        more information about the item, can be displayed in a
+# 	        preview window
+# kind	        single letter indicating the type of completion
+# icase	        when non-zero case is to be ignored when comparing
+# 	        items to be equal; when omitted zero is used, thus
+# 	        items that only differ in case are added
+# dup	        when non-zero this match will be added even when an
+# 	        item with the same word is already present.
+# 
+# <abbr pattern> : start with 'o' for multiple line, 'j' for single line, 'k' for short keyword names
+# 
+#################################################################################
+# OVM
+#################################################################################
+# Sequence Item
+--
+word  ~> =sv#uvm#mapping#component() 
+abbr  ~> ^u%[vm]c%[omponent]$
+menu  ~> uvm_component
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> =sv#uvm#mapping#agent() 
+abbr  ~> ^u%[vm]a%[gent]$
+menu  ~> uvm_agent
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> =sv#uvm#mapping#env() 
+abbr  ~> ^u%[vm]e%[nv]$
+menu  ~> uvm_env
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> =sv#uvm#mapping#driver() 
+abbr  ~> ^u%[vm]d%[river]$
+menu  ~> uvm_driver
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> =sv#uvm#mapping#monitor() 
+abbr  ~> ^u%[vm]m%[onitor]$
+menu  ~> uvm_monitor
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> =sv#uvm#mapping#object() 
+abbr  ~> ^u%[vm]o%[bject]$
+menu  ~> uvm_object
+info  ~>
+kind  ~> o
+icase ~>
+dup   ~>
+--
+word  ~> =sv#uvm#mapping#singleton_object() 
+abbr  ~> ^u%[vm]o%[bject]s%[ingleton]$
+menu  ~> uvm_object Singleton
+info  ~>
+kind  ~> o
+icase ~>
+dup   ~>
+--
+word  ~> =sv#uvm#mapping#transaction() 
+abbr  ~> ^u%[vm]s%[eq]i%[tem]$
+menu  ~> uvm_transaction
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+# used scoreboard_with_analysis_fifo instead of scoreboard
+# word  ~> =sv#uvm#mapping#scoreboard() 
+word  ~> =sv#uvm#mapping#scoreboard_with_analysis_fifo() 
+abbr  ~> ^u%[vm]s%[core]%[board]$
+menu  ~> uvm_scoreboard
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> =sv#uvm#mapping#subscriber() 
+abbr  ~> ^u%[vm]s%[ubscriber]$
+menu  ~> uvm_subscriber
+info  ~>
+kind  ~> c
+--
+# word  ~> =sv#uvm#register_adaptor#register_adaptor() 
+# abbr  ~> ^u%[vm]ra
+# menu  ~> uvm_register_adaptor
+# --
+# word  ~> =sv#uvm#register_adaptor#uvm_reg() 
+# abbr  ~> ^u%[vm]r
+# menu  ~> uvm_reg
+# --
+# word  ~> =sv#uvm#register_adaptor#uvm_mem() 
+# abbr  ~> ^u%[vm]m
+# menu  ~> uvm_mem
+# --
+word  ~> =sv#uvm#mapping#sequence() 
+abbr  ~> ^u%[vm]s%[equence]$
+menu  ~> uvm_sequence
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> =sv#uvm#mapping#sequence_library() 
+abbr  ~> ^u%[vm]s%[equence]l%[ibrary]$
+menu  ~> uvm_sequence_library
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> =sv#uvm#mapping#sequencer() 
+abbr  ~> ^u%[vm]s%[equence]r$
+menu  ~> uvm_sequencer
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> =sv#uvm#mapping#test() 
+abbr  ~> ^u%[vm]t%[est]$
+menu  ~> uvm_test
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> =sv#uvm#uvm_callbacks#callback() 
+abbr  ~> ^u%[vm]c%[all]b%[ack]$
+menu  ~> uvm_callback
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+word  ~> =sv#uvm#uvm_callbacks#uvm_callbacks_add() 
+abbr  ~> ^u%[vm]c%[all]b%[acks]a%[dd]$
+menu  ~> uvm_callbacks::add
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--

@@ -1,0 +1,434 @@
+#new()
+#word  ~> my $mech = WWW::Mechanize -> new(  agent => 'Mozilla/5.0 (X11; Linux i686; rv:12.0) Gecko/20100101 Firefox/12.0',onerror => sub { die ("Error: Couldn't fetch web request!!!\n"); });
+word  ~> =perl#www_mechanize#new() 
+abbr  ~> ^w%[ww]m%[echanize]n%[ew]$
+menu  ~> WWW::Mechanize -> new()
+--
+
+#$mech -> agent_alias( $alias )
+word  ~> $mech -> agent_alias(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]a%[gent_]a%[lias]$
+menu  ~> $mech -> agent_alias( $alias )
+--
+
+#known_agent_aliases()
+word  ~> known_agent_aliases(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]k%[nown_]a%[gent_]a%[liase]%[s]$
+menu  ~> known_agent_aliases()
+--
+
+#$mech -> get( $uri )
+word  ~> $mech -> get(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]g%[et]$
+menu  ~> $mech -> get( $uri )
+--
+
+#$mech -> put( $uri, content => $content )
+word  ~> $mech -> put(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]p%[ut]$
+menu  ~> $mech -> put( $uri, content => $content )
+--
+
+#$mech -> reload()
+word  ~> $mech -> reload(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]r%[eload]$
+menu  ~> $mech -> reload()
+--
+
+#$mech -> back()
+word  ~> $mech -> back(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]b%[ack]$
+menu  ~> $mech -> back()
+--
+
+#$mech -> success()
+word  ~> $mech -> success(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]s%[uccess]$
+menu  ~> $mech -> success()
+--
+
+#$mech -> uri()
+word  ~> $mech -> uri(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]u%[ri]$
+menu  ~> $mech -> uri()
+--
+
+#$mech -> response() / $mech -> res()
+word  ~> $mech -> response() / $mech -> res(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]r%[esponse]$
+menu  ~> $mech -> response() / $mech -> res()
+--
+
+#$mech -> status()
+word  ~> $mech -> status(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]s%[tatus]$
+menu  ~> $mech -> status()
+--
+
+#$mech -> ct() / $mech -> content_type()
+word  ~> $mech -> ct() / $mech -> content_type(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]c%[ontent]t%[ype]$
+menu  ~> $mech -> ct() / $mech -> content_type()
+--
+
+#$mech -> base()
+word  ~> $mech -> base(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]b%[ase]$
+menu  ~> $mech -> base()
+--
+
+#$mech -> forms()
+word  ~> $mech -> forms(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[orm]%[s]$
+menu  ~> $mech -> forms()
+--
+
+#$mech -> current_form()
+word  ~> $mech -> current_form(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]c%[urrent]f%[orm]$
+menu  ~> $mech -> current_form()
+--
+
+#$mech -> links()
+word  ~> $mech -> links(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]l%[ink]%[s]$
+menu  ~> $mech -> links()
+--
+
+#$mech -> is_html()
+word  ~> $mech -> is_html(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]i%[s]h%[tml]$
+menu  ~> $mech -> is_html()
+--
+
+#$mech -> title()
+word  ~> $mech -> title(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]t%[itle]$
+menu  ~> $mech -> title()
+--
+
+#$mech -> content(...)
+word  ~> $mech -> content()
+abbr  ~> ^w%[ww]m%[echanize]c%[ontent]$
+menu  ~> $mech -> content(...)
+--
+
+#$mech -> text()
+word  ~> $mech -> text(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]t%[ext]$
+menu  ~> $mech -> text()
+--
+
+#$mech -> follow_link(...)
+word  ~> $mech -> follow_link(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[ollow]l%[ink]$
+menu  ~> $mech -> follow_link(...)
+--
+
+#$mech -> find_link( ... )
+word  ~> $mech -> find_link(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[ind]l%[ink]$
+menu  ~> $mech -> find_link( ... )
+--
+
+#$mech -> find_all_links( ... )
+word  ~> $mech -> find_all_links(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[ind]a%[ll]l%[inks]$
+menu  ~> $mech -> find_all_links( ... )
+--
+
+#$mech -> find_all_inputs( ... criteria ... )
+word  ~> $mech -> find_all_inputs(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[ind]a%[ll]i%[nputs]$
+menu  ~> $mech -> find_all_inputs( ... criteria ... )
+--
+
+#$mech -> find_all_submits( ... criteria ... )
+word  ~> $mech -> find_all_submits(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[ind]a%[ll]s%[ubmits]$
+menu  ~> $mech -> find_all_submits( ... criteria ... )
+--
+
+#$mech -> find_image()
+word  ~> $mech -> find_image(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[ind]i%[mage]$
+menu  ~> $mech -> find_image()
+--
+
+#$mech -> find_all_images( ... )
+word  ~> $mech -> find_all_images(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[ind]a%[ll]i%[mage]%[s]$
+menu  ~> $mech -> find_all_images( ... )
+--
+
+#$mech -> form_number($number)
+word  ~> $mech -> form_number(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[orm]n%[umber]$
+menu  ~> $mech -> form_number($number)
+--
+
+#$mech -> form_name( $name )
+word  ~> $mech -> form_name(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[orm]n%[ame]$
+menu  ~> $mech -> form_name( $name )
+--
+
+#$mech -> form_id( $name )
+word  ~> $mech -> form_id(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[orm]i%[d]$
+menu  ~> $mech -> form_id( $name )
+--
+
+#$mech -> form_with_fields( @fields )
+word  ~> $mech -> form_with_fields(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[orm]w%[ith]f%[ields]$
+menu  ~> $mech -> form_with_fields( @fields )
+--
+
+#$mech -> field( $name, $value, $number )
+word  ~> $mech -> field(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[ield]$
+menu  ~> $mech -> field( $name, $value, $number )
+--
+
+#$mech -> select($name, $value)
+word  ~> $mech -> select(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]s%[elect]$
+menu  ~> $mech -> select($name, $value)
+--
+
+#$mech -> set_fields( $name => $value ... )
+word  ~> $mech -> set_fields(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]s%[et]f%[ield]%[s]$
+menu  ~> $mech -> set_fields( $name => $value ... )
+--
+
+#$mech -> set_visible( @criteria )
+word  ~> $mech -> set_visible(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]s%[et]v%[isible]$
+menu  ~> $mech -> set_visible( @criteria )
+--
+
+#$mech -> tick( $name, $value [, $set] )
+word  ~> $mech -> tick(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]t%[ick]$
+menu  ~> $mech -> tick( $name, $value [, $set] )
+--
+
+#$mech -> untick($name, $value)
+word  ~> $mech -> untick(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]u%[n]t%[ick]$
+menu  ~> $mech -> untick($name, $value)
+--
+
+#$mech -> value( $name [, $number] )
+word  ~> $mech -> value(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]v%[alue]$
+menu  ~> $mech -> value( $name [, $number] )
+--
+
+#$mech -> click( $button [, $x, $y] )
+word  ~> $mech -> click(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]c%[lick]$
+menu  ~> $mech -> click( $button [, $x, $y] )
+--
+
+#$mech -> click_button( ... )
+word  ~> $mech -> click_button(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]c%[lick]b%[utton]$
+menu  ~> $mech -> click_button( ... )
+--
+
+#$mech -> submit()
+word  ~> $mech -> submit(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]s%[ubmit]$
+menu  ~> $mech -> submit()
+--
+
+#$mech -> submit_form( ... )
+word  ~> $mech -> submit_form(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]s%[ubmit]f%[orm]$
+menu  ~> $mech -> submit_form( ... )
+--
+
+#$mech -> add_header( name => $value [, name => $value... ] )
+word  ~> $mech -> add_header(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]a%[dd]h%[eader]$
+menu  ~> $mech -> add_header( name => $value [, name => $value... ] )
+--
+
+#$mech -> delete_header( name [, name ... ] )
+word  ~> $mech -> delete_header(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]d%[elete]h%[eader]$
+menu  ~> $mech -> delete_header( name [, name ... ] )
+--
+
+#$mech -> quiet(true/false)
+word  ~> $mech -> quiet(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]q%[uiet]$
+menu  ~> $mech -> quiet(true/false)
+--
+
+#$mech -> stack_depth( $max_depth )
+word  ~> $mech -> stack_depth(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]s%[tack]d%[epth]$
+menu  ~> $mech -> stack_depth( $max_depth )
+--
+
+#$mech -> save_content( $filename, %opts )
+word  ~> $mech -> save_content(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]s%[ave]c%[ontent]$
+menu  ~> $mech -> save_content( $filename, %opts )
+--
+
+#$mech -> dump_headers( [$fh] )
+word  ~> $mech -> dump_headers(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]d%[ump]h%[eader]%[s]$
+menu  ~> $mech -> dump_headers( [$fh] )
+--
+
+#$mech -> dump_links( [[$fh], $absolute] )
+word  ~> $mech -> dump_links(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]d%[ump]l%[ink]%[s]$
+menu  ~> $mech -> dump_links( [[$fh], $absolute] )
+--
+
+#$mech -> dump_images( [[$fh], $absolute] )
+word  ~> $mech -> dump_images(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]d%[ump]i%[mage]%[s]$
+menu  ~> $mech -> dump_images( [[$fh], $absolute] )
+--
+
+#$mech -> dump_forms( [$fh] )
+word  ~> $mech -> dump_forms(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]d%[ump]f%[orm]%[s]$
+menu  ~> $mech -> dump_forms( [$fh] )
+--
+
+#$mech -> dump_text( [$fh] )
+word  ~> $mech -> dump_text(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]d%[ump]t%[ext]$
+menu  ~> $mech -> dump_text( [$fh] )
+--
+
+#$mech -> clone()
+word  ~> $mech -> clone(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]c%[lone]$
+menu  ~> $mech -> clone()
+--
+
+#$mech -> redirect_ok()
+word  ~> $mech -> redirect_ok(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]r%[edirect]o%[k]$
+menu  ~> $mech -> redirect_ok()
+--
+
+#$mech -> request( $request [, $arg [, $size]])
+word  ~> $mech -> request(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]r%[equest]$
+menu  ~> $mech -> request( $request [, $arg [, $size]])
+--
+
+#$mech -> update_html( $html )
+word  ~> $mech -> update_html(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]u%[pdate]h%[tml]$
+menu  ~> $mech -> update_html( $html )
+--
+
+#$mech -> credentials( $username, $password )
+word  ~> $mech -> credentials(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]c%[redential]%[s]$
+menu  ~> $mech -> credentials( $username, $password )
+--
+
+#$mech -> get_basic_credentials( $realm, $uri, $isproxy )
+word  ~> $mech -> get_basic_credentials(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]g%[et]b%[asic]c%[redential]%[s]$
+menu  ~> $mech -> get_basic_credentials( $realm, $uri, $isproxy )
+--
+
+#$mech -> clear_credentials()
+word  ~> $mech -> clear_credentials(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]c%[lear]c%[redential]%[s]$
+menu  ~> $mech -> clear_credentials()
+--
+
+#$mech -> head()
+word  ~> $mech -> head(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]h%[ead]$
+menu  ~> $mech -> head()
+--
+
+#$mech -> post()
+word  ~> $mech -> post(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]p%[ost]$
+menu  ~> $mech -> post()
+--
+
+#$mech -> mirror()
+word  ~> $mech -> mirror(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]m%[irror]$
+menu  ~> $mech -> mirror()
+--
+
+#$mech -> simple_request()
+word  ~> $mech -> simple_request(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]s%[imple]r%[equest]$
+menu  ~> $mech -> simple_request()
+--
+
+#$mech -> is_protocol_supported()
+word  ~> $mech -> is_protocol_supported(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]i%[s]p%[rotocol]s%[upported]$
+menu  ~> $mech -> is_protocol_supported()
+--
+
+#$mech -> prepare_request()
+word  ~> $mech -> prepare_request(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]p%[repare]r%[equest]$
+menu  ~> $mech -> prepare_request()
+--
+
+#$mech -> progress()
+word  ~> $mech -> progress(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]p%[rogress]$
+menu  ~> $mech -> progress()
+--
+
+#$mech -> _update_page($request, $response)
+word  ~> $mech -> _update_page(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]u%[pdate]p%[age]$
+menu  ~> $mech -> _update_page($request, $response)
+--
+
+#$mech -> _modify_request( $req )
+word  ~> $mech -> _modify_request(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]m%[odify]r%[equest]$
+menu  ~> $mech -> _modify_request( $req )
+--
+
+#$mech -> _make_request()
+word  ~> $mech -> _make_request(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]m%[ake]r%[equest]$
+menu  ~> $mech -> _make_request()
+--
+
+#$mech -> _reset_page()
+word  ~> $mech -> _reset_page(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]r%[eset]p%[age]$
+menu  ~> $mech -> _reset_page()
+--
+
+#$mech -> _extract_links()
+word  ~> $mech -> _extract_links(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]e%[xtract]l%[inks]$
+menu  ~> $mech -> _extract_links()
+--
+
+#$mech -> _push_page_stack()
+word  ~> $mech -> _push_page_stack(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]p%[ush]p%[age]s%[tack]$
+menu  ~> $mech -> _push_page_stack()
+--
+
+

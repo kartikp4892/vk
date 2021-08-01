@@ -1,0 +1,1074 @@
+# new
+word  ~> =perl#www_selenium#new() 
+abbr  ~> ^w%[ww]s%[elenium]n%[ew]$
+menu  ~> Selenium New
+--
+
+# Start & Stop
+word  ~> =perl#www_selenium#start_stop() 
+abbr  ~> ^w%[ww]s%[elenium]s%[tart]s%[top]$
+menu  ~> Selenium Start & Stop
+--
+
+# open
+word  ~> $sel -> open ("maa");`aa
+abbr  ~> ^w%[ww]s%[elenium]o%[pen]$
+menu  ~> Selenium Open
+--
+
+# click
+word  ~> $sel -> click ("maa");`aa
+abbr  ~> ^w%[ww]s%[elenium]c%[lick]$
+menu  ~> Selenium click
+--
+
+# get_title
+word  ~> $sel -> get_title ("maa");`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]t%[itle]$
+menu  ~> Selenium get_title
+--
+
+# set_timeout
+word  ~> $sel -> set_timeout('60000');
+abbr  ~> ^w%[ww]s%[elenium]s%[et]t%[imeout]$
+menu  ~> Selenium set_timeout
+--
+
+# pause
+word  ~> $sel -> pause();
+abbr  ~> ^w%[ww]s%[elenium]p%[ause]$
+menu  ~> Selenium pause
+--
+
+# double_click
+word  ~> $sel -> double_click();
+abbr  ~> ^w%[ww]s%[elenium]d%[ouble]c%[lick]$
+menu  ~> Selenium double_click
+--
+
+# click_at
+word  ~> $sel -> click_at();
+abbr  ~> ^w%[ww]s%[elenium]c%[lick]a%[t]$
+menu  ~> Selenium click_at
+--
+
+# double_click_at
+word  ~> $sel -> double_click_at();
+abbr  ~> ^w%[ww]s%[elenium]d%[ouble]c%[lick]a%[t]$
+menu  ~> Selenium double_click_at
+--
+
+# focus
+word  ~> $sel -> focus();
+abbr  ~> ^w%[ww]s%[elenium]f%[ocus]$
+menu  ~> Selenium focus
+--
+
+# $sel -> context_menu($locator)
+word  ~> $sel -> context_menu(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]c%[ontext]m%[enu]$
+menu  ~> $sel -> context_menu($locator)
+#info  ~> $sel -> context_menu($locator)
+--
+
+# $sel -> context_menu_at($locator, $coord_string)
+word  ~> $sel -> context_menu_at(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]c%[ontext]m%[enu]a%[t]$
+menu  ~> $sel -> context_menu_at($locator, $coord_string)
+#info  ~> $sel -> context_menu_at($locator, $coord_string)
+--
+
+# $sel -> fire_event($locator, $event_name)
+word  ~> $sel -> fire_event(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]f%[ire]e%[vent]$
+menu  ~> $sel -> fire_event($locator, $event_name)
+#info  ~> $sel -> fire_event($locator, $event_name)
+--
+
+# $sel -> key_press($locator, $key_sequence)
+word  ~> $sel -> key_press(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]k%[ey]p%[ress]$
+menu  ~> $sel -> key_press($locator, $key_sequence)
+#info  ~> $sel -> key_press($locator, $key_sequence)
+--
+
+# $sel -> shift_key_down()
+word  ~> $sel -> shift_key_down()
+abbr  ~> ^w%[ww]s%[elenium]s%[hift]k%[ey]d%[own]$
+menu  ~> $sel -> shift_key_down()
+#info  ~> $sel -> shift_key_down()
+--
+
+# $sel -> shift_key_up()
+word  ~> $sel -> shift_key_up()
+abbr  ~> ^w%[ww]s%[elenium]s%[hift]k%[ey]u%[p]$
+menu  ~> $sel -> shift_key_up()
+#info  ~> $sel -> shift_key_up()
+--
+
+# $sel -> meta_key_down()
+word  ~> $sel -> meta_key_down()
+abbr  ~> ^w%[ww]s%[elenium]m%[eta]k%[ey]d%[own]$
+menu  ~> $sel -> meta_key_down()
+#info  ~> $sel -> meta_key_down()
+--
+
+# $sel -> meta_key_up()
+word  ~> $sel -> meta_key_up()
+abbr  ~> ^w%[ww]s%[elenium]m%[eta]k%[ey]u%[p]$
+menu  ~> $sel -> meta_key_up()
+#info  ~> $sel -> meta_key_up()
+--
+
+# $sel -> alt_key_down()
+word  ~> $sel -> alt_key_down()
+abbr  ~> ^w%[ww]s%[elenium]a%[lt]k%[ey]d%[own]$
+menu  ~> $sel -> alt_key_down()
+#info  ~> $sel -> alt_key_down()
+--
+
+# $sel -> alt_key_up()
+word  ~> $sel -> alt_key_up()
+abbr  ~> ^w%[ww]s%[elenium]a%[lt]k%[ey]u%[p]$
+menu  ~> $sel -> alt_key_up()
+#info  ~> $sel -> alt_key_up()
+--
+
+# $sel -> control_key_down()
+word  ~> $sel -> control_key_down()
+abbr  ~> ^w%[ww]s%[elenium]ckd
+menu  ~> $sel -> control_key_down()
+#info  ~> $sel -> control_key_down()
+--
+
+# $sel -> control_key_up()
+word  ~> $sel -> control_key_up()
+abbr  ~> ^w%[ww]s%[elenium]c%[ontrol]k%[ey]u%[p]$
+menu  ~> $sel -> control_key_up()
+#info  ~> $sel -> control_key_up()
+--
+
+# $sel -> key_down($locator, $key_sequence)
+word  ~> $sel -> key_down(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]k%[ey]d%[own]$
+menu  ~> $sel -> key_down($locator, $key_sequence)
+#info  ~> $sel -> key_down($locator, $key_sequence)
+--
+
+# $sel -> key_up($locator, $key_sequence)
+word  ~> $sel -> key_up(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]k%[ey]u%[p]$
+menu  ~> $sel -> key_up($locator, $key_sequence)
+#info  ~> $sel -> key_up($locator, $key_sequence)
+--
+
+# $sel -> mouse_over($locator)
+word  ~> $sel -> mouse_over(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]m%[ouse]o%[ver]$
+menu  ~> $sel -> mouse_over($locator)
+#info  ~> $sel -> mouse_over($locator)
+--
+
+# $sel -> mouse_out($locator)
+word  ~> $sel -> mouse_out(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]m%[ouse]o%[ut]$
+menu  ~> $sel -> mouse_out($locator)
+#info  ~> $sel -> mouse_out($locator)
+--
+
+# $sel -> mouse_down($locator)
+word  ~> $sel -> mouse_down(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]m%[ouse]d%[own]$
+menu  ~> $sel -> mouse_down($locator)
+#info  ~> $sel -> mouse_down($locator)
+--
+
+# $sel -> mouse_down_right($locator)
+word  ~> $sel -> mouse_down_right(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]m%[ouse]d%[own]r%[ight]$
+menu  ~> $sel -> mouse_down_right($locator)
+#info  ~> $sel -> mouse_down_right($locator)
+--
+
+# $sel -> mouse_down_at($locator, $coord_string)
+word  ~> $sel -> mouse_down_at(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]m%[ouse]d%[own]a%[t]$
+menu  ~> $sel -> mouse_down_at($locator, $coord_string)
+#info  ~> $sel -> mouse_down_at($locator, $coord_string)
+--
+
+# $sel -> mouse_down_right_at($locator, $coord_string)
+word  ~> $sel -> mouse_down_right_at(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]m%[ouse]d%[own]r%[ight]a%[t]$
+menu  ~> $sel -> mouse_down_right_at($locator, $coord_string)
+#info  ~> $sel -> mouse_down_right_at($locator, $coord_string)
+--
+
+# $sel -> mouse_up($locator)
+word  ~> $sel -> mouse_up(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]m%[ouse]u%[p]$
+menu  ~> $sel -> mouse_up($locator)
+#info  ~> $sel -> mouse_up($locator)
+--
+
+# $sel -> mouse_up_right($locator)
+word  ~> $sel -> mouse_up_right(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]m%[ouse]u%[p]r%[ight]$
+menu  ~> $sel -> mouse_up_right($locator)
+#info  ~> $sel -> mouse_up_right($locator)
+--
+
+# $sel -> mouse_up_at($locator, $coord_string)
+word  ~> $sel -> mouse_up_at(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]m%[ouse]u%[p]a%[t]$
+menu  ~> $sel -> mouse_up_at($locator, $coord_string)
+#info  ~> $sel -> mouse_up_at($locator, $coord_string)
+--
+
+# $sel -> mouse_up_right_at($locator, $coord_string)
+word  ~> $sel -> mouse_up_right_at(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]m%[ouse]u%[p]r%[ight]a%[t]$
+menu  ~> $sel -> mouse_up_right_at($locator, $coord_string)
+#info  ~> $sel -> mouse_up_right_at($locator, $coord_string)
+--
+
+# $sel -> mouse_move($locator)
+word  ~> $sel -> mouse_move(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]m%[ouse]m%[ove]$
+menu  ~> $sel -> mouse_move($locator)
+#info  ~> $sel -> mouse_move($locator)
+--
+
+# $sel -> mouse_move_at($locator, $coord_string)
+word  ~> $sel -> mouse_move_at(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]m%[ouse]m%[ove]a%[t]$
+menu  ~> $sel -> mouse_move_at($locator, $coord_string)
+#info  ~> $sel -> mouse_move_at($locator, $coord_string)
+--
+
+# $sel -> type($locator, $value)
+word  ~> $sel -> type(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]t%[ype]$
+menu  ~> $sel -> type($locator, $value)
+#info  ~> $sel -> type($locator, $value)
+--
+
+# $sel -> type_keys($locator, $value)
+word  ~> $sel -> type_keys(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]t%[ype]k%[eys]$
+menu  ~> $sel -> type_keys($locator, $value)
+#info  ~> $sel -> type_keys($locator, $value)
+--
+
+# $sel -> set_speed($value)
+word  ~> $sel -> set_speed(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]s%[et]s%[peed]$
+menu  ~> $sel -> set_speed($value)
+#info  ~> $sel -> set_speed($value)
+--
+
+# $sel -> get_speed()
+word  ~> $sel -> get_speed()
+abbr  ~> ^w%[ww]s%[elenium]g%[et]s%[peed]$
+menu  ~> $sel -> get_speed()
+#info  ~> $sel -> get_speed()
+--
+
+# $sel -> check($locator)
+word  ~> $sel -> check(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]c%[heck]$
+menu  ~> $sel -> check($locator)
+#info  ~> $sel -> check($locator)
+--
+
+# $sel -> uncheck($locator)
+word  ~> $sel -> uncheck(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]u%[ncheck]$
+menu  ~> $sel -> uncheck($locator)
+#info  ~> $sel -> uncheck($locator)
+--
+
+# $sel -> select($select_locator, $option_locator)
+word  ~> $sel -> select(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]s%[elect]$
+menu  ~> $sel -> select($select_locator, $option_locator)
+#info  ~> $sel -> select($select_locator, $option_locator)
+--
+
+# $sel -> add_selection($locator, $option_locator)
+word  ~> $sel -> add_selection(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]a%[dd]s%[election]$
+menu  ~> $sel -> add_selection($locator, $option_locator)
+#info  ~> $sel -> add_selection($locator, $option_locator)
+--
+
+# $sel -> remove_selection($locator, $option_locator)
+word  ~> $sel -> remove_selection(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]r%[emove]s%[election]$
+menu  ~> $sel -> remove_selection($locator, $option_locator)
+#info  ~> $sel -> remove_selection($locator, $option_locator)
+--
+
+# $sel -> remove_all_selections($locator)
+word  ~> $sel -> remove_all_selections(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]r%[emove]a%[ll]s%[elections]$
+menu  ~> $sel -> remove_all_selections($locator)
+#info  ~> $sel -> remove_all_selections($locator)
+--
+
+# $sel -> submit($form_locator)
+word  ~> $sel -> submit(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]s%[ubmit]$
+menu  ~> $sel -> submit($form_locator)
+#info  ~> $sel -> submit($form_locator)
+--
+
+# $sel -> open_window($url, $window_id)
+word  ~> $sel -> open_window(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]o%[pen]w%[indow]$
+menu  ~> $sel -> open_window($url, $window_id)
+#info  ~> $sel -> open_window($url, $window_id)
+--
+
+# $sel -> select_window($window_id)
+word  ~> $sel -> select_window(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]s%[elect]w%[indow]$
+menu  ~> $sel -> select_window($window_id)
+#info  ~> $sel -> select_window($window_id)
+--
+
+# $sel -> select_pop_up($window_id)
+word  ~> $sel -> select_pop_up(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]s%[elect]p%[op]u%[p]$
+menu  ~> $sel -> select_pop_up($window_id)
+#info  ~> $sel -> select_pop_up($window_id)
+--
+
+# $sel -> deselect_pop_up()
+word  ~> $sel -> deselect_pop_up()
+abbr  ~> ^w%[ww]s%[elenium]d%[eselect]p%[op]u%[p]$
+menu  ~> $sel -> deselect_pop_up()
+#info  ~> $sel -> deselect_pop_up()
+--
+
+# $sel -> select_frame($locator)
+word  ~> $sel -> select_frame(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]s%[elect]f%[rame]$
+menu  ~> $sel -> select_frame($locator)
+#info  ~> $sel -> select_frame($locator)
+--
+
+# $sel -> get_whether_this_frame_match_frame_expression($current_frame_string, $target)
+word  ~> $sel -> get_whether_this_frame_match_frame_expression(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]w%[hether]t%[his]f%[rame]m%[atch]f%[rame]e%[xpression]$
+menu  ~> $sel -> get_whether_this_frame_match_frame_expression($current_frame_string, $target)
+#info  ~> $sel -> get_whether_this_frame_match_frame_expression($current_frame_string, $target)
+--
+
+# $sel -> get_whether_this_window_match_window_expression($current_window_string, $target)
+word  ~> $sel -> get_whether_this_window_match_window_expression(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]w%[hether]t%[his]w%[indow]m%[atch]w%[indow]e%[xpression]$
+menu  ~> $sel -> get_whether_this_window_match_window_expression($current_window_string, $target)
+#info  ~> $sel -> get_whether_this_window_match_window_expression($current_window_string, $target)
+--
+
+# $sel -> wait_for_pop_up($window_id, $timeout)
+word  ~> $sel -> wait_for_pop_up(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]w%[ait]f%[or]p%[op]u%[p]$
+menu  ~> $sel -> wait_for_pop_up($window_id, $timeout)
+#info  ~> $sel -> wait_for_pop_up($window_id, $timeout)
+--
+
+# $sel -> choose_cancel_on_next_confirmation()
+word  ~> $sel -> choose_cancel_on_next_confirmation()
+abbr  ~> ^w%[ww]s%[elenium]c%[hoose]c%[ancel]o%[n]n%[ext]c%[onfirmation]$
+menu  ~> $sel -> choose_cancel_on_next_confirmation()
+#info  ~> $sel -> choose_cancel_on_next_confirmation()
+--
+
+# $sel -> choose_ok_on_next_confirmation()
+word  ~> $sel -> choose_ok_on_next_confirmation()
+abbr  ~> ^w%[ww]s%[elenium]c%[hoose]o%[k]o%[n]n%[ext]c%[onfirmation]$
+menu  ~> $sel -> choose_ok_on_next_confirmation()
+#info  ~> $sel -> choose_ok_on_next_confirmation()
+--
+
+# $sel -> answer_on_next_prompt($answer)
+word  ~> $sel -> answer_on_next_prompt(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]a%[nswer]o%[n]n%[ext]p%[rompt]$
+menu  ~> $sel -> answer_on_next_prompt($answer)
+#info  ~> $sel -> answer_on_next_prompt($answer)
+--
+
+# $sel -> go_back()
+word  ~> $sel -> go_back()
+abbr  ~> ^w%[ww]s%[elenium]g%[o]b%[ack]$
+menu  ~> $sel -> go_back()
+#info  ~> $sel -> go_back()
+--
+
+# $sel -> refresh()
+word  ~> $sel -> refresh()
+abbr  ~> ^w%[ww]s%[elenium]r%[efresh]$
+menu  ~> $sel -> refresh()
+#info  ~> $sel -> refresh()
+--
+
+# $sel -> close()
+word  ~> $sel -> close()
+abbr  ~> ^w%[ww]s%[elenium]c%[lose]$
+menu  ~> $sel -> close()
+#info  ~> $sel -> close()
+--
+
+# $sel -> is_alert_present()
+word  ~> $sel -> is_alert_present()
+abbr  ~> ^w%[ww]s%[elenium]i%[s]a%[lert]p%[resent]$
+menu  ~> $sel -> is_alert_present()
+#info  ~> $sel -> is_alert_present()
+--
+
+# $sel -> is_prompt_present()
+word  ~> $sel -> is_prompt_present()
+abbr  ~> ^w%[ww]s%[elenium]i%[s]p%[rompt]p%[resent]$
+menu  ~> $sel -> is_prompt_present()
+#info  ~> $sel -> is_prompt_present()
+--
+
+# $sel -> is_confirmation_present()
+word  ~> $sel -> is_confirmation_present()
+abbr  ~> ^w%[ww]s%[elenium]i%[s]c%[onfirmation]p%[resent]$
+menu  ~> $sel -> is_confirmation_present()
+#info  ~> $sel -> is_confirmation_present()
+--
+
+# $sel -> get_alert()
+word  ~> $sel -> get_alert()
+abbr  ~> ^w%[ww]s%[elenium]g%[et]a%[lert]$
+menu  ~> $sel -> get_alert()
+#info  ~> $sel -> get_alert()
+--
+
+# $sel -> get_confirmation()
+word  ~> $sel -> get_confirmation()
+abbr  ~> ^w%[ww]s%[elenium]g%[et]c%[onfirmation]$
+menu  ~> $sel -> get_confirmation()
+#info  ~> $sel -> get_confirmation()
+--
+
+# $sel -> get_prompt()
+word  ~> $sel -> get_prompt()
+abbr  ~> ^w%[ww]s%[elenium]g%[et]p%[rompt]$
+menu  ~> $sel -> get_prompt()
+#info  ~> $sel -> get_prompt()
+--
+
+# $sel -> get_location()
+word  ~> $sel -> get_location()
+abbr  ~> ^w%[ww]s%[elenium]g%[et]l%[ocation]$
+menu  ~> $sel -> get_location()
+#info  ~> $sel -> get_location()
+--
+
+# $sel -> get_title()
+word  ~> $sel -> get_title()
+abbr  ~> ^w%[ww]s%[elenium]g%[et]t%[itle]$
+menu  ~> $sel -> get_title()
+#info  ~> $sel -> get_title()
+--
+
+# $sel -> get_body_text()
+word  ~> $sel -> get_body_text()
+abbr  ~> ^w%[ww]s%[elenium]g%[et]b%[ody]t%[ext]$
+menu  ~> $sel -> get_body_text()
+#info  ~> $sel -> get_body_text()
+--
+
+# $sel -> get_value($locator)
+word  ~> $sel -> get_value(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]v%[alue]$
+menu  ~> $sel -> get_value($locator)
+#info  ~> $sel -> get_value($locator)
+--
+
+# $sel -> get_text($locator)
+word  ~> $sel -> get_text(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]t%[ext]$
+menu  ~> $sel -> get_text($locator)
+#info  ~> $sel -> get_text($locator)
+--
+
+# $sel -> highlight($locator)
+word  ~> $sel -> highlight(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]h%[ighlight]$
+menu  ~> $sel -> highlight($locator)
+#info  ~> $sel -> highlight($locator)
+--
+
+# $sel -> get_eval($script)
+word  ~> $sel -> get_eval(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]e%[val]$
+menu  ~> $sel -> get_eval($script)
+#info  ~> $sel -> get_eval($script)
+--
+
+# $sel -> is_checked($locator)
+word  ~> $sel -> is_checked(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]i%[s]c%[hecked]$
+menu  ~> $sel -> is_checked($locator)
+#info  ~> $sel -> is_checked($locator)
+--
+
+# $sel -> get_table($table_cell_address)
+word  ~> $sel -> get_table(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]t%[able]$
+menu  ~> $sel -> get_table($table_cell_address)
+#info  ~> $sel -> get_table($table_cell_address)
+--
+
+# $sel -> get_selected_labels($select_locator)
+word  ~> $sel -> get_selected_labels(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]s%[elected]l%[abels]$
+menu  ~> $sel -> get_selected_labels($select_locator)
+#info  ~> $sel -> get_selected_labels($select_locator)
+--
+
+# $sel -> get_selected_label($select_locator)
+word  ~> $sel -> get_selected_label(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]s%[elected]l%[abel]$
+menu  ~> $sel -> get_selected_label($select_locator)
+#info  ~> $sel -> get_selected_label($select_locator)
+--
+
+# $sel -> get_selected_values($select_locator)
+word  ~> $sel -> get_selected_values(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]s%[elected]v%[alues]$
+menu  ~> $sel -> get_selected_values($select_locator)
+#info  ~> $sel -> get_selected_values($select_locator)
+--
+
+# $sel -> get_selected_value($select_locator)
+word  ~> $sel -> get_selected_value(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]s%[elected]v%[alue]$
+menu  ~> $sel -> get_selected_value($select_locator)
+#info  ~> $sel -> get_selected_value($select_locator)
+--
+
+# $sel -> get_selected_indexes($select_locator)
+word  ~> $sel -> get_selected_indexes(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]s%[elected]i%[ndexes]$
+menu  ~> $sel -> get_selected_indexes($select_locator)
+#info  ~> $sel -> get_selected_indexes($select_locator)
+--
+
+# $sel -> get_selected_index($select_locator)
+word  ~> $sel -> get_selected_index(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]get_selected_index
+menu  ~> $sel -> get_selected_index($select_locator)
+#info  ~> $sel -> get_selected_index($select_locator)
+--
+
+# $sel -> get_selected_ids($select_locator)
+word  ~> $sel -> get_selected_ids(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]s%[elected]i%[ds]$
+menu  ~> $sel -> get_selected_ids($select_locator)
+#info  ~> $sel -> get_selected_ids($select_locator)
+--
+
+# $sel -> get_selected_id($select_locator)
+word  ~> $sel -> get_selected_id(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]s%[elected]i%[d]$
+menu  ~> $sel -> get_selected_id($select_locator)
+#info  ~> $sel -> get_selected_id($select_locator)
+--
+
+# $sel -> is_something_selected($select_locator)
+word  ~> $sel -> is_something_selected(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]i%[s]s%[omething]s%[elected]$
+menu  ~> $sel -> is_something_selected($select_locator)
+#info  ~> $sel -> is_something_selected($select_locator)
+--
+
+# $sel -> get_select_options($select_locator)
+word  ~> $sel -> get_select_options(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]s%[elect]o%[ptions]$
+menu  ~> $sel -> get_select_options($select_locator)
+#info  ~> $sel -> get_select_options($select_locator)
+--
+
+# $sel -> get_attribute($attribute_locator)
+word  ~> $sel -> get_attribute(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]a%[ttribute]$
+menu  ~> $sel -> get_attribute($attribute_locator)
+#info  ~> $sel -> get_attribute($attribute_locator)
+--
+
+# $sel -> is_text_present($pattern)
+word  ~> $sel -> is_text_present(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]i%[s]t%[ext]p%[resent]$
+menu  ~> $sel -> is_text_present($pattern)
+#info  ~> $sel -> is_text_present($pattern)
+--
+
+# $sel -> is_element_present($locator)
+word  ~> $sel -> is_element_present(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]i%[s]e%[lement]p%[resent]$
+menu  ~> $sel -> is_element_present($locator)
+#info  ~> $sel -> is_element_present($locator)
+--
+
+# $sel -> is_visible($locator)
+word  ~> $sel -> is_visible(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]i%[s]v%[isible]$
+menu  ~> $sel -> is_visible($locator)
+#info  ~> $sel -> is_visible($locator)
+--
+
+# $sel -> is_editable($locator)
+word  ~> $sel -> is_editable(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]i%[s]e%[ditable]$
+menu  ~> $sel -> is_editable($locator)
+#info  ~> $sel -> is_editable($locator)
+--
+
+# $sel -> get_all_buttons()
+word  ~> $sel -> get_all_buttons()
+abbr  ~> ^w%[ww]s%[elenium]g%[et]a%[ll]b%[uttons]$
+menu  ~> $sel -> get_all_buttons()
+#info  ~> $sel -> get_all_buttons()
+--
+
+# $sel -> get_all_links()
+word  ~> $sel -> get_all_links()
+abbr  ~> ^w%[ww]s%[elenium]g%[et]a%[ll]l%[inks]$
+menu  ~> $sel -> get_all_links()
+#info  ~> $sel -> get_all_links()
+--
+
+# $sel -> get_all_fields()
+word  ~> $sel -> get_all_fields()
+abbr  ~> ^w%[ww]s%[elenium]g%[et]a%[ll]f%[ields]$
+menu  ~> $sel -> get_all_fields()
+#info  ~> $sel -> get_all_fields()
+--
+
+# $sel -> get_attribute_from_all_windows($attribute_name)
+word  ~> $sel -> get_attribute_from_all_windows(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]a%[ttribute]f%[rom]a%[ll]w%[indows]$
+menu  ~> $sel -> get_attribute_from_all_windows($attribute_name)
+#info  ~> $sel -> get_attribute_from_all_windows($attribute_name)
+--
+
+# $sel -> dragdrop($locator, $movements_string)
+word  ~> $sel -> dragdrop(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]d%[ragdrop]$
+menu  ~> $sel -> dragdrop($locator, $movements_string)
+#info  ~> $sel -> dragdrop($locator, $movements_string)
+--
+
+# $sel -> set_mouse_speed($pixels)
+word  ~> $sel -> set_mouse_speed(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]s%[et]m%[ouse]s%[peed]$
+menu  ~> $sel -> set_mouse_speed($pixels)
+#info  ~> $sel -> set_mouse_speed($pixels)
+--
+
+# $sel -> get_mouse_speed()
+word  ~> $sel -> get_mouse_speed()
+abbr  ~> ^w%[ww]s%[elenium]g%[et]m%[ouse]s%[peed]$
+menu  ~> $sel -> get_mouse_speed()
+#info  ~> $sel -> get_mouse_speed()
+--
+
+# $sel -> drag_and_drop($locator, $movements_string)
+word  ~> $sel -> drag_and_drop(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]d%[rag]a%[nd]d%[rop]$
+menu  ~> $sel -> drag_and_drop($locator, $movements_string)
+#info  ~> $sel -> drag_and_drop($locator, $movements_string)
+--
+
+# $sel -> drag_and_drop_to_object($locator_of_object_to_be_dragged, $locator_of_drag_destination_object)
+word  ~> $sel -> drag_and_drop_to_object(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]d%[rag]a%[nd]d%[rop]t%[o]o%[bject]$
+menu  ~> $sel -> drag_and_drop_to_object($locator_of_object_to_be_dragged, $locator_of_drag_destination_object)
+#info  ~> $sel -> drag_and_drop_to_object($locator_of_object_to_be_dragged, $locator_of_drag_destination_object)
+--
+
+# $sel -> window_focus()
+word  ~> $sel -> window_focus()
+abbr  ~> ^w%[ww]s%[elenium]w%[indow]f%[ocus]$
+menu  ~> $sel -> window_focus()
+#info  ~> $sel -> window_focus()
+--
+
+# $sel -> window_maximize()
+word  ~> $sel -> window_maximize()
+abbr  ~> ^w%[ww]s%[elenium]w%[indow]m%[aximize]$
+menu  ~> $sel -> window_maximize()
+#info  ~> $sel -> window_maximize()
+--
+
+# $sel -> get_all_window_ids()
+word  ~> $sel -> get_all_window_ids()
+abbr  ~> ^w%[ww]s%[elenium]g%[et]a%[ll]w%[indow]i%[ds]$
+menu  ~> $sel -> get_all_window_ids()
+#info  ~> $sel -> get_all_window_ids()
+--
+
+# $sel -> get_all_window_names()
+word  ~> $sel -> get_all_window_names()
+abbr  ~> ^w%[ww]s%[elenium]g%[et]a%[ll]w%[indow]n%[ames]$
+menu  ~> $sel -> get_all_window_names()
+#info  ~> $sel -> get_all_window_names()
+--
+
+# $sel -> get_all_window_titles()
+word  ~> $sel -> get_all_window_titles()
+abbr  ~> ^w%[ww]s%[elenium]g%[et]a%[ll]w%[indow]t%[itles]$
+menu  ~> $sel -> get_all_window_titles()
+#info  ~> $sel -> get_all_window_titles()
+--
+
+# $sel -> get_html_source()
+word  ~> $sel -> get_html_source()
+abbr  ~> ^w%[ww]s%[elenium]g%[et]h%[tml]s%[ource]$
+menu  ~> $sel -> get_html_source()
+#info  ~> $sel -> get_html_source()
+--
+
+# $sel -> set_cursor_position($locator, $position)
+word  ~> $sel -> set_cursor_position(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]s%[et]c%[ursor]p%[osition]$
+menu  ~> $sel -> set_cursor_position($locator, $position)
+#info  ~> $sel -> set_cursor_position($locator, $position)
+--
+
+# $sel -> get_element_index($locator)
+word  ~> $sel -> get_element_index(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]e%[lement]i%[ndex]$
+menu  ~> $sel -> get_element_index($locator)
+#info  ~> $sel -> get_element_index($locator)
+--
+
+# $sel -> is_ordered($locator1, $locator2)
+word  ~> $sel -> is_ordered(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]i%[s]o%[rdered]$
+menu  ~> $sel -> is_ordered($locator1, $locator2)
+#info  ~> $sel -> is_ordered($locator1, $locator2)
+--
+
+# $sel -> get_element_position_left($locator)
+word  ~> $sel -> get_element_position_left(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]e%[lement]p%[osition]l%[eft]$
+menu  ~> $sel -> get_element_position_left($locator)
+#info  ~> $sel -> get_element_position_left($locator)
+--
+
+# $sel -> get_element_position_top($locator)
+word  ~> $sel -> get_element_position_top(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]e%[lement]p%[osition]t%[op]$
+menu  ~> $sel -> get_element_position_top($locator)
+#info  ~> $sel -> get_element_position_top($locator)
+--
+
+# $sel -> get_element_width($locator)
+word  ~> $sel -> get_element_width(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]e%[lement]w%[idth]$
+menu  ~> $sel -> get_element_width($locator)
+#info  ~> $sel -> get_element_width($locator)
+--
+
+# $sel -> get_element_height($locator)
+word  ~> $sel -> get_element_height(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]e%[lement]h%[eight]$
+menu  ~> $sel -> get_element_height($locator)
+#info  ~> $sel -> get_element_height($locator)
+--
+
+# $sel -> get_cursor_position($locator)
+word  ~> $sel -> get_cursor_position(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]c%[ursor]p%[osition]$
+menu  ~> $sel -> get_cursor_position($locator)
+#info  ~> $sel -> get_cursor_position($locator)
+--
+
+# $sel -> get_expression($expression)
+word  ~> $sel -> get_expression(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]e%[xpression]$
+menu  ~> $sel -> get_expression($expression)
+#info  ~> $sel -> get_expression($expression)
+--
+
+# $sel -> get_xpath_count($xpath)
+word  ~> $sel -> get_xpath_count(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]x%[path]c%[ount]$
+menu  ~> $sel -> get_xpath_count($xpath)
+#info  ~> $sel -> get_xpath_count($xpath)
+--
+
+# $sel -> assign_id($locator, $identifier)
+word  ~> $sel -> assign_id(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]a%[ssign]i%[d]$
+menu  ~> $sel -> assign_id($locator, $identifier)
+#info  ~> $sel -> assign_id($locator, $identifier)
+--
+
+# $sel -> allow_native_xpath($allow)
+word  ~> $sel -> allow_native_xpath(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]a%[llow]n%[ative]x%[path]$
+menu  ~> $sel -> allow_native_xpath($allow)
+#info  ~> $sel -> allow_native_xpath($allow)
+--
+
+# $sel -> ignore_attributes_without_value($ignore)
+word  ~> $sel -> ignore_attributes_without_value(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]i%[gnore]a%[ttributes]w%[ithout]v%[alue]$
+menu  ~> $sel -> ignore_attributes_without_value($ignore)
+#info  ~> $sel -> ignore_attributes_without_value($ignore)
+--
+
+# $sel -> wait_for_condition($script, $timeout)
+word  ~> $sel -> wait_for_condition(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]w%[ait]f%[or]c%[ondition]$
+menu  ~> $sel -> wait_for_condition($script, $timeout)
+#info  ~> $sel -> wait_for_condition($script, $timeout)
+--
+
+# $sel -> set_timeout($timeout)
+word  ~> $sel -> set_timeout(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]s%[et]t%[imeout]$
+menu  ~> $sel -> set_timeout($timeout)
+#info  ~> $sel -> set_timeout($timeout)
+--
+
+# $sel -> wait_for_page_to_load($timeout)
+word  ~> $sel -> wait_for_page_to_load($timeout);
+abbr  ~> ^w%[ww]s%[elenium]w%[ait]f%[or]p%[age]t%[o]l%[oad]$
+menu  ~> $sel -> wait_for_page_to_load($timeout)
+#info  ~> $sel -> wait_for_page_to_load($timeout)
+--
+
+# $sel -> wait_for_frame_to_load($frame_address, $timeout)
+word  ~> $sel -> wait_for_frame_to_load(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]w%[ait]f%[or]f%[rame]t%[o]l%[oad]$
+menu  ~> $sel -> wait_for_frame_to_load($frame_address, $timeout)
+#info  ~> $sel -> wait_for_frame_to_load($frame_address, $timeout)
+--
+
+# $sel -> get_cookie()
+word  ~> $sel -> get_cookie()
+abbr  ~> ^w%[ww]s%[elenium]g%[et]c%[ookie]$
+menu  ~> $sel -> get_cookie()
+#info  ~> $sel -> get_cookie()
+--
+
+# $sel -> get_cookie_by_name($name)
+word  ~> $sel -> get_cookie_by_name(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]c%[ookie]b%[y]n%[ame]$
+menu  ~> $sel -> get_cookie_by_name($name)
+#info  ~> $sel -> get_cookie_by_name($name)
+--
+
+# $sel -> is_cookie_present($name)
+word  ~> $sel -> is_cookie_present(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]i%[s]c%[ookie]p%[resent]$
+menu  ~> $sel -> is_cookie_present($name)
+#info  ~> $sel -> is_cookie_present($name)
+--
+
+# $sel -> create_cookie($name_value_pair, $options_string)
+word  ~> $sel -> create_cookie(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]c%[reate]c%[ookie]$
+menu  ~> $sel -> create_cookie($name_value_pair, $options_string)
+#info  ~> $sel -> create_cookie($name_value_pair, $options_string)
+--
+
+# $sel -> delete_cookie($name, $options_string)
+word  ~> $sel -> delete_cookie(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]d%[elete]c%[ookie]$
+menu  ~> $sel -> delete_cookie($name, $options_string)
+#info  ~> $sel -> delete_cookie($name, $options_string)
+--
+
+# $sel -> delete_all_visible_cookies()
+word  ~> $sel -> delete_all_visible_cookies()
+abbr  ~> ^w%[ww]s%[elenium]d%[elete]a%[ll]v%[isible]c%[ookies]$
+menu  ~> $sel -> delete_all_visible_cookies()
+#info  ~> $sel -> delete_all_visible_cookies()
+--
+
+# $sel -> set_browser_log_level($log_level)
+word  ~> $sel -> set_browser_log_level(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]s%[et]b%[rowser]l%[og]l%[evel]$
+menu  ~> $sel -> set_browser_log_level($log_level)
+#info  ~> $sel -> set_browser_log_level($log_level)
+--
+
+# $sel -> run_script($script)
+word  ~> $sel -> run_script(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]r%[un]s%[cript]$
+menu  ~> $sel -> run_script($script)
+#info  ~> $sel -> run_script($script)
+--
+
+# $sel -> add_location_strategy($strategy_name)
+word  ~> $sel -> add_location_strategy(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]a%[dd]l%[ocation]s%[trategy]$
+menu  ~> $sel -> add_location_strategy($strategy_name)
+#info  ~> $sel -> add_location_strategy($strategy_name)
+--
+
+# $sel -> capture_entire_page_screenshot($filename, $kwargs)
+word  ~> $sel -> capture_entire_page_screenshot(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]c%[apture]e%[ntire]p%[age]s%[creenshot]$
+menu  ~> $sel -> capture_entire_page_screenshot($filename, $kwargs)
+#info  ~> $sel -> capture_entire_page_screenshot($filename, $kwargs)
+--
+
+# $sel -> rollup($rollup_name, $kwargs)
+word  ~> $sel -> rollup(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]r%[ollup]$
+menu  ~> $sel -> rollup($rollup_name, $kwargs)
+#info  ~> $sel -> rollup($rollup_name, $kwargs)
+--
+
+# $sel -> add_script($script_content, $script_tag_id)
+word  ~> $sel -> add_script(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]a%[dd]s%[cript]$
+menu  ~> $sel -> add_script($script_content, $script_tag_id)
+#info  ~> $sel -> add_script($script_content, $script_tag_id)
+--
+
+# $sel -> remove_script($script_tag_id)
+word  ~> $sel -> remove_script(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]r%[emove]s%[cript]$
+menu  ~> $sel -> remove_script($script_tag_id)
+#info  ~> $sel -> remove_script($script_tag_id)
+--
+
+# $sel -> use_xpath_library($library_name)
+word  ~> $sel -> use_xpath_library(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]u%[se]x%[path]l%[ibrary]$
+menu  ~> $sel -> use_xpath_library($library_name)
+#info  ~> $sel -> use_xpath_library($library_name)
+--
+
+# $sel -> set_context($context)
+word  ~> $sel -> set_context(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]s%[et]c%[ontext]$
+menu  ~> $sel -> set_context($context)
+#info  ~> $sel -> set_context($context)
+--
+
+# $sel -> attach_file($field_locator, $file_locator)
+word  ~> $sel -> attach_file(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]a%[ttach]f%[ile]$
+menu  ~> $sel -> attach_file($field_locator, $file_locator)
+#info  ~> $sel -> attach_file($field_locator, $file_locator)
+--
+
+# $sel -> capture_screenshot($filename)
+word  ~> $sel -> capture_screenshot(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]c%[apture]s%[creenshot]$
+menu  ~> $sel -> capture_screenshot($filename)
+#info  ~> $sel -> capture_screenshot($filename)
+--
+
+# $sel -> capture_screenshot_to_string()
+word  ~> $sel -> capture_screenshot_to_string()
+abbr  ~> ^w%[ww]s%[elenium]c%[apture]s%[creenshot]t%[o]s%[tring]$
+menu  ~> $sel -> capture_screenshot_to_string()
+#info  ~> $sel -> capture_screenshot_to_string()
+--
+
+# $sel -> capture_entire_page_screenshot_to_string($kwargs)
+word  ~> $sel -> capture_entire_page_screenshot_to_string(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]c%[apture]e%[ntire]p%[age]s%[creenshot]t%[o]s%[tring]$
+menu  ~> $sel -> capture_entire_page_screenshot_to_string($kwargs)
+#info  ~> $sel -> capture_entire_page_screenshot_to_string($kwargs)
+--
+
+# $sel -> shut_down_selenium_server()
+word  ~> $sel -> shut_down_selenium_server()
+abbr  ~> ^w%[ww]s%[elenium]s%[hut]d%[own]s%[elenium]s%[erver]$
+menu  ~> $sel -> shut_down_selenium_server()
+#info  ~> $sel -> shut_down_selenium_server()
+--
+
+# $sel -> retrieve_last_remote_control_logs()
+word  ~> $sel -> retrieve_last_remote_control_logs()
+abbr  ~> ^w%[ww]s%[elenium]r%[etrieve]l%[ast]r%[emote]c%[ontrol]l%[ogs]$
+menu  ~> $sel -> retrieve_last_remote_control_logs()
+#info  ~> $sel -> retrieve_last_remote_control_logs()
+--
+
+# $sel -> key_down_native($keycode)
+word  ~> $sel -> key_down_native(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]k%[ey]d%[own]n%[ative]$
+menu  ~> $sel -> key_down_native($keycode)
+#info  ~> $sel -> key_down_native($keycode)
+--
+
+# $sel -> key_up_native($keycode)
+word  ~> $sel -> key_up_native(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]k%[ey]u%[p]n%[ative]$
+menu  ~> $sel -> key_up_native($keycode)
+#info  ~> $sel -> key_up_native($keycode)
+--
+
+# $sel -> key_press_native($keycode)
+word  ~> $sel -> key_press_native(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]k%[ey]p%[ress]n%[ative]$
+menu  ~> $sel -> key_press_native($keycode)
+#info  ~> $sel -> key_press_native($keycode)
+--
+
+# $sel -> wait_for_text_present($text, $timeout)
+word  ~> $sel -> wait_for_text_present(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]w%[ait]f%[or]t%[ext]p%[resent]$
+menu  ~> $sel -> wait_for_text_present($text, $timeout)
+#info  ~> $sel -> wait_for_text_present($text, $timeout)
+--
+
+# $sel -> wait_for_element_present($locator, $timeout)
+word  ~> $sel -> wait_for_element_present(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]w%[ait]f%[or]e%[lement]p%[resent]$
+menu  ~> $sel -> wait_for_element_present($locator, $timeout)
+#info  ~> $sel -> wait_for_element_present($locator, $timeout)
+--
+
+# $sel -> is_location($expected_location)
+word  ~> $sel -> is_location(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]i%[s]l%[ocation]$
+menu  ~> $sel -> is_location($expected_location)
+#info  ~> $sel -> is_location($expected_location)
+--
+
+# $sel -> get_checked($locator)
+word  ~> $sel -> get_checked(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]c%[hecked]$
+menu  ~> $sel -> get_checked($locator)
+#info  ~> $sel -> get_checked($locator)
+--
+
+# $sel -> is_selected($locator, $option_locator)
+word  ~> $sel -> is_selected(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]i%[s]s%[elected]$
+menu  ~> $sel -> is_selected($locator, $option_locator)
+#info  ~> $sel -> is_selected($locator, $option_locator)
+--
+
+# $sel -> get_selected_options($locator)
+word  ~> $sel -> get_selected_options(maa);`aa
+abbr  ~> ^w%[ww]s%[elenium]g%[et]s%[elected]o%[ptions]$
+menu  ~> $sel -> get_selected_options($locator)
+#info  ~> $sel -> get_selected_options($locator)
+--
+
+# $sel -> get_absolute_location()
+word  ~> $sel -> get_absolute_location()
+abbr  ~> ^w%[ww]s%[elenium]g%[et]a%[bsolute]l%[ocation]$
+menu  ~> $sel -> get_absolute_location()
+#info  ~> $sel -> get_absolute_location()
+--
+

@@ -1,0 +1,11 @@
+source $HOME/.vk/.kp/bin/setenv.csh
+
+alias g 'C:/Program\ Files\ \(x86\)/Vim/vim74/gvim `cygpath -m \!*` &'
+
+alias cl clear
+alias c 'clear; ls'
+alias b 'cd ..; ls'
+
+# Tag for VHD, C , H 
+alias tag 'svtags -f $BASE_DIR/.tags $BASE_DIR/; ctags -R -f $HOME/.tags `find $BASE_DIR /tools/mentor/questasim_10.2c/modeltech/verilog_src/uvm-1.1d/src/ -regextype sed -regex ".*\.\(vhd\|c\|h\)"`'
+

@@ -1,0 +1,77 @@
+#-------------------------------------------------------------------------------
+# Data::CSV_KP
+#-------------------------------------------------------------------------------
+
+#use
+word  ~> use Data::CSV_KP; 
+abbr  ~> ^u%[se]d%[ata]c%[svkp]4
+menu  ~> use CSV_KP
+--
+#new
+word  ~> my $csv_kp = Data::CSV_KP -> new (csv_file => maa, heading => mba);`aa
+abbr  ~> ^d%[ata]c%[svkp]n%[ew]$
+menu  ~> CSV_KP -> new
+--
+# print
+word  ~> $csv_kp -> print (maa);`aa
+abbr  ~> ^d%[ata]c%[svkp]p%[rint]$
+menu  ~> CSV_KP -> print
+--
+# print
+word  ~> $csv_kp -> print_heading ();
+abbr  ~> ^d%[ata]c%[svkp]p%[rint]h%[eading]$
+menu  ~> CSV_KP -> print_heading
+--
+
+#-------------------------------------------------------------------------------
+# Web::ScrapeUnit
+#-------------------------------------------------------------------------------
+
+#use
+word  ~> use Web::ScrapeUnit; 
+abbr  ~> ^u%[se]w%[eb]s%[crape]%[unit]
+menu  ~> ScrapeUnit use
+--
+#new
+word  ~> my $wsu = Web::ScrapeUnit -> new (mech => maa);`aa
+abbr  ~> ^w%[wb]s%[crape]%[unit]n%[ew]$
+menu  ~> ScrapeUnit new
+--
+# scrape
+word  ~> $wsu -> scrape (url => maa, scraper => mba);`aa
+abbr  ~> ^w%[wb]s%[crape]%[unit]s%[crape]$
+menu  ~> ScrapeUnit -> scrape
+--
+# hash_to_csv_data
+word  ~> $wsu -> hash_to_csv_data (heading => maa);`aa
+abbr  ~> ^w%[wb]s%[crape]%[unit]h%[ash]t%[o]c%[sv]d%[ata]$
+menu  ~> ScrapeUnit -> hash_to_csv_data
+--
+
+#-------------------------------------------------------------------------------
+# Data::Convert
+#-------------------------------------------------------------------------------
+#use
+word  ~> use Data::Convert; 
+abbr  ~> ^u%[se]d%[ata]c%[onvert]$
+menu  ~> use Data::Convert
+--
+#hash_to_csv_data
+word  ~> hash_to_csv_data(heading => maa, h_data => mba);`aa
+abbr  ~> ^d%[ata]c%[onvert]h%[ash]t%[o]c%[sv]d%[ata]$
+menu  ~> hash_to_csv_data
+--
+
+#-------------------------------------------------------------------------------
+# WWW::Mech::Try
+#use
+word  ~> use WWW::Mech::Try; 
+abbr  ~> ^u%[se]w%[ww]m%[ech]t%[ry]$
+menu  ~> use WWW::Mech::Try
+--
+#new
+word  ~> my $mech = WWW::Mech::Try -> new (  agent => 'Mozilla/5.0 (X11; Linux i686; rv:12.0) Gecko/20100101 Firefox/12.0',max_try => -1,);
+abbr  ~> ^w%[ww]m%[ech]%[try]n%[ew]$
+menu  ~> ScrapeUnit new
+--
+#-------------------------------------------------------------------------------

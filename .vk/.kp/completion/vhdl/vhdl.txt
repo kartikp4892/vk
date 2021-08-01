@@ -1,0 +1,66 @@
+# word	        the text that will be inserted, mandatory
+# abbr	        abbreviation of "word"; when not empty it is used in
+# 	        the menu instead of "word"
+# menu	        extra text for the popup menu, displayed after "word"
+# 	        or "abbr"
+# info	        more information about the item, can be displayed in a
+# 	        preview window
+# kind	        single letter indicating the type of completion
+# icase	        when non-zero case is to be ignored when comparing
+# 	        items to be equal; when omitted zero is used, thus
+# 	        items that only differ in case are added
+# dup	        when non-zero this match will be added even when an
+# 	        item with the same word is already present.
+# 
+
+enti
+enty
+std_logic_vector
+--
+word ~> architecture
+abbr ~> architecture
+menu ~> 
+info ~> 
+--
+word ~> std_logic
+abbr ~> std_logic
+menu ~> 
+info ~> 
+--
+word ~> ="entity" 
+abbr ~> entt
+menu ~> entity declaration
+info ~> entity information 
+       \  another line 
+       \  third line
+--
+word ~> std_logic_hector
+abbr ~> slh
+menu ~> kartik declaration
+info ~> kartik information
+--
+--
+word ~> =vhdl#keywordfn#kp_slv() 
+#word ~> std_logic_vector (maa downto mba)mc`aa
+#word ~> std_logic_vector (ma downto mb)`aa
+abbr ~> slv
+menu ~> kartik declaration
+info ~> one line 
+\another line 
+\third line
+--
+word ~> =vhdl#keywordfn#kp_opp() 
+abbr ~> oppb
+menu ~> ovm_put_port_blocking
+info ~> ovm_put_port_blocking
+--
+word ~> =vhdl#keywordfn#kp_oppn() 
+abbr ~> oppn
+menu ~> ovm_put_port_non_blocking
+info ~> ovm_put_port_non_blocking
+--
+word ~> =vhdl#keywordfn#kp_opt() 
+abbr ~> opt
+menu ~> ovm_put_transaction
+info ~> ovm_put_transaction
+--

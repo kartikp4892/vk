@@ -1,0 +1,71 @@
+# word	        the text that will be inserted, mandatory
+# abbr	        abbreviation of "word"; when not empty it is used in
+# 	        the menu instead of "word"
+# menu	        extra text for the popup menu, displayed after "word"
+# 	        or "abbr"
+## info	        more information about the item, can be displayed in a
+# 	        preview window
+# kind	        single letter indicating the type of completion
+# icase	        when non-zero case is to be ignored when comparing
+# 	        items to be equal; when omitted zero is used, thus
+# 	        items that only differ in case are added
+# dup	        when non-zero this match will be added even when an
+# 	        item with the same word is already present.
+# 
+word  ~> =matlab#userdefined#report_info() 
+abbr  ~> ^r%[eport]i%[nfo]$
+menu  ~> report_info
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =matlab#userdefined#report_error() 
+abbr  ~> ^r%[eport]e%[rror]$
+menu  ~> report_error
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =matlab#userdefined#report_pass() 
+abbr  ~> ^r%[eport]p%[ass]$
+menu  ~> report_pass
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =matlab#userdefined#report_fail() 
+abbr  ~> ^r%[eport]f%[ail]$
+menu  ~> report_fail
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =matlab#userdefined#pretest_step() 
+abbr  ~> ^p%[retest]s%[tep]$
+menu  ~> pretest_step
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =matlab#userdefined#stim_step() 
+abbr  ~> ^s%[tim]s%[tep]$
+menu  ~> stim_step
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+
+
+

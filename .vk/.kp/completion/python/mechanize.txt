@@ -1,0 +1,125 @@
+word  ~> =python#mechanize#new() 
+abbr  ~> ^m%[echanize]n%[ew]$
+menu  ~> mechanize()
+--
+word  ~> =python#mechanize#read() 
+abbr  ~> ^m%[echanize]%[response]r%[ead]$
+menu  ~> mechanize().response().read()
+--
+word  ~> =python#mechanize#title() 
+abbr  ~> ^m%[echanize]t%[itle]$
+menu  ~> mechanize().title()
+--
+word  ~> =python#mechanize#info() 
+abbr  ~> ^m%[echanize]%[response]i%[nfo]$
+menu  ~> mechanize().response().info()
+--
+word  ~> =python#mechanize#forms() 
+abbr  ~> ^m%[echanize]f%[orm]%[s]$
+menu  ~> mechanize().forms()
+--
+word  ~> =python#mechanize#form() 
+abbr  ~> ^m%[echanize]f%[orm]$
+menu  ~> mechanize().orm()
+--
+word  ~> =python#mechanize#submit() 
+abbr  ~> ^m%[echanize]s%[ubmit]$
+menu  ~> mechanize().submit()
+--
+word  ~> =python#mechanize#links() 
+abbr  ~> ^m%[echanize]l%[inks]$
+menu  ~> mechanize().links()
+--
+word  ~> =python#mechanize#find_link() 
+abbr  ~> ^m%[echanize]f%[ind]l%[inks]$
+menu  ~> mechanize().find_link()
+--
+word  ~> =python#mechanize#geturl() 
+abbr  ~> ^m%[echanize]g%[et]u%[rl]$
+menu  ~> mechanize().geturl()
+--
+word  ~> =python#mechanize#retrieve() 
+abbr  ~> ^m%[echanize]r%[etrieve]$
+menu  ~> mechanize().retrieve()
+--
+word  ~> =python#mechanize#set_proxies() 
+abbr  ~> ^m%[echanize]s%[et]p%[roxies]$
+menu  ~> mechanize().set_proxies()
+--
+word  ~> =python#mechanize#add_proxy_password() 
+abbr  ~> ^m%[echanize]a%[dd]p%[roxy]p%[assword]$
+menu  ~> mechanize().add_proxy_password()
+--
+word  ~> =python#mechanize#add_proxy_password() 
+abbr  ~> ^m%[echanize]a%[dd]p%[roxy]p%[assword]$
+menu  ~> mechanize().add_proxy_password()
+--
+word  ~> =python#mechanize#click_link() 
+abbr  ~> ^m%[echanize]c%[lick]l%[ink]$
+menu  ~> mechanize().click_link()
+--
+word  ~> =python#mechanize#open() 
+abbr  ~> ^m%[echanize]o%[pen]$
+menu  ~> mechanize().open()
+--
+word  ~> =python#mechanize#add_password() 
+abbr  ~> ^m%[echanize]a%[dd]p%[assword]$
+menu  ~> mechanize().add_password()
+--
+word  ~> =python#mechanize#select_form() 
+abbr  ~> ^m%[echanize]s%[elect]f%[orm]$
+menu  ~> mechanize().select_form()
+--
+word  ~> =python#mechanize#browser() 
+abbr  ~> ^m%[echanize]b%[rowser]$
+menu  ~> mechanize().browser()
+--
+word  ~> =python#mechanize#set_handle_equiv() 
+abbr  ~> ^m%[echanize]s%[et]h%[andle]e%[quiv]$
+menu  ~> mechanize().set_handle_equiv()
+--
+word  ~> =python#mechanize#set_handle_gzip() 
+abbr  ~> ^m%[echanize]s%[et]h%[andle]g%[zip]$
+menu  ~> mechanize().set_handle_gzip()
+--
+word  ~> =python#mechanize#set_handle_redirect() 
+abbr  ~> ^m%[echanize]s%[et]h%[andle]r%[edirect]$
+menu  ~> mechanize().set_handle_redirect()
+--
+word  ~> =python#mechanize#set_handle_referer() 
+abbr  ~> ^m%[echanize]s%[et]h%[andle]r%[edirect]$
+menu  ~> mechanize().set_handle_referer()
+--
+word  ~> =python#mechanize#set_handle_robots() 
+abbr  ~> ^m%[echanize]s%[et]h%[andle]r%[obots]$
+menu  ~> mechanize().set_handle_robots()
+--
+word  ~> =python#mechanize#set_handle_refresh() 
+abbr  ~> ^m%[echanize]s%[et]h%[andle]r%[efresh]$
+menu  ~> mechanize().set_handle_refresh()
+--
+word  ~> =python#mechanize#set_debug_http() 
+abbr  ~> ^m%[echanize]s%[et]d%[ebug]h%[ttp]$
+menu  ~> mechanize().set_debug_http()
+--
+word  ~> =python#mechanize#set_debug_redirects() 
+abbr  ~> ^m%[echanize]s%[et]d%[ebug]r%[edirects]$
+menu  ~> mechanize().set_debug_redirects()
+--
+word  ~> =python#mechanize#set_debug_responses() 
+abbr  ~> ^m%[echanize]s%[et]d%[ebug]r%[esponses]$
+menu  ~> mechanize().set_debug_responses()
+--
+word  ~> =python#mechanize#addheaders() 
+abbr  ~> ^m%[echanize]a%[dd]h%[eaders]$
+menu  ~> mechanize().addheaders()
+--
+
+
+
+
+
+
+
+
+

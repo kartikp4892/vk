@@ -1,0 +1,171 @@
+# word	        the text that will be inserted, mandatory
+# abbr	        abbreviation of "word"; when not empty it is used in
+# 	        the menu instead of "word"
+# menu	        extra text for the popup menu, displayed after "word"
+# 	        or "abbr"
+## info	        more information about the item, can be displayed in a
+# 	        preview window
+# kind	        single letter indicating the type of completion
+# icase	        when non-zero case is to be ignored when comparing
+# 	        items to be equal; when omitted zero is used, thus
+# 	        items that only differ in case are added
+# dup	        when non-zero this match will be added even when an
+# 	        item with the same word is already present.
+# 
+word  ~> =cpp#cpp#main() 
+abbr  ~> main
+menu  ~> main
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =cpp#oops#class() 
+abbr  ~> class
+menu  ~> class
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =cpp#cpp#struct() 
+abbr  ~> struct
+menu  ~> struct
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =cpp#cpp#function() 
+abbr  ~> function
+menu  ~> function
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> #define 
+abbr  ~> define
+menu  ~> define
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =cpp#cpp#for_incr() 
+abbr  ~> fi
+menu  ~> for++
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =cpp#cpp#for_decr() 
+abbr  ~> fd
+menu  ~> for--
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =cpp#cpp#while() 
+abbr  ~> while
+menu  ~> while
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =cpp#cpp#do_while() 
+abbr  ~> dw
+menu  ~> do while
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> cout << "maa" << endl;`aa
+abbr  ~> cout
+menu  ~> cout
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> cin >> maa;`aa
+abbr  ~> cin
+menu  ~> cin
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =cpp#sqlite3#sqlite3_open() 
+abbr  ~> ^s%[q]l%[ite]o%[pen]$
+menu  ~> sqlite3_open
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =cpp#sqlite3#sqlite3_close() 
+abbr  ~> ^s%[q]l%[ite]c%[lose]$
+menu  ~> sqlite3_close
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =cpp#sqlite3#sqlite3_exec() 
+abbr  ~> ^s%[q]l%[ite]e%[xec]$
+menu  ~> sqlite3_exec
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =cpp#sqlite3#sqlite3_exec_callback() 
+abbr  ~> ^s%[q]l%[ite]%[exec]c%[all]%[back]$
+menu  ~> sqlite3 callback
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =cpp#sqlite3#sqlite3_prepare_insert() 
+abbr  ~> ^s%[q]l%[ite]p%[repare]%[insert]$
+menu  ~> sqlite3 prepare insert
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =cpp#sqlite3#sqlite3_prepare_select() 
+abbr  ~> ^s%[q]l%[ite]p%[repare]%[select]$
+menu  ~> sqlite3 prepare select
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+
+
+
+

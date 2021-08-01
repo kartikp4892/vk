@@ -1,0 +1,136 @@
+# word	        the text that will be inserted, mandatory
+# abbr	        abbreviation of "word"; when not empty it is used in
+# 	        the menu instead of "word"
+# menu	        extra text for the popup menu, displayed after "word"
+# 	        or "abbr"
+## info	        more information about the item, can be displayed in a
+# 	        preview window
+# kind	        single letter indicating the type of completion
+# icase	        when non-zero case is to be ignored when comparing
+# 	        items to be equal; when omitted zero is used, thus
+# 	        items that only differ in case are added
+# dup	        when non-zero this match will be added even when an
+# 	        item with the same word is already present.
+# 
+word  ~> print "maa\n";`aa
+abbr  ~> print
+menu  ~> print
+--
+word  ~> echo "maa\n";`aa
+abbr  ~> echo
+menu  ~> echo
+--
+word  ~> =php#common#function() 
+abbr  ~> fun
+menu  ~> function
+--
+word  ~> define (maa)`aa 
+abbr  ~> def
+menu  ~> define
+--
+word  ~> =php#common#if() 
+abbr  ~> if
+menu  ~> if ()
+--
+word  ~> =php#common#elsif() 
+abbr  ~> ef
+menu  ~> elseif ()
+--
+word  ~> =php#common#else() 
+abbr  ~> el
+menu  ~> else
+--
+word  ~> =php#common#switch() 
+abbr  ~> switch
+menu  ~> switch
+--
+word  ~> =php#common#case() 
+abbr  ~> cs
+menu  ~> case
+--
+word  ~> =php#common#while() 
+abbr  ~> while
+menu  ~> while
+--
+word  ~> =php#common#do_while() 
+abbr  ~> dw
+menu  ~> do while
+--
+word  ~> =php#common#incfor() 
+abbr  ~> fi
+menu  ~> for ++
+--
+word  ~> =php#common#decfor() 
+abbr  ~> fd
+menu  ~> for --
+--
+word  ~> =php#common#foreach() 
+abbr  ~> fe
+menu  ~> foreach
+--
+word  ~> =php#common#class() 
+abbr  ~> class
+menu  ~> class
+--
+
+###################################################################################
+# Keywords
+word  ~> return maa;`aa
+abbr  ~> re
+menu  ~> return
+--
+word  ~> public 
+abbr  ~> public
+menu  ~> public
+--
+word  ~> private 
+abbr  ~> private
+menu  ~> private
+--
+word  ~> include "maa";`aa
+abbr  ~> include
+menu  ~> include
+--
+word  ~> $maa = new `aa
+abbr  ~> new
+menu  ~> new
+--
+
+###################################################################################
+# Super Globals
+word  ~> $GLOBALS['maa']`aa
+abbr  ~> sgglo
+menu  ~> $GLOBALS
+--
+word  ~> $_SERVER['maa']`aa
+abbr  ~> sgser
+menu  ~> $_SERVER
+--
+word  ~> $_REQUEST['maa']`aa
+abbr  ~> sgr
+menu  ~> $_REQUEST
+--
+word  ~> $_POST['maa']`aa
+abbr  ~> sgp
+menu  ~> $_POST
+--
+word  ~> $_GET['maa']`aa
+abbr  ~> sgget
+menu  ~> $_GET
+--
+word  ~> $_FILES['maa']`aa
+abbr  ~> sgf
+menu  ~> $_FILES
+--
+word  ~> $_ENV['maa']`aa
+abbr  ~> sge
+menu  ~> $_ENV
+--
+word  ~> $_COOKIE['maa']`aa
+abbr  ~> sgc
+menu  ~> $_COOKIE
+--
+word  ~> $_SESSION['maa']`aa
+abbr  ~> sgsess
+menu  ~> $_SESSION
+--

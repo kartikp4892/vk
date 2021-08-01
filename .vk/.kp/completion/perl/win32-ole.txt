@@ -1,0 +1,28 @@
+#Win32::OLE->GetActiveObject('Excel.Application')
+word  ~> my $Excel = Win32::OLE->GetActiveObject('Excel.Application') || Win32::OLE->new('Excel.Application', 'Quit'); 
+        \$Excel ->{DisplayAlerts} = 1; 
+        \$Excel->{'Visible'} = 1;
+abbr  ~> ^w%[in32]o%[le]g%[etactiveobject]$
+menu  ~> Win32::OLE->GetActiveObject('Excel.Application')
+--
+
+# book & sheet
+word  ~> my $book = $Excel->Workbooks->Open($xls_file) || die("Unable to open book", Win32::OLE->LastError()); 
+        \my $sheet = $book -> sheets(1); 
+abbr  ~> ^w%[in32]o%[le]w%[ork]%[book]
+menu  ~> $book; $sheet;
+--
+
+# save & close
+word  ~>$book -> save(); 
+        \$book -> close();
+abbr  ~> ^w%[in32]o%[le]s%[ave]%[close]$
+menu  ~> Save; Close;
+--
+
+# saveas
+word  ~>$book -> SaveAs(); 
+abbr  ~> ^w%[in32]o%[le]s%[ave]%[as]$
+menu  ~> SaveAs
+--
+

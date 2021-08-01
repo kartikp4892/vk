@@ -1,0 +1,231 @@
+# word	        the text that will be inserted, mandatory
+# abbr	        abbreviation of "word"; when not empty it is used in
+# 	        the menu instead of "word"
+# menu	        extra text for the popup menu, displayed after "word"
+# 	        or "abbr"
+# info	        more information about the item, can be displayed in a
+# 	        preview window
+# kind	        single letter indicating the type of completion
+# icase	        when non-zero case is to be ignored when comparing
+# 	        items to be equal; when omitted zero is used, thus
+# 	        items that only differ in case are added
+# dup	        when non-zero this match will be added even when an
+# 	        item with the same word is already present.
+# 
+#################################################################################
+# System Verilog
+#################################################################################
+# if block (procedural)
+word  ~> =sv#sv#sv#if() 
+abbr  ~> ^i%[f]$
+menu  ~> if () [Procedural]
+info  ~>
+kind  ~>  
+--
+# if block used in constraint (declarative)
+word  ~> =sv#sv#sv#cif() 
+abbr  ~> ^c%[if]$
+menu  ~> if () [Declarative]
+info  ~>
+kind  ~>  
+--
+# elseif block
+word  ~> =sv#sv#sv#elseif() 
+abbr  ~> ^e%[lse]i%[f]$
+menu  ~> else if () [Procedural]
+info  ~>
+kind  ~>  
+--
+# elseif block used in constraint (declarative)
+word  ~> =sv#sv#sv#celseif() 
+abbr  ~> ^c%[else]i%[f]$
+menu  ~> if () [Declarative]
+info  ~>
+kind  ~>  
+--
+# else block
+word  ~> =sv#sv#sv#else() 
+abbr  ~> ^e%[lse]$
+menu  ~> else [Procedural]
+info  ~>
+kind  ~>  
+--
+# else block used in constraint (declarative)
+word  ~> =sv#sv#sv#celse() 
+abbr  ~> ^ce%[lse]$
+menu  ~> else [Declarative]
+info  ~>
+kind  ~>  
+--
+# for ++ block
+word  ~> =sv#sv#sv#complete('sv#sv#sv#for', -1, 1) 
+abbr  ~> ^f%[or]i%[nc]$
+menu  ~> for ++
+info  ~>
+kind  ~>  
+--
+# for -- block
+word  ~> =sv#sv#sv#complete('sv#sv#sv#for', -1, 0) 
+abbr  ~> ^f%[or]d%[ec]$
+menu  ~> for --
+info  ~>
+kind  ~>  
+--
+# foreach block
+word  ~> =sv#sv#sv#foreach() 
+abbr  ~> ^f%[or]e%[ach]$
+menu  ~> foreach
+info  ~>
+kind  ~>  
+--
+# foreach block used in constraint (declarative)
+word  ~> =sv#sv#sv#cforeach() 
+abbr  ~> ^cf%[or]e%[ach]$
+menu  ~> foreach () [Declarative]
+info  ~>
+kind  ~>  
+--
+# while block
+word  ~> =sv#sv#sv#while() 
+abbr  ~> ^w%[hile]$
+menu  ~> while
+info  ~>
+kind  ~>  
+--
+# do_while block
+word  ~> =sv#sv#sv#do_while() 
+abbr  ~> dw
+menu  ~> do_while
+info  ~>
+kind  ~>  
+--
+# repeat block
+word  ~> =sv#sv#sv#repeat() 
+abbr  ~> ^r%[epeat]$
+menu  ~> repeat
+info  ~>
+kind  ~>  
+--
+# begin-end block
+word  ~> =sv#sv#sv#beginEnd() 
+abbr  ~> ^b%[egin]e%[nd]$
+menu  ~> begin-end
+info  ~>
+kind  ~>  
+--
+# fork-join block
+word  ~> =sv#sv#sv#forkJoin() 
+abbr  ~> ^f%[ork]j%[oin]$
+menu  ~> fork-join
+info  ~>
+kind  ~>  
+--
+# fork-join_any block
+word  ~> =sv#sv#sv#forkJoinAny() 
+abbr  ~> ^f%[ork]j%[oin]a%[ny]$
+menu  ~> fork-join_any
+info  ~>
+kind  ~>  
+--
+# fork-join_none block
+word  ~> =sv#sv#sv#forkJoinNone() 
+abbr  ~> ^f%[ork]j%[oin]n%[one]$
+menu  ~> fork-join_none
+info  ~>
+--
+# case block
+word  ~> =sv#sv#sv#case() 
+abbr  ~> ^c%[ase]$
+menu  ~> case
+info  ~>
+--
+# function block
+#word  ~> =sv#sv#sv#complete('sv#sv#sv#function', -1, 'void', '', "FUNCTION", matchstr(getline("."), '\w\+')) 
+word  ~> =sv#sv#sv#complete('sv#sv#sv#function', -1, "virtual", 'void', '', "FUNCTION", matchstr(getline("."), '\w\+')) 
+abbr  ~> ^f%[unction]$
+menu  ~> function
+info  ~>
+kind  ~> f
+--
+# task block
+#word  ~> =sv#sv#sv#complete('sv#sv#sv#task', -1, '',"TASK" , matchstr(getline("."), '\w\+')) 
+word  ~> =sv#sv#sv#complete('sv#sv#sv#task', -1, "virtual", '',"TASK" , matchstr(getline("."), '\w\+')) 
+abbr  ~> ^t%[ask]$
+menu  ~> task
+info  ~>
+kind  ~> f
+--
+# Interface block
+word  ~> =sv#sv#sv#complete("sv#sv#sv#interface", -1) 
+abbr  ~> ^i%[nterface]$
+menu  ~> interface
+info  ~>
+kind  ~>  
+--
+# constraint
+word  ~> constraint maa {  }`aa
+abbr  ~> ^c%[onstraint]$
+menu  ~> constraint
+info  ~>
+kind  ~>  
+--
+# class block
+word  ~> =sv#sv#sv#class() 
+abbr  ~> ^c%[lass]$
+menu  ~> class
+info  ~>
+kind  ~>  
+--
+# class block
+word  ~> =sv#sv#sv#class_extended() 
+abbr  ~> ^c%[lass]e%[xtended]$
+menu  ~> class extends
+info  ~>
+kind  ~>  
+--
+# randomize
+word  ~> =sv#sv#sv#complete('sv#sv#sv#randomize', -1) 
+abbr  ~> ^r%[andomize]$
+menu  ~> randomize
+info  ~>
+kind  ~>  
+--
+# program block
+word  ~> =sv#sv#sv#complete('sv#sv#sv#program', -1) 
+abbr  ~> ^p%[rogram]$
+menu  ~> program
+info  ~>
+kind  ~>  
+--
+# module block
+word  ~> =sv#sv#sv#complete('sv#sv#sv#module', -1) 
+abbr  ~> ^m%[odule]$
+menu  ~> module
+info  ~>
+kind  ~>  
+--
+
+#################################################################################
+# System Verilog
+#################################################################################
+# `ifndef block
+word  ~> =sv#sv#sv#complete('sv#sv#sv#ifndef', substitute(expand("%:p:t"), '\.', '_', 'g')) 
+abbr  ~> ^i%[f]n%[def]$
+menu  ~> `ifndef
+info  ~> The `ifndef compiler directive checks for the definition of a text_macro_name. 
+        \If the text_macro_name is not defined, then the lines following the `ifndef directive are included. 
+        \If the text_macro_name is defined and an `else directive exists, then this source is compiled. 
+        \If the `elsif directive exists (instead of the `else) the compiler checks for the definition of the text_macro_name. 
+        \If the name exists the lines following the `elsif directive are included. 
+        \The `elsif directive is equivalent to the compiler directive sequence `else `ifdef ... `endif. 
+        \This directive does not need a corresponding `endif directive. This directive must be preceded by an `ifdef or `ifndef directive. 
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ifdef block
+word  ~> =sv#sv#sv#ifdef() 
+abbr  ~> ^i%[f]d%[ef]$
+menu  ~> `ifdef
+kind  ~> m
+--

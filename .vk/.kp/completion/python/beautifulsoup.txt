@@ -1,0 +1,193 @@
+word  ~> =python#beautifulsoup#new() 
+abbr  ~> ^b%[eautifulsoup]n%[ew]$
+menu  ~> BeautifulSoup
+--
+word  ~> =python#beautifulsoup#contents() 
+abbr  ~> ^b%[eautifulsoup]c%[ontents]$
+menu  ~> contents
+--
+word  ~> =python#beautifulsoup#contents() 
+abbr  ~> ^b%[eautifulsoup]c%[ontents]$
+menu  ~> contents
+--
+word  ~> =python#beautifulsoup#children() 
+abbr  ~> ^b%[eautifulsoup]c%[hildren]$
+menu  ~> children
+--
+word  ~> =python#beautifulsoup#string() 
+abbr  ~> ^b%[eautifulsoup]s%[tring]$
+menu  ~> string
+--
+word  ~> =python#beautifulsoup#strings() 
+abbr  ~> ^b%[eautifulsoup]s%[tring]%[s]$
+menu  ~> strings
+--
+word  ~> =python#beautifulsoup#strings() 
+abbr  ~> ^b%[eautifulsoup]s%[tring]%[s]$
+menu  ~> strings
+--
+word  ~> =python#beautifulsoup#stripped_strings() 
+abbr  ~> ^b%[eautifulsoup]s%[tripped]s%[trings]$
+menu  ~> stripped_strings
+--
+word  ~> =python#beautifulsoup#parent() 
+abbr  ~> ^b%[eautifulsoup]p%[arent]$
+menu  ~> parent
+--
+word  ~> =python#beautifulsoup#parents() 
+abbr  ~> ^b%[eautifulsoup]p%[arent]%[s]$
+menu  ~> parents
+--
+word  ~> =python#beautifulsoup#prettify() 
+abbr  ~> ^b%[eautifulsoup]p%[rettify]$
+menu  ~> prettify
+--
+word  ~> =python#beautifulsoup#next_sibling() 
+abbr  ~> ^b%[eautifulsoup]n%[ext]s%[ibling]$
+menu  ~> next_sibling
+--
+word  ~> =python#beautifulsoup#previous_sibling() 
+abbr  ~> ^b%[eautifulsoup]p%[revious]s%[ibling]$
+menu  ~> previous_sibling
+--
+word  ~> =python#beautifulsoup#next_siblings() 
+abbr  ~> ^b%[eautifulsoup]n%[ext]s%[ibling]%[s]$
+menu  ~> next_siblings
+--
+word  ~> =python#beautifulsoup#previous_siblings() 
+abbr  ~> ^b%[eautifulsoup]p%[revious]s%[ibling]%[s]$
+menu  ~> previous_siblings
+--
+word  ~> =python#beautifulsoup#next_element() 
+abbr  ~> ^b%[eautifulsoup]n%[ext]e%[lement]$
+menu  ~> next_element
+--
+word  ~> =python#beautifulsoup#previous_element() 
+abbr  ~> ^b%[eautifulsoup]p%[revious]e%[lement]$
+menu  ~> previous_element
+--
+word  ~> =python#beautifulsoup#next_elements() 
+abbr  ~> ^b%[eautifulsoup]n%[ext]e%[lement]%[s]$
+menu  ~> next_elements
+--
+word  ~> =python#beautifulsoup#previous_elements() 
+abbr  ~> ^b%[eautifulsoup]p%[revious]e%[lement]%[s]$
+menu  ~> previous_elements
+--
+word  ~> =python#beautifulsoup#find_all() 
+abbr  ~> ^b%[eautifulsoup]f%[ind]a%[ll]$
+menu  ~> find_all
+--
+word  ~> =python#beautifulsoup#find() 
+abbr  ~> ^b%[eautifulsoup]f%[ind]$
+menu  ~> find
+--
+word  ~> =python#beautifulsoup#find_parent() 
+abbr  ~> ^b%[eautifulsoup]f%[ind]p%[arent]$
+menu  ~> find_parent
+--
+word  ~> =python#beautifulsoup#find_parents() 
+abbr  ~> ^b%[eautifulsoup]f%[ind]p%[arent]%[s]$
+menu  ~> find_parents
+--
+word  ~> =python#beautifulsoup#find_next_siblings() 
+abbr  ~> ^b%[eautifulsoup]f%[ind]n%[ext]s%[ibling]%[s]$
+menu  ~> find_next_siblings
+--
+word  ~> =python#beautifulsoup#find_next_sibling() 
+abbr  ~> ^b%[eautifulsoup]f%[ind]n%[ext]s%[ibling]$
+menu  ~> find_next_sibling
+--
+word  ~> =python#beautifulsoup#find_previous_siblings() 
+abbr  ~> ^b%[eautifulsoup]f%[ind]p%[revious]s%[ibling]%[s]$
+menu  ~> find_previous_siblings
+--
+word  ~> =python#beautifulsoup#find_previous_sibling() 
+abbr  ~> ^b%[eautifulsoup]f%[ind]p%[revious]s%[ibling]$
+menu  ~> find_previous_sibling
+--
+word  ~> =python#beautifulsoup#find_all_next() 
+abbr  ~> ^b%[eautifulsoup]f%[ind]a%[ll]n%[ext]$
+menu  ~> find_all_next
+--
+word  ~> =python#beautifulsoup#find_next() 
+abbr  ~> ^b%[eautifulsoup]f%[ind]n%[ext]$
+menu  ~> find_next
+--
+word  ~> =python#beautifulsoup#find_all_previous() 
+abbr  ~> ^b%[eautifulsoup]f%[ind]a%[ll]p%[revious]$
+menu  ~> find_all_previous
+--
+word  ~> =python#beautifulsoup#find_previous() 
+abbr  ~> ^b%[eautifulsoup]f%[ind]p%[revious]$
+menu  ~> find_previous
+--
+word  ~> =python#beautifulsoup#select() 
+abbr  ~> ^b%[eautifulsoup]s%[elect]$
+menu  ~> select
+--
+word  ~> =python#beautifulsoup#append() 
+abbr  ~> ^b%[eautifulsoup]a%[ppend]$
+menu  ~> append
+--
+word  ~> =python#beautifulsoup#NavigableString() 
+abbr  ~> ^b%[eautifulsoup]n%[avigable]s%[tring]$
+menu  ~> NavigableString
+--
+word  ~> =python#beautifulsoup#new_tag() 
+abbr  ~> ^b%[eautifulsoup]n%[ew]t%[ag]$
+menu  ~> new_tag
+--
+word  ~> =python#beautifulsoup#insert() 
+abbr  ~> ^b%[eautifulsoup]i%[nsert]$
+menu  ~> insert
+--
+word  ~> =python#beautifulsoup#insert_before() 
+abbr  ~> ^b%[eautifulsoup]i%[nsert]b%[efore]$
+menu  ~> insert_before
+--
+word  ~> =python#beautifulsoup#insert_after() 
+abbr  ~> ^b%[eautifulsoup]i%[nsert]a%[fter]$
+menu  ~> insert_after
+--
+word  ~> =python#beautifulsoup#clear() 
+abbr  ~> ^b%[eautifulsoup]c%[lear]$
+menu  ~> clear
+--
+word  ~> =python#beautifulsoup#extract() 
+abbr  ~> ^b%[eautifulsoup]e%[xtract]$
+menu  ~> extract
+--
+word  ~> =python#beautifulsoup#decompose() 
+abbr  ~> ^b%[eautifulsoup]d%[ecompose]$
+menu  ~> decompose
+--
+word  ~> =python#beautifulsoup#replace_with() 
+abbr  ~> ^b%[eautifulsoup]r%[eplace]w%[ith]$
+menu  ~> replace_with
+--
+word  ~> =python#beautifulsoup#wrap() 
+abbr  ~> ^b%[eautifulsoup]w%[rap]$
+menu  ~> wrap
+--
+word  ~> =python#beautifulsoup#unwrap() 
+abbr  ~> ^b%[eautifulsoup]u%[n]w%[rap]$
+menu  ~> unwrap
+--
+word  ~> =python#beautifulsoup#get_text() 
+abbr  ~> ^b%[eautifulsoup]g%[et]t%[ext]$
+menu  ~> get_text
+--
+word  ~> =python#beautifulsoup#original_encoding() 
+abbr  ~> ^b%[eautifulsoup]o%[riginal]e%[ncoding]$
+menu  ~> original_encoding
+--
+
+
+
+
+
+
+
+
+

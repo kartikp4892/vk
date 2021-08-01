@@ -1,0 +1,41 @@
+#
+word  ~> my $pm = Parallel::ForkManager->new(maa);`aa
+abbr  ~> ^p%[arallel]f%[ork]%[manager]n%[ew]$
+menu  ~> Parallel::ForkManager->new
+--
+word  ~> $pm -> start and next;
+abbr  ~> ^p%[arallel]f%[ork]%[manager]s%[tart]a%[nd]n%[ext]$
+menu  ~> Parallel::ForkManager->start
+--
+word  ~> $pm -> start(maa) and next;`aa
+abbr  ~> ^p%[arallel]f%[ork]%[manager]s%[tart]$
+menu  ~> Parallel::ForkManager->start [ $process_identifier ]
+--
+word  ~> $pm -> finish;
+abbr  ~> ^p%[arallel]f%[ork]%[manager]f%[inish]d$
+menu  ~> Parallel::ForkManager->finish
+--
+word  ~> $pm -> finish(maa);`aa
+abbr  ~> ^p%[arallel]f%[ork]%[manager]f%[inish]%[$]$
+menu  ~> Parallel::ForkManager->finish [ $exit_code [, $data_structure_reference] ]
+--
+word  ~> $pm -> wait_all_children;
+abbr  ~> ^p%[arallel]f%[ork]%[manager]w%[ait]a%[ll]c%[hildren]$
+menu  ~> Parallel::ForkManager->wait_all_children
+--
+word  ~> =perl#parallel_forkmanager#run_on_finish() 
+abbr  ~> ^p%[arallel]f%[ork]%[manager]r%[un]o%[n]f%[inish]$
+menu  ~> Parallel::ForkManager->run_on_finish $code [, $pid ]
+--
+word  ~> =perl#parallel_forkmanager#run_on_start() 
+abbr  ~> ^p%[arallel]f%[ork]%[manager]r%[un]o%[n]s%[tart]$
+menu  ~> Parallel::ForkManager->run_on_start $code
+--
+word  ~> =perl#parallel_forkmanager#run_on_wait() 
+abbr  ~> ^p%[arallel]f%[ork]%[manager]r%[un]o%[n]w%[ait]$
+menu  ~> Parallel::ForkManager->run_on_wait $code, [$period]
+--
+word  ~> $pm -> set_max_procs (maa)`aa
+abbr  ~> ^p%[arallel]f%[ork]%[manager]s%[et]m%[ax]p%[rocs]$
+menu  ~> Parallel::ForkManager->set_max_procs $processes
+--

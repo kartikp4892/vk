@@ -1,0 +1,419 @@
+# word	        the text that will be inserted, mandatory
+# abbr	        abbreviation of "word"; when not empty it is used in
+# 	        the menu instead of "word"
+# menu	        extra text for the popup menu, displayed after "word"
+# 	        or "abbr"
+## info	        more information about the item, can be displayed in a
+# 	        preview window
+# kind	        single letter indicating the type of completion
+# icase	        when non-zero case is to be ignored when comparing
+# 	        items to be equal; when omitted zero is used, thus
+# 	        items that only differ in case are added
+# dup	        when non-zero this match will be added even when an
+# 	        item with the same word is already present.
+#
+word ~> basename(maa)`aa
+abbr ~> fbn
+menu ~> basename(path,suffix) 
+info ~> Returns the filename component of a path
+--
+word ~> chgrp(maa)`aa
+abbr ~> fchgrp
+menu ~> chgrp(file,group) 
+info ~> Changes the file group
+--
+word ~> chmod(maa)`aa
+abbr ~> fchmod
+menu ~> chmod(file,mode) 
+info ~> Changes the file mode
+--
+word ~> chown(maa)`aa
+abbr ~> fchown
+menu ~> chown(file,owner) 
+info ~> Changes the file owner
+--
+word ~> clearstatcache(maa)`aa
+abbr ~> fcsc
+menu ~> clearstatcache() 
+info ~> Clears the file status cache
+--
+word ~> copy(maa)`aa
+abbr ~> fcopy
+menu ~> copy(file,to_file) 
+info ~> Copies a file
+--
+word ~> delete(maa)`aa
+abbr ~> fdelete
+menu ~> 
+info ~> See unlink() or unset()
+--
+word ~> dirname(maa)`aa
+abbr ~> fdn
+menu ~> dirname(path) 
+info ~> Returns the directory name component of a path
+--
+word ~> disk_free_space(maa)`aa
+abbr ~> fdfs
+menu ~> disk_free_space(directory) 
+info ~> Returns the free space of a directory
+--
+word ~> disk_total_space(maa)`aa
+abbr ~> fdts
+menu ~> disk_total_space(directory) 
+info ~> Returns the total size of a directory
+--
+word ~> diskfreespace(maa)`aa
+abbr ~> fdfs
+menu ~> diskfreespace(directory) 
+info ~> Alias of disk_free_space()
+--
+word ~> fclose(maa)`aa
+abbr ~> ffclose
+menu ~> fclose(file) 
+info ~> Closes an open file
+--
+word ~> feof(maa)`aa
+abbr ~> ffeof
+menu ~> feof(file) 
+info ~> Tests for end-of-file on an open file
+--
+word ~> fflush(maa)`aa
+abbr ~> ffflush
+menu ~> fflush(file) 
+info ~> Flushes buffered output to an open file
+--
+word ~> fgetc(maa)`aa
+abbr ~> ffgetc
+menu ~> fgetc(file) 
+info ~> Returns a character from an open file
+--
+word ~> fgetcsv(maa)`aa
+abbr ~> ffgetcsv
+menu ~> fgetcsv(file,length,separator,enclosure) 
+info ~> Parses a line from an open file, checking for CSV fields
+--
+word ~> fgets(maa)`aa
+abbr ~> ffgets
+menu ~> fgets(file,length) 
+info ~> Returns a line from an open file
+--
+word ~> fgetss(maa)`aa
+abbr ~> ffgetss
+menu ~> fgetss(file,length,tags) 
+info ~> Returns a line, with HTML and PHP tags removed, from an open file
+--
+word ~> file(maa)`aa
+abbr ~> ffile
+menu ~> file(path,include_path,context) 
+info ~> Reads a file into an array
+--
+word ~> file_exists(maa)`aa
+abbr ~> ffe
+menu ~> file_exists(path) 
+info ~> Checks whether or not a file or directory exists
+--
+word ~> file_get_contents(maa)`aa
+abbr ~> ffgc
+menu ~> file_get_contents(path,include_path,context,start,max_length) 
+info ~> Reads a file into a string
+--
+word ~> file_put_contents(maa)`aa
+abbr ~> ffpc
+menu ~> file_put_contents(file,data,mode,context) 
+info ~> Writes a string to a file
+--
+word ~> fileatime(maa)`aa
+abbr ~> ffat
+menu ~> fileatime(filename) 
+info ~> Returns the last access time of a file
+--
+word ~> filectime(maa)`aa
+abbr ~> ffct
+menu ~> filectime(filename) 
+info ~> Returns the last change time of a file
+--
+word ~> filegroup(maa)`aa
+abbr ~> ffg
+menu ~> filegroup(filename) 
+info ~> Returns the group ID of a file
+--
+word ~> fileinode(maa)`aa
+abbr ~> ffin
+menu ~> fileinode(filename) 
+info ~> Returns the inode number of a file
+--
+word ~> filemtime(maa)`aa
+abbr ~> ffmt
+menu ~> filemtime(filename) 
+info ~> Returns the last modification time of a file
+--
+word ~> fileowner(maa)`aa
+abbr ~> ffo
+menu ~> fileowner(filename) 
+info ~> Returns the user ID (owner) of a file
+--
+word ~> fileperms(maa)`aa
+abbr ~> ffp
+menu ~> fileperms(filename) 
+info ~> Returns the permissions of a file
+--
+word ~> filesize(maa)`aa
+abbr ~> ffs
+menu ~> filesize(filename) 
+info ~> Returns the file size
+--
+word ~> filetype(maa)`aa
+abbr ~> fft
+menu ~> filetype(filename) 
+info ~> Returns the file type
+--
+word ~> flock(maa)`aa
+abbr ~> fflock
+menu ~> flock(file,lock,block) 
+info ~> Locks or releases a file
+--
+word ~> fnmatch(maa)`aa
+abbr ~> ffnmatch
+menu ~> fnmatch(pattern,string,flags) 
+info ~> Matches a filename or string against a specified pattern
+--
+word ~> =php#filesystem#fopen() 
+abbr ~> ffopen
+menu ~> fopen(filename,mode,include_path,context) 
+info ~> Opens a file or URL
+--
+word ~> fpassthru(maa)`aa
+abbr ~> ffpt
+menu ~> fpassthru(file) 
+info ~> Reads from an open file, until EOF, and writes the result to the output buffer
+--
+word ~> fputcsv(maa)`aa
+abbr ~> ffpc
+menu ~> fputcsv(file,fields,seperator,enclosure) 
+info ~> Formats a line as CSV and writes it to an open file
+--
+word ~> fputs(maa)`aa
+abbr ~> ffputs
+menu ~> fputs(file,string,length) 
+info ~> Alias of fwrite()
+--
+word ~> fread(maa)`aa
+abbr ~> ffread
+menu ~> fread(file,length) 
+info ~> Reads from an open file
+--
+word ~> fscanf(maa)`aa
+abbr ~> ffscanf
+menu ~> fscanf(file,format,mixed) 
+info ~> Parses input from an open file according to a specified format
+--
+word ~> fseek(maa)`aa
+abbr ~> ffseek
+menu ~> fseek(file,offset,whence) 
+info ~> Seeks in an open file
+--
+word ~> fstat(maa)`aa
+abbr ~> ffstat
+menu ~> fstat(file) 
+info ~> Returns information about an open file
+--
+word ~> ftell(maa)`aa
+abbr ~> fftell
+menu ~> ftell(file) 
+info ~> Returns the current position in an open file
+--
+word ~> ftruncate(maa)`aa
+abbr ~> fftruncate
+menu ~> ftruncate(file,size) 
+info ~> Truncates an open file to a specified length
+--
+word ~> fwrite(maa)`aa
+abbr ~> ffwrite
+menu ~> fwrite(file,string,length) 
+info ~> Writes to an open file
+--
+word ~> glob(maa)`aa
+abbr ~> fglob
+menu ~> glob(pattern,flags) 
+info ~> Returns an array of filenames / directories matching a specified pattern
+--
+word ~> is_dir(maa)`aa
+abbr ~> fid
+menu ~> is_dir(file) 
+info ~> Checks whether a file is a directory
+--
+word ~> is_executable(maa)`aa
+abbr ~> fie
+menu ~> is_executable(file) 
+info ~> Checks whether a file is executable
+--
+word ~> is_file(maa)`aa
+abbr ~> fif
+menu ~> is_file(file) 
+info ~> Checks whether a file is a regular file
+--
+word ~> is_link(maa)`aa
+abbr ~> fil
+menu ~> is_link(file) 
+info ~> Checks whether a file is a link
+--
+word ~> is_readable(maa)`aa
+abbr ~> fir
+menu ~> is_readable(file) 
+info ~> Checks whether a file is readable
+--
+word ~> is_uploaded_file(maa)`aa
+abbr ~> fiuf
+menu ~> is_uploaded_file(file) 
+info ~> Checks whether a file was uploaded via HTTP POST
+--
+word ~> is_writable(maa)`aa
+abbr ~> fiw
+menu ~> is_writable(file) 
+info ~> Checks whether a file is writeable
+--
+word ~> is_writeable(maa)`aa
+abbr ~> fiw
+menu ~> is_writeable(file) 
+info ~> Alias of is_writable()
+--
+word ~> lchgrp(maa)`aa
+abbr ~> flchgrp
+menu ~> lchgrp()
+info ~> Changes group ownership of symlink
+--
+word ~> lchown(maa)`aa
+abbr ~> flchown
+menu ~> fslchown()
+info ~> Changes user ownership of symlink
+--
+word ~> link(maa)`aa
+abbr ~> flink
+menu ~> link(target,link) 
+info ~> Creates a hard link
+--
+word ~> linkinfo(maa)`aa
+abbr ~> flinkinfo
+menu ~> linkinfo(path) 
+info ~> Returns information about a hard link
+--
+word ~> lstat(maa)`aa
+abbr ~> flstat
+menu ~> lstat(file) 
+info ~> Returns information about a file or symbolic link
+--
+word ~> mkdir(maa)`aa
+abbr ~> fmkdir
+menu ~> mkdir(path,mode,recursive,context) 
+info ~> Creates a directory
+--
+word ~> move_uploaded_file(maa)`aa
+abbr ~> fmuf
+menu ~> move_uploaded_file(file,newloc) 
+info ~> Moves an uploaded file to a new location
+--
+word ~> parse_ini_file(maa)`aa
+abbr ~> fpif
+menu ~> parse_ini_file(file,process_sections) 
+info ~> Parses a configuration file
+--
+word ~> parse_ini_string(maa)`aa
+abbr ~> fpis
+menu ~> parse_ini_string()
+info ~> Parses a configuration string
+--
+word ~> pathinfo(maa)`aa
+abbr ~> fpi
+menu ~> pathinfo(path,options) 
+info ~> Returns information about a file path
+--
+word ~> pclose(maa)`aa
+abbr ~> fpclose
+menu ~> pclose(pipe) 
+info ~> Closes a pipe opened by popen()
+--
+word ~> popen(maa)`aa
+abbr ~> fpopen
+menu ~> popen(command,mode) 
+info ~> Opens a pipe
+--
+word ~> readfile(maa)`aa
+abbr ~> frf
+menu ~> readfile(filename,include_path,context) 
+info ~> Reads a file and writes it to the output buffer
+--
+word ~> readlink(maa)`aa
+abbr ~> frl
+menu ~> readlink(linkpath) 
+info ~> Returns the target of a symbolic link
+--
+word ~> realpath(maa)`aa
+abbr ~> frp
+menu ~> realpath(path) 
+info ~> Returns the absolute pathname
+--
+word ~> realpath_cache_get(maa)`aa
+abbr ~> frpcg
+menu ~> realpath_cache_get()
+info ~> Returns realpath cache entries
+--
+word ~> realpath_cache_size(maa)`aa
+abbr ~> frpcs
+menu ~> realpath_cache_size()
+info ~> Returns realpath cache size
+--
+word ~> rename(maa)`aa
+abbr ~> frename
+menu ~> rename(oldname,newname,context) 
+info ~> Renames a file or directory
+--
+word ~> rewind(maa)`aa
+abbr ~> frewind
+menu ~> rewind(file) 
+info ~> Rewinds a file pointer
+--
+word ~> rmdir(maa)`aa
+abbr ~> frmdir
+menu ~> rmdir(dir,context) 
+info ~> Removes an empty directory
+--
+word ~> set_file_buffer(maa)`aa
+abbr ~> fsfb
+menu ~> set_file_buffer(file,buffer) 
+info ~> Sets the buffer size of an open file
+--
+word ~> stat(maa)`aa
+abbr ~> fstat
+menu ~> stat(filename) 
+info ~> Returns information about a file
+--
+word ~> symlink(maa)`aa
+abbr ~> fsymlink
+menu ~> symlink(target,link) 
+info ~> Creates a symbolic link
+--
+word ~> tempnam(maa)`aa
+abbr ~> ftempnam
+menu ~> tempnam(dir,prefix) 
+info ~> Creates a unique temporary file
+--
+word ~> tmpfile(maa)`aa
+abbr ~> ftmpfile
+menu ~> tmpfile() 
+info ~> Creates a unique temporary file
+--
+word ~> touch(maa)`aa
+abbr ~> ftouch
+menu ~> touch(filename,time,atime) 
+info ~> Sets access and modification time of a file
+--
+word ~> umask(maa)`aa
+abbr ~> fumask
+menu ~> umask(mask) 
+info ~> Changes file permissions for files
+--
+word ~> unlink(maa)`aa
+abbr ~> funlink
+menu ~> unlink(filename,context) 
+info ~> Deletes a file
+--

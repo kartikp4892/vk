@@ -1,0 +1,462 @@
+#$mech -> new( %args )
+word  ~> WWW::Mechanize::Firefox -> new(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]n%[ew]$
+menu  ~> $mech -> new( %args )
+--
+
+#$mech -> autodie( [$state] )
+word  ~> $mech -> autodie(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]a%[utodie]$
+menu  ~> $mech -> autodie( [$state] )
+--
+
+#$mech -> events()
+word  ~> $mech -> events(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]e%[vents]$
+menu  ~> $mech -> events()
+--
+
+#$mech -> on_event()
+word  ~> $mech -> on_event(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]o%[n]e%[vent]$
+menu  ~> $mech -> on_event()
+--
+
+#$mech -> cookies()
+word  ~> $mech -> cookies(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]c%[ookies]$
+menu  ~> $mech -> cookies()
+--
+
+#$mech -> allow( %options )
+word  ~> $mech -> allow(javascript => 0, images => 0);
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]a%[llow]$
+menu  ~> $mech -> allow( %options )
+--
+
+#$mech -> js_errors()
+word  ~> $mech -> js_errors(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]j%[s]e%[rrors]$
+menu  ~> $mech -> js_errors()
+--
+
+#$mech -> clear_js_errors()
+word  ~> $mech -> clear_js_errors(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]c%[lear]j%[s]e%[rrors]$
+menu  ~> $mech -> clear_js_errors()
+--
+
+#$mech -> eval_in_page( $str [, $env [, $document]] )
+word  ~> $mech -> eval_in_page(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]e%[val]i%[n]p%[age]$
+menu  ~> $mech -> eval_in_page( $str [, $env [, $document]] )
+--
+
+#$mech -> eval( $str [, $env [, $document]] )
+word  ~> $mech -> eval(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]e%[val]$
+menu  ~> $mech -> eval( $str [, $env [, $document]] )
+--
+
+#$mech -> unsafe_page_property_access( ELEMENT )
+word  ~> $mech -> unsafe_page_property_access(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]u%[nsafe]p%[age]p%[roperty]a%[ccess]$
+menu  ~> $mech -> unsafe_page_property_access( ELEMENT )
+--
+
+#$mech -> application()
+word  ~> $mech -> application(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]a%[pplication]$
+menu  ~> $mech -> application()
+--
+
+#$mech -> tab()
+word  ~> $mech -> tab(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]t%[ab]$
+menu  ~> $mech -> tab()
+--
+
+#$mech -> make_progress_listener( %callbacks )
+word  ~> $mech -> make_progress_listener(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]m%[ake]p%[rogress]l%[istener]$
+menu  ~> $mech -> make_progress_listener( %callbacks )
+--
+
+#$mech -> progress_listener( $source, %callbacks )
+word  ~> $mech -> progress_listener(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]p%[rogress]l%[istener]$
+menu  ~> $mech -> progress_listener( $source, %callbacks )
+--
+
+#$mech -> repl()
+word  ~> $mech -> repl(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]r%[epl]$
+menu  ~> $mech -> repl()
+--
+
+#$mech -> highlight_node( @nodes )
+word  ~> $mech -> highlight_node(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]h%[ighlight]n%[ode]$
+menu  ~> $mech -> highlight_node( @nodes )
+--
+
+#$mech -> get( $url, %options )
+word  ~> $mech -> get(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]g%[et]$
+menu  ~> $mech -> get( $url, %options )
+--
+
+#$mech -> get_local( $filename , %options )
+word  ~> $mech -> get_local(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]g%[et]l%[ocal]$
+menu  ~> $mech -> get_local( $filename , %options )
+--
+
+#$mech -> post( $url, %options )
+word  ~> $mech -> post(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]p%[ost]$
+menu  ~> $mech -> post( $url, %options )
+--
+
+#$mech -> add_header( $name => $value, ... )
+word  ~> $mech -> add_header(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]a%[dd]h%[eader]$
+menu  ~> $mech -> add_header( $name => $value, ... )
+--
+
+#$mech -> delete_header( $name , $name2... )
+word  ~> $mech -> delete_header(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]d%[elete]h%[eader]$
+menu  ~> $mech -> delete_header( $name , $name2... )
+--
+
+#$mech -> synchronize( $event, $callback )
+word  ~> $mech -> synchronize(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]s%[ynchronize]$
+menu  ~> $mech -> synchronize( $event, $callback )
+--
+
+#$mech -> res() / $mech -> response(%options)
+word  ~> $mech -> res() / $mech -> response(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]r%[es]$
+menu  ~> $mech -> res() / $mech -> response(%options)
+--
+
+#$mech -> success()
+word  ~> $mech -> success(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]s%[uccess]$
+menu  ~> $mech -> success()
+--
+
+#$mech -> status()
+word  ~> $mech -> status(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]s%[tatus]$
+menu  ~> $mech -> status()
+--
+
+#$mech -> reload( [$bypass_cache] )
+word  ~> $mech -> reload(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]r%[eload]$
+menu  ~> $mech -> reload( [$bypass_cache] )
+--
+
+#$mech -> back( [$synchronize] )
+word  ~> $mech -> back(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]b%[ack]$
+menu  ~> $mech -> back( [$synchronize] )
+--
+
+#$mech -> forward( [$synchronize] )
+word  ~> $mech -> forward(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]f%[orward]$
+menu  ~> $mech -> forward( [$synchronize] )
+--
+
+#$mech -> uri()
+word  ~> $mech -> uri(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]u%[ri]$
+menu  ~> $mech -> uri()
+--
+
+#$mech -> document()
+word  ~> $mech -> document(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]d%[ocument]$
+menu  ~> $mech -> document()
+--
+
+#$mech -> docshell()
+word  ~> $mech -> docshell(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]d%[ocshell]$
+menu  ~> $mech -> docshell()
+--
+
+#$mech -> content( %options )
+word  ~> $mech -> content(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]c%[ontent]$
+menu  ~> $mech -> content( %options )
+--
+
+#$mech -> text()
+word  ~> $mech -> text(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]t%[ext]$
+menu  ~> $mech -> text()
+--
+
+#$mech -> content_encoding()
+word  ~> $mech -> content_encoding(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]c%[ontent]e%[ncoding]$
+menu  ~> $mech -> content_encoding()
+--
+
+#$mech -> update_html( $html )
+word  ~> $mech -> update_html(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]u%[pdate]h%[tml]$
+menu  ~> $mech -> update_html( $html )
+--
+
+#$mech -> save_content( $localname [, $resource_directory] [, %options ] )
+word  ~> $mech -> save_content(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]s%[ave]c%[ontent]$
+menu  ~> $mech -> save_content( $localname [, $resource_directory] [, %options ] )
+--
+
+#$mech -> save_url( $url, $localname, [%options] )
+word  ~> $mech -> save_url(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]s%[ave]u%[rl]$
+menu  ~> $mech -> save_url( $url, $localname, [%options] )
+--
+
+#$mech -> base()
+word  ~> $mech -> base(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]b%[ase]$
+menu  ~> $mech -> base()
+--
+
+#$mech -> content_type()
+word  ~> $mech -> content_type(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]c%[ontent]t%[ype]$
+menu  ~> $mech -> content_type()
+--
+
+#$mech -> ct()
+word  ~> $mech -> ct(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]c%[t]$
+menu  ~> $mech -> ct()
+--
+
+#$mech -> is_html()
+word  ~> $mech -> is_html(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]i%[s]h%[tml]$
+menu  ~> $mech -> is_html()
+--
+
+#$mech -> title()
+word  ~> $mech -> title(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]t%[itle]$
+menu  ~> $mech -> title()
+--
+
+#$mech -> links()
+word  ~> $mech -> links(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]l%[inks]$
+menu  ~> $mech -> links()
+--
+
+#$mech -> find_link_dom( %options )
+word  ~> $mech -> find_link_dom(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]f%[ind]l%[ink]d%[om]$
+menu  ~> $mech -> find_link_dom( %options )
+--
+
+#$mech -> find_link( %options )
+word  ~> $mech -> find_link(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]f%[ind]l%[ink]$
+menu  ~> $mech -> find_link( %options )
+--
+
+#$mech -> find_all_links( %options )
+word  ~> $mech -> find_all_links(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]f%[ind]a%[ll]l%[inks]$
+menu  ~> $mech -> find_all_links( %options )
+--
+
+#$mech -> follow_link( $link )
+word  ~> $mech -> follow_link(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]f%[ollow]l%[ink]$
+menu  ~> $mech -> follow_link( $link )
+--
+
+#$mech -> xpath( $query, %options )
+word  ~> $mech -> xpath(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]x%[path]$
+menu  ~> $mech -> xpath( $query, %options )
+--
+
+#$mech -> xpathEx( $query, %options )
+word  ~> $mech -> xpathEx(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]x%[pathEx]$
+menu  ~> $mech -> xpathEx( $query, %options )
+--
+
+#$mech -> selector( $css_selector, %options )
+word  ~> $mech -> selector(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]s%[elector]$
+menu  ~> $mech -> selector( $css_selector, %options )
+--
+
+#$mech -> by_id( $id, %options )
+word  ~> $mech -> by_id(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]b%[y]i%[d]$
+menu  ~> $mech -> by_id( $id, %options )
+--
+
+#$mech -> click( $name [,$x ,$y] )
+word  ~> $mech -> click(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]c%[lick]$
+menu  ~> $mech -> click( $name [,$x ,$y] )
+--
+
+#$mech -> click_button( ... )
+word  ~> $mech -> click_button(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]c%[lick]b%[utton]$
+menu  ~> $mech -> click_button( ... )
+--
+
+#$mech -> current_form()
+word  ~> $mech -> current_form(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]c%[urrent]f%[orm]$
+menu  ~> $mech -> current_form()
+--
+
+#$mech -> form_name( $name [, %options] )
+word  ~> $mech -> form_name(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]f%[orm]n%[ame]$
+menu  ~> $mech -> form_name( $name [, %options] )
+--
+
+#$mech -> form_id( $id [, %options] )
+word  ~> $mech -> form_id(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]f%[orm]i%[d]$
+menu  ~> $mech -> form_id( $id [, %options] )
+--
+
+#$mech -> form_number( $number [, %options] )
+word  ~> $mech -> form_number(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]f%[orm]n%[umber]$
+menu  ~> $mech -> form_number( $number [, %options] )
+--
+
+#$mech -> form_with_fields( [$options], @fields )
+word  ~> $mech -> form_with_fields(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]f%[orm]w%[ith]f%[ields]$
+menu  ~> $mech -> form_with_fields( [$options], @fields )
+--
+
+#$mech -> forms( %options )
+word  ~> $mech -> forms(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]f%[orms]$
+menu  ~> $mech -> forms( %options )
+--
+
+#$mech -> field( $selector, $value, [,\@pre_events [,\@post_events]] )
+word  ~> $mech -> field(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]f%[ield]$
+menu  ~> $mech -> field( $selector, $value, [,\@pre_events [,\@post_events]] )
+--
+
+#$mech -> value( $selector_or_element, [%options] )
+word  ~> $mech -> value(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]v%[alue]$
+menu  ~> $mech -> value( $selector_or_element, [%options] )
+--
+
+#$mech -> get_set_value( %options )
+word  ~> $mech -> get_set_value(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]g%[et]s%[et]v%[alue]$
+menu  ~> $mech -> get_set_value( %options )
+--
+
+#$mech -> select( $name, $value )
+word  ~> $mech -> select(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]s%[elect]$
+menu  ~> $mech -> select( $name, $value )
+--
+
+#$mech -> tick( $name, $value [, $set ] )
+word  ~> $mech -> tick(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]t%[ick]$
+menu  ~> $mech -> tick( $name, $value [, $set ] )
+--
+
+#$mech -> untick( $name, $value )
+word  ~> $mech -> untick(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]u%[ntick]$
+menu  ~> $mech -> untick( $name, $value )
+--
+
+#$mech -> submit( $form )
+word  ~> $mech -> submit(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]s%[ubmit]$
+menu  ~> $mech -> submit( $form )
+--
+
+#$mech -> submit_form( %options )
+word  ~> $mech -> submit_form(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]s%[ubmit]f%[orm]$
+menu  ~> $mech -> submit_form( %options )
+--
+
+#$mech -> set_fields( $name => $value, ... )
+word  ~> $mech -> set_fields(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]s%[et]f%[ields]$
+menu  ~> $mech -> set_fields( $name => $value, ... )
+--
+
+#$mech -> set_visible( @values )
+word  ~> $mech -> set_visible(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]s%[et]v%[isible]$
+menu  ~> $mech -> set_visible( @values )
+--
+
+#$mech -> is_visible( $element )
+word  ~> $mech -> is_visible(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]i%[s]v%[isible]$
+menu  ~> $mech -> is_visible( $element )
+--
+
+#$mech -> is_visible( %options )
+word  ~> $mech -> is_visible(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]i%[s]v%[isible]$
+menu  ~> $mech -> is_visible( %options )
+--
+
+#$mech -> wait_until_invisible( $element )
+word  ~> $mech -> wait_until_invisible(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]w%[ait]u%[ntil]i%[nvisible]$
+menu  ~> $mech -> wait_until_invisible( $element )
+--
+
+#$mech -> clickables()
+word  ~> $mech -> clickables(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]c%[lickables]$
+menu  ~> $mech -> clickables()
+--
+
+#$mech -> expand_frames( $spec )
+word  ~> $mech -> expand_frames(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]e%[xpand]f%[rames]$
+menu  ~> $mech -> expand_frames( $spec )
+--
+
+#$mech -> content_as_png( [$tab, \%coordinates, \%target_size ] )
+word  ~> $mech -> content_as_png(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]c%[ontent]a%[s]p%[ng]$
+menu  ~> $mech -> content_as_png( [$tab, \%coordinates, \%target_size ] )
+--
+
+#$mech -> element_coordinates( $element )
+word  ~> $mech -> element_coordinates(maa)`aa
+abbr  ~> ^w%[ww]m%[echanize]f%[irefox]e%[lement]c%[oordinates]$
+menu  ~> $mech -> element_coordinates( $element )
+--
+

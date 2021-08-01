@@ -1,0 +1,19 @@
+# Pack
+word  ~> =perl#perl_tk#pack() 
+abbr  ~> tpack
+menu  ~> ->pack()
+info  ~> pack (
+  \  -side => 'left' | 'right' | 'top' | 'bottom' 
+  \  -fill => 'none' | 'x' | 'y'| 'both' 
+  \  -expand => 1 | 0 
+  \  -anchor => 'n' | 'ne' | 'e' | 'se' | 's' | 'sw' | 'w' | 'nw' | 'center' 
+  \  -after => $otherwidget 
+  \  -before => $otherwidget 
+  \  -in => $otherwindow 
+  \  -ipadx => amount 
+  \  -ipady => amount 
+  \  -padx => amount 
+  \  -pady => amount 
+  \);
+--
+

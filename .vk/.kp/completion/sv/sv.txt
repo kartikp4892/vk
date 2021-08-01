@@ -1,0 +1,135 @@
+# word	        the text that will be inserted, mandatory
+# abbr	        abbreviation of "word"; when not empty it is used in
+# 	        the menu instead of "word"
+# menu	        extra text for the popup menu, displayed after "word"
+# 	        or "abbr"
+# info	        more information about the item, can be displayed in a
+# 	        preview window
+# kind	        single letter indicating the type of completion
+# icase	        when non-zero case is to be ignored when comparing
+# 	        items to be equal; when omitted zero is used, thus
+# 	        items that only differ in case are added
+# dup	        when non-zero this match will be added even when an
+# 	        item with the same word is already present.
+# 
+#accept_on
+#export
+#ref
+#alias
+#extends
+#restrict
+#always_comb
+#extern
+return
+#always_ff
+#final
+#s_always
+#always_latch
+#first_match
+#s_eventually
+assert
+#foreach
+#s_nexttime
+#assume
+#forkjoin
+#s_until
+#before
+#globals_until_with
+#bind
+#iff
+sequence
+bins
+ignore_bins
+shortint
+binsof
+illegal_bins
+shortreal
+bit
+#implies
+solve
+break
+input
+output
+#import
+#static
+byte
+inside
+string
+#chandle
+integer
+#strong
+#checker
+#interface
+struct
+#class
+intersect
+#super
+#clocking
+#join_any
+#sync_accept_on
+const
+#join_none
+#sync_reject_on
+constraint
+#let
+#tagged
+#context
+#local
+this
+continue
+logic
+#throughout
+cover
+longint
+#timeprecision
+#covergroup
+#matches
+#timeunit
+#coverpoint
+modport
+type
+cross
+#new
+typedef
+#dist
+#nexttime
+#union
+#do
+#null
+#unique
+#endchecker
+#package
+#unique0
+#endclass
+packed
+#until
+#endclocking
+#priority
+#until_with
+#endgroup
+#program
+#untypted
+#endinterface
+#property
+#var
+#endpackage
+#protected
+#virtual
+#endprogram
+#pure
+#void
+#endproperty
+rand
+#wait_order
+#endsequence
+#randc
+#weak
+enum
+randcase
+#wildcard
+#eventually
+#randsequence
+#with
+#expect
+#reject_on
+#within

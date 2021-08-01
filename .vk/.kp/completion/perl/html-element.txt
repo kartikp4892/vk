@@ -1,0 +1,456 @@
+#new
+word  ~> $he -> new(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]n%[ew]$
+menu  ~> new
+--
+
+#attr
+word  ~> $he -> attr(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]a%[ttr]$
+menu  ~> attr
+--
+
+#tag
+word  ~> $he -> tag(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]t%[ag]$
+menu  ~> tag
+--
+
+#parent
+word  ~> $he -> parent(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]p%[arent]$
+menu  ~> parent
+--
+
+#content_list
+word  ~> $he -> content_list(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]c%[ontent]l%[ist]$
+menu  ~> content_list
+--
+
+#content
+word  ~> $he -> content(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]c%[ontent]$
+menu  ~> content
+--
+
+#content_array_ref
+word  ~> $he -> content_array_ref(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]c%[ontent]a%[rray]r%[ef]$
+menu  ~> content_array_ref
+--
+
+#content_refs_list
+word  ~> $he -> content_refs_list(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]c%[ontent]r%[efs]l%[ist]$
+menu  ~> content_refs_list
+--
+
+#implicit
+word  ~> $he -> implicit(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]i%[mplicit]$
+menu  ~> implicit
+--
+
+#pos
+word  ~> $he -> pos(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]p%[os]$
+menu  ~> pos
+--
+
+#all_attr
+word  ~> $he -> all_attr(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]a%[ll]a%[ttr]$
+menu  ~> all_attr
+--
+
+#all_attr_names
+word  ~> $he -> all_attr_names(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]a%[ll]a%[ttr]n%[ames]$
+menu  ~> all_attr_names
+--
+
+#all_external_attr
+word  ~> $he -> all_external_attr(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]a%[ll]e%[xternal]a%[ttr]$
+menu  ~> all_external_attr
+--
+
+#all_external_attr_names
+word  ~> $he -> all_external_attr_names(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]a%[ll]e%[xternal]a%[ttr]n%[ames]$
+menu  ~> all_external_attr_names
+--
+
+#id
+word  ~> $he -> id(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]i%[d]$
+menu  ~> id
+--
+
+#idf
+word  ~> $he -> idf(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]i%[df]$
+menu  ~> idf
+--
+
+#push_content
+word  ~> $he -> push_content(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]p%[ush]c%[ontent]$
+menu  ~> push_content
+--
+
+#unshift_content
+word  ~> $he -> unshift_content(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]u%[n]s%[hift]c%[ontent]$
+menu  ~> unshift_content
+--
+
+#splice_content
+word  ~> $he -> splice_content(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]s%[plice]c%[ontent]$
+menu  ~> splice_content
+--
+
+#detach
+word  ~> $he -> detach(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]d%[etach]$
+menu  ~> detach
+--
+
+#detach_content
+word  ~> $he -> detach_content(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]d%[etach]c%[ontent]$
+menu  ~> detach_content
+--
+
+#replace_with
+word  ~> $he -> replace_with(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]r%[eplace]w%[ith]$
+menu  ~> replace_with
+--
+
+#preinsert
+word  ~> $he -> preinsert(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]p%[re]i%[nsert]$
+menu  ~> preinsert
+--
+
+#postinsert
+word  ~> $he -> postinsert(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]p%[ost]i%[nsert]$
+menu  ~> postinsert
+--
+
+#replace_with_content
+word  ~> $he -> replace_with_content(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]r%[eplace]w%[ith]c%[ontent]$
+menu  ~> replace_with_content
+--
+
+#delete_content
+word  ~> $he -> delete_content(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]d%[elete]c%[ontent]$
+menu  ~> delete_content
+--
+
+#delete
+word  ~> $he -> delete(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]d%[elete]$
+menu  ~> delete
+--
+
+#destroy
+word  ~> $he -> destroy(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]d%[estroy]$
+menu  ~> destroy
+--
+
+#destroy_content
+word  ~> $he -> destroy_content(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]d%[estroy]c%[ontent]$
+menu  ~> destroy_content
+--
+
+#clone
+word  ~> $he -> clone(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]c%[lone]$
+menu  ~> clone
+--
+
+#clone_list
+word  ~> $he -> clone_list(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]c%[lone]l%[ist]$
+menu  ~> clone_list
+--
+
+#normalize_content
+word  ~> $he -> normalize_content(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]n%[ormalize]c%[ontent]$
+menu  ~> normalize_content
+--
+
+#delete_ignorable_whitespace
+word  ~> $he -> delete_ignorable_whitespace(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]d%[elete]i%[gnorable]w%[hitespace]$
+menu  ~> delete_ignorable_whitespace
+--
+
+#insert_element
+word  ~> $he -> insert_element(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]i%[nsert]e%[lement]$
+menu  ~> insert_element
+--
+
+#dump
+word  ~> $he -> dump(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]d%[ump]$
+menu  ~> dump
+--
+
+#as_HTML
+word  ~> $he -> as_HTML(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]a%[s]h%[tml]$
+menu  ~> as_HTML
+--
+
+#as_text
+word  ~> $he -> as_text(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]a%[s]t%[ext]$
+menu  ~> as_text
+--
+
+#as_trimmed_text
+word  ~> $he -> as_trimmed_text(extra_chars => '\p{Zs}\xB7\x{20AC}')
+abbr  ~> ^h%[tml]e%[lement]a%[s]t%[rimmed]t%[ext]$
+menu  ~> as_trimmed_text
+--
+
+#as_XML
+word  ~> $he -> as_XML(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]a%[s]x%[ml]$
+menu  ~> as_XML
+--
+
+#as_Lisp_form
+word  ~> $he -> as_Lisp_form(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]a%[s]l%[isp]f%[orm]$
+menu  ~> as_Lisp_form
+--
+
+#format
+word  ~> $he -> format(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]f%[ormat]$
+menu  ~> format
+--
+
+#starttag
+word  ~> $he -> starttag(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]s%[tarttag]$
+menu  ~> starttag
+--
+
+#starttag_XML
+word  ~> $he -> starttag_XML(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]s%[tarttag]x%[ml]$
+menu  ~> starttag_XML
+--
+
+#endtag
+word  ~> $he -> endtag(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]e%[nd]t%[ag]$
+menu  ~> endtag
+--
+
+#endtag_XML
+word  ~> $he -> endtag_XML(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]e%[nd]t%[ag]x%[ml]$
+menu  ~> endtag_XML
+--
+
+#is_inside
+word  ~> $he -> is_inside(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]i%[s]i%[nside]$
+menu  ~> is_inside
+--
+
+#is_empty
+word  ~> $he -> is_empty(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]i%[s]e%[mpty]$
+menu  ~> is_empty
+--
+
+#pindex
+word  ~> $he -> pindex(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]p%[index]$
+menu  ~> pindex
+--
+
+#left
+word  ~> $he -> left(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]l%[eft]$
+menu  ~> left
+--
+
+#right
+word  ~> $he -> right(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]r%[ight]$
+menu  ~> right
+--
+
+#address
+word  ~> $he -> address(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]a%[ddress]$
+menu  ~> address
+--
+
+#depth
+word  ~> $he -> depth(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]d%[epth]$
+menu  ~> depth
+--
+
+#root
+word  ~> $he -> root(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]r%[oot]$
+menu  ~> root
+--
+
+#lineage
+word  ~> $he -> lineage(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]l%[ineage]$
+menu  ~> lineage
+--
+
+#lineage_tag_names
+word  ~> $he -> lineage_tag_names(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]l%[ineage]t%[ag]n%[ames]$
+menu  ~> lineage_tag_names
+--
+
+#descendants
+word  ~> $he -> descendants(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]d%[escendants]$
+menu  ~> descendants
+--
+
+#find_by_tag_name
+word  ~> $he -> find_by_tag_name(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]f%[ind]b%[y]t%[ag]n%[ame]$
+menu  ~> find_by_tag_name
+--
+
+#find
+word  ~> $he -> find(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]f%[ind]$
+menu  ~> find
+--
+
+#find_by_attribute
+word  ~> $he -> find_by_attribute(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]f%[ind]b%[y]a%[ttribute]$
+menu  ~> find_by_attribute
+--
+
+#look_down
+word  ~> $he -> look_down(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]l%[ook]d%[own]$
+menu  ~> look_down
+--
+
+#look_up
+word  ~> $he -> look_up(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]l%[ook]u%[p]$
+menu  ~> look_up
+--
+
+#traverse
+word  ~> $he -> traverse(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]t%[raverse]$
+menu  ~> traverse
+--
+
+#attr_get_i
+word  ~> $he -> attr_get_i(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]a%[ttr]g%[et]i$
+menu  ~> attr_get_i
+--
+
+#tagname_map
+word  ~> $he -> tagname_map(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]t%[agname]m%[ap]$
+menu  ~> tagname_map
+--
+
+#extract_links
+word  ~> $he -> extract_links(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]e%[xtract]l%[inks]$
+menu  ~> extract_links
+--
+
+#simplify_pres
+word  ~> $he -> simplify_pres(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]s%[implify]p%[res]$
+menu  ~> simplify_pres
+--
+
+#same_as
+word  ~> $he -> same_as(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]s%[ame]a%[s]$
+menu  ~> same_as
+--
+
+#new_from_lol
+word  ~> $he -> new_from_lol(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]n%[ew]f%[rom]l%[ol]$
+menu  ~> new_from_lol
+--
+
+#objectify_text
+word  ~> $he -> objectify_text(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]o%[bjectify]t%[ext]$
+menu  ~> objectify_text
+--
+
+#deobjectify_text
+word  ~> $he -> deobjectify_text(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]d%[e]o%[bjectify]t%[ext]$
+menu  ~> deobjectify_text
+--
+
+#number_lists
+word  ~> $he -> number_lists(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]n%[umber]l%[ists]$
+menu  ~> number_lists
+--
+
+#has_insane_linkage
+word  ~> $he -> has_insane_linkage(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]h%[as]i%[nsane]l%[inkage]$
+menu  ~> has_insane_linkage
+--
+
+#element_class
+word  ~> $he -> element_class(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]e%[lement]c%[lass]$
+menu  ~> element_class
+--
+
+#Use_Weak_Refs
+word  ~> $he -> Use_Weak_Refs(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]u%[se]w%[eak]r%[efs]$
+menu  ~> Use_Weak_Refs
+--
+
+#Version
+word  ~> $he -> Version(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]v%[ersion]$
+menu  ~> Version
+--
+
+#ABORT OK PRUNE PRUNE_SOFTLY PRUNE_UP
+word  ~> $he -> ABORT OK PRUNE PRUNE_SOFTLY PRUNE_UP(maa)`aa
+abbr  ~> ^h%[tml]e%[lement]A%[BORTOKPRUNEPRUNE]S%[OFTLYPRUNE]U%[P]$
+menu  ~> ABORT OK PRUNE PRUNE_SOFTLY PRUNE_UP
+--
+

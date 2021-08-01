@@ -1,0 +1,37 @@
+"let a_list = []
+"nnoremap ± :let a_list = add(a_list, expand("%"))
+"nnoremap à :n
+"
+"let unused_var = []
+"fun! Kp_unused_var()
+"  let l:var = expand("<cword>")
+"  "if (search('\(\/\/.*\)\@<!\<' . l:var .'\>', 'n', search('\(\/\/.*\)\@<!\(\<endfunction\>\|\<endtask\>\)', 'n')) == 0)
+"  if (search('\(\/\/.*\)\@<!\%(\W\zs' . l:var .'\ze\W\)', 'n', search('\(\/\/.*\)\@<!\(\<endfunction\>\|\<endtask\>\)', 'n')) == 0)
+"    echohl ErrorMsg | echo l:var . ": not found" | echohl None
+"    if (len(g:unused_var) != 0)
+"      let g:unused_var = add(g:unused_var, expand("%") . " (Line " . line(".") . "): " . l:var)
+"    else
+"      let g:unused_var = [expand("%") . " (Line " . line(".") . "): " . l:var]
+"    endif
+"  endif
+"endfun
+"
+"fun! Kp_class_unused_var(...)
+"  if (a:0 != 0)
+"    let l:var = a:1
+"  else
+"    let l:var = expand("<cword>")
+"  endif
+"  if (search('\(\/\/.*\)\@<!\<' . l:var .'\>', 'n', search('\(\/\/.*\)\@<!\<endclass\>', 'n')) == 0)
+"    echohl ErrorMsg | echo l:var . ": not found" | echohl None
+"    if (len(g:unused_var) != 0)
+"      let g:unused_var = add(g:unused_var, expand("%") . " (Line " . line(".") . "): " . l:var)
+"    else
+"      let g:unused_var = [expand("%") . " (Line " . line(".") . "): " .  l:var]
+"    endif
+"  endif
+"endfun
+"
+"nmap <C-RightMouse> <LeftMouse>:call Kp_unused_var()
+"nmap <C-LeftMouse> <LeftMouse>:call Kp_class_unused_var()
+"nmap ñ :call Kp_class_unused_var('*')

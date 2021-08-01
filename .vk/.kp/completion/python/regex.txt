@@ -1,0 +1,98 @@
+word  ~> =python#regex#compile() 
+abbr  ~> ^r%[e]c%[ompile]$
+menu  ~> re.compile()
+--
+word  ~> =python#regex#search() 
+abbr  ~> ^r%[e]s%[search]$
+menu  ~> re.search()
+--
+word  ~> =python#regex#split() 
+abbr  ~> \v^r%[e]s%[plit]$
+menu  ~> re.split()
+--
+word  ~> =python#regex#sub() 
+abbr  ~> \v^r%[e]s%[ub]$
+menu  ~> re.sub()
+--
+word  ~> =python#regex#span() 
+abbr  ~> \v^r%[e]s%[pan]$
+menu  ~> re.span()
+--
+word  ~> =python#regex#subn() 
+abbr  ~> \v^r%[e]s%[ub]n$
+menu  ~> re.subn()
+--
+word  ~> =python#regex#escape() 
+abbr  ~> \v^r%[e]e%[scape]$
+menu  ~> re.escape()
+--
+word  ~> =python#regex#purge() 
+abbr  ~> \v^r%[e]p%[urge]$
+menu  ~> re.purge()
+--
+word  ~> =python#regex#group() 
+abbr  ~> \v^r%[e]g%[roup]$
+menu  ~> re.group()
+--
+word  ~> =python#regex#groups() 
+abbr  ~> \v^r%[e]g%[roup]s$
+menu  ~> re.groups()
+--
+word  ~> =python#regex#groupdict() 
+abbr  ~> \v^r%[e]g%[roup]d%[ict]$
+menu  ~> re.groupdict()
+--
+word  ~> =python#regex#start() 
+abbr  ~> \v^r%[e]s%[tart]$
+menu  ~> re.start()
+--
+word  ~> =python#regex#end() 
+abbr  ~> \v^r%[e]e%[nd]$
+menu  ~> re.end()
+--
+word  ~> =python#regex#findall() 
+abbr  ~> \v^r%[e]f%[ind]a%[ll]$
+menu  ~> re.findall()
+--
+word  ~> =python#regex#finditer() 
+abbr  ~> \v^r%[e]f%[ind]i%[ter]$
+menu  ~> re.finditer()
+--
+word  ~> =python#regex#match() 
+abbr  ~> \v^r%[e]m%[atch]$
+menu  ~> re.match()
+--
+word  ~> =python#regex#DEBUG() 
+abbr  ~> \v^r%[e]D%[EBUG]$
+menu  ~> re.DEBUG()
+--
+word  ~> =python#regex#IGNORE() 
+abbr  ~> \v^r%[e]I%[GNORE]$
+menu  ~> re.IGNORE()
+--
+word  ~> =python#regex#LOCALE() 
+abbr  ~> \v^r%[e]L%[OCALE]$
+menu  ~> re.LOCALE()
+--
+word  ~> =python#regex#MULTILINE() 
+abbr  ~> \v^r%[e]M%[ULTILINE]$
+menu  ~> re.MULTILINE()
+--
+word  ~> =python#regex#DOTALL() 
+abbr  ~> \v^r%[e]S$\|^r%[e]D%[OTALL]$
+menu  ~> re.DOTALL()
+--
+word  ~> =python#regex#UNICODE() 
+abbr  ~> \v^r%[e]U$\|^r%[e]U%[NICODE]$
+menu  ~> re.UNICODE()
+--
+word  ~> =python#regex#VERBOSE() 
+abbr  ~> \v^r%[e]X$\|^r%[e]V%[ERBOSE]$
+menu  ~> re.VERBOSE()
+--
+
+
+
+
+
+

@@ -1,0 +1,961 @@
+# word	        the text that will be inserted, mandatory
+# abbr	        abbreviation of "word"; when not empty it is used in
+# 	        the menu instead of "word"
+# menu	        extra text for the popup menu, displayed after "word"
+# 	        or "abbr"
+# info	        more information about the item, can be displayed in a
+# 	        preview window
+# kind	        single letter indicating the type of completion
+# icase	        when non-zero case is to be ignored when comparing
+# 	        items to be equal; when omitted zero is used, thus
+# 	        items that only differ in case are added
+# dup	        when non-zero this match will be added even when an
+# 	        item with the same word is already present.
+# 
+
+#################################################################################
+# OVM
+#################################################################################
+# `ovm_component_utils_begin
+--
+word  ~> =sv#ovm#ovm#component_utils_begin() 
+abbr  ~> ^o%[vm]c%[omponent]u%[tils]b%[egin]$
+menu  ~> `ovm_component_utils_begin
+info  ~> Simple (non-parameterized) components must use the ovm_components_utils* versions, which do the following: 
+  \ 
+  \    * Implements get_type_name, which returns TYPE as a string. 
+  \    * Implements create, which allocates a component of type TYPE using a two argument constructor.  TYPE’s constructor must have a name and a parent argument. 
+  \    * Registers the TYPE with the factory, using the string TYPE as the factory lookup string for the type. 
+  \    * Implements the static get_type() method which returns a factory proxy object for the type. 
+  \    * Implements the virtual get_object_type() method which works just like the static get_type() method, but operates on an already allocated object.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_component_param_utils_begin
+--
+word  ~> =sv#ovm#ovm#component_param_utils_begin() 
+abbr  ~> ^o%[vm]c%[omponent]p%[aram]u%[tils]b%[egin]$
+menu  ~> `ovm_component_param_utils_begin
+info  ~> Parameterized classes must use the ovm_object_param_utils* versions.  They differ from `ovm_object_utils only in that they do not supply a type name when registering the object with the factory.  As such, name-based lookup with the factory for parameterized classes is not possible. 
+  \ 
+  \The macros with _begin suffixes are the same as the non-suffixed versions except that they also start a block in which `ovm_field_* macros can be placed.  The block must be terminated by `ovm_component_utils_end. 
+  \ 
+  \Components deriving from ovm_sequencer must use the `ovm_sequencer_* macros instead of these macros.  See `ovm_sequencer_utils for details.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_component_utils
+--
+word  ~> =sv#ovm#ovm#component_utils() 
+abbr  ~> ^o%[vm]c%[omponent]u%[tils]$
+menu  ~> `ovm_component_utils
+info  ~> Simple (non-parameterized) components must use the ovm_components_utils* versions, which do the following: 
+  \ 
+  \    * Implements get_type_name, which returns TYPE as a string. 
+  \    * Implements create, which allocates a component of type TYPE using a two argument constructor.  TYPE’s constructor must have a name and a parent argument. 
+  \    * Registers the TYPE with the factory, using the string TYPE as the factory lookup string for the type. 
+  \    * Implements the static get_type() method which returns a factory proxy object for the type. 
+  \    * Implements the virtual get_object_type() method which works just like the static get_type() method, but operates on an already allocated object.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_component_param_utils
+--
+word  ~> =sv#ovm#ovm#component_param_utils() 
+abbr  ~> ^o%[vm]c%[omponent]p%[aram]u%[tils]$
+menu  ~> `ovm_component_param_utils
+info  ~> Parameterized classes must use the ovm_object_param_utils* versions.  They differ from `ovm_object_utils only in that they do not supply a type name when registering the object with the factory.  As such, name-based lookup with the factory for parameterized classes is not possible. 
+  \ 
+  \The macros with _begin suffixes are the same as the non-suffixed versions except that they also start a block in which `ovm_field_* macros can be placed.  The block must be terminated by `ovm_component_utils_end. 
+  \ 
+  \Components deriving from ovm_sequencer must use the `ovm_sequencer_* macros instead of these macros.  See `ovm_sequencer_utils for details.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_object_utils_begin
+word  ~> =sv#ovm#ovm#object_utils_begin() 
+abbr  ~> ^o%[vm]o%[bject]u%[tils]b%[egin]$
+menu  ~> `ovm_object_utils_begin
+info  ~> Simple (non-parameterized) objects use the ovm_object_utils* versions, which do the following: 
+  \ 
+  \    * Implements get_type_name, which returns TYPE as a string 
+  \    * Implements create, which allocates an object of type TYPE by calling its constructor with no arguments. 
+  \      TYPE’s constructor, if defined, must have default values on all it arguments. 
+  \    * Registers the TYPE with the factory, using the string TYPE as the factory lookup string for the type. 
+  \    * Implements the static get_type() method which returns a factory proxy object for the type. 
+  \    * Implements the virtual get_object_type() method which works just like the static get_type() method, but operates on an already allocated object.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_object_param_utils_begin
+word  ~> =sv#ovm#ovm#object_param_utils_begin() 
+abbr  ~> ^o%[vm]o%[bject]p%[aram]u%[tils]b%[egin]$
+menu  ~> `ovm_object_param_utils_begin
+info  ~> Parameterized classes must use the ovm_object_param_utils* versions.  They differ from `ovm_object_utils only in that they do not supply a type name when registering the object with the factory.  As such, name-based lookup with the factory for parameterized classes is not possible. 
+  \ 
+  \The macros with _begin suffixes are the same as the non-suffixed versions except that they also start a block in which `ovm_field_* macros can be placed.  The block must be terminated by `ovm_object_utils_end. 
+  \ 
+  \Objects deriving from ovm_sequence must use the `ovm_sequence_* macros instead of these macros.  See `ovm_sequence_utils for details.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_object_utils
+--
+word  ~> =sv#ovm#ovm#object_utils() 
+abbr  ~> ^o%[vm]o%[bject]u%[tils]$
+menu  ~> `ovm_object_utils
+info  ~> Simple (non-parameterized) objects use the ovm_object_utils* versions, which do the following: 
+  \ 
+  \    * Implements get_type_name, which returns TYPE as a string 
+  \    * Implements create, which allocates an object of type TYPE by calling its constructor with no arguments. 
+  \      TYPE’s constructor, if defined, must have default values on all it arguments. 
+  \    * Registers the TYPE with the factory, using the string TYPE as the factory lookup string for the type. 
+  \    * Implements the static get_type() method which returns a factory proxy object for the type. 
+  \    * Implements the virtual get_object_type() method which works just like the static get_type() method, but operates on an already allocated object.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_object_param_utils
+--
+word  ~> =sv#ovm#ovm#object_param_utils() 
+abbr  ~> ^o%[vm]o%[bject]p%[aram]u%[tils]$
+menu  ~> `ovm_object_param_utils
+info  ~> Parameterized classes must use the ovm_object_param_utils* versions.  They differ from `ovm_object_utils only in that they do not supply a type name when registering the object with the factory.  As such, name-based lookup with the factory for parameterized classes is not possible. 
+  \ 
+  \The macros with _begin suffixes are the same as the non-suffixed versions except that they also start a block in which `ovm_field_* macros can be placed.  The block must be terminated by `ovm_object_utils_end. 
+  \ 
+  \Objects deriving from ovm_sequence must use the `ovm_sequence_* macros instead of these macros.  See `ovm_sequence_utils for details.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_utils_begin
+--
+word  ~> =sv#ovm#ovm#field_utils_begin() 
+abbr  ~> ^o%[vm]f%[ield]u%[tils]b%[egin]$
+menu  ~> `ovm_field_utils_begin
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_int
+--
+word  ~> =sv#ovm#ovm_macro#field_int() 
+abbr  ~> ^o%[vm]f%[ield]i%[nt]$
+menu  ~> `ovm_field_int
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_object
+--
+word  ~> =sv#ovm#ovm_macro#field_object() 
+abbr  ~> ^o%[vm]f%[ield]o%[bject]$
+menu  ~> `ovm_field_object
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_string
+--
+word  ~> =sv#ovm#ovm_macro#field_string() 
+abbr  ~> ^o%[vm]f%[ield]s%[tring]$
+menu  ~> `ovm_field_string
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_enum
+--
+word  ~> =sv#ovm#ovm_macro#field_enum() 
+abbr  ~> ^o%[vm]f%[ield]e%[num]$
+menu  ~> `ovm_field_enum
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_real
+--
+word  ~> =sv#ovm#ovm_macro#field_real() 
+abbr  ~> ^o%[vm]f%[ield]r%[eal]$
+menu  ~> `ovm_field_real
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_event
+--
+word  ~> =sv#ovm#ovm_macro#field_event() 
+abbr  ~> ^o%[vm]f%[ield]e%[vent]$
+menu  ~> `ovm_field_event
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_sarray_int
+--
+word  ~> =sv#ovm#ovm_macro#field_sarray_int() 
+abbr  ~> ^o%[vm]f%[ield]s%[array]i%[nt]$
+menu  ~> `ovm_field_sarray_int
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_sarray_object
+--
+word  ~> =sv#ovm#ovm_macro#field_sarray_object() 
+abbr  ~> ^o%[vm]f%[ield]s%[array]o%[bject]$
+menu  ~> `ovm_field_sarray_object
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_sarray_string
+--
+word  ~> =sv#ovm#ovm_macro#field_sarray_string() 
+abbr  ~> ^o%[vm]f%[ield]s%[array]s%[tring]$
+menu  ~> `ovm_field_sarray_string
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_sarray_enum
+--
+word  ~> =sv#ovm#ovm_macro#field_sarray_enum() 
+abbr  ~> ^o%[vm]f%[ield]s%[array]e%[num]$
+menu  ~> `ovm_field_sarray_enum
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_array_int
+--
+word  ~> =sv#ovm#ovm_macro#field_array_int() 
+abbr  ~> ^o%[vm]f%[ield]a%[rray]i%[nt]$
+menu  ~> `ovm_field_array_int
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_array_object
+--
+word  ~> =sv#ovm#ovm_macro#field_array_object() 
+abbr  ~> ^o%[vm]f%[ield]a%[rray]o%[bject]$
+menu  ~> `ovm_field_array_object
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_array_string
+--
+word  ~> =sv#ovm#ovm_macro#field_array_string() 
+abbr  ~> ^o%[vm]f%[ield]a%[rray]s%[tring]$
+menu  ~> `ovm_field_array_string
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_array_enum
+--
+word  ~> =sv#ovm#ovm_macro#field_array_enum() 
+abbr  ~> ^o%[vm]f%[ield]a%[rray]e%[num]$
+menu  ~> `ovm_field_array_enum
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_queue_int
+--
+word  ~> =sv#ovm#ovm_macro#field_queue_int() 
+abbr  ~> ^o%[vm]f%[ield]q%[ueue]i%[nt]$
+menu  ~> `ovm_field_queue_int
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_queue_object
+--
+word  ~> =sv#ovm#ovm_macro#field_queue_object() 
+abbr  ~> ^o%[vm]f%[ield]q%[ueue]o%[bject]$
+menu  ~> `ovm_field_queue_object
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_queue_string
+--
+word  ~> =sv#ovm#ovm_macro#field_queue_string() 
+abbr  ~> ^o%[vm]f%[ield]q%[ueue]s%[tring]$
+menu  ~> `ovm_field_queue_string
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_queue_enum
+--
+word  ~> =sv#ovm#ovm_macro#field_queue_enum() 
+abbr  ~> ^o%[vm]f%[ield]q%[ueue]e%[num]$
+menu  ~> `ovm_field_queue_enum
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_aa_int_string
+--
+word  ~> =sv#ovm#ovm_macro#field_aa_int_string() 
+abbr  ~> ^o%[vm]f%[ield]a%[a]i%[nt]s%[tring]$
+menu  ~> `ovm_field_aa_int_string
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_aa_object_string
+--
+word  ~> =sv#ovm#ovm_macro#field_aa_object_string() 
+abbr  ~> ^o%[vm]f%[ield]a%[a]o%[bject]s%[tring]$
+menu  ~> `ovm_field_aa_object_string
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_aa_string_string
+--
+word  ~> =sv#ovm#ovm_macro#field_aa_string_string() 
+abbr  ~> ^o%[vm]f%[ield]a%[a]s%[tring]s%[tring]$
+menu  ~> `ovm_field_aa_string_string
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_aa_object_int
+--
+word  ~> =sv#ovm#ovm_macro#field_aa_object_int() 
+abbr  ~> ^o%[vm]f%[ield]a%[a]o%[bject]i%[nt]$
+menu  ~> `ovm_field_aa_object_int
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_aa_int_int
+--
+word  ~> =sv#ovm#ovm_macro#field_aa_int_int() 
+abbr  ~> ^o%[vm]f%[ield]a%[a]i%[nt]i%[nt]$
+menu  ~> `ovm_field_aa_int_int
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_aa_int_int_unsigned
+--
+word  ~> =sv#ovm#ovm_macro#field_aa_int_int_unsigned() 
+abbr  ~> ^o%[vm]f%[ield]a%[a]i%[nt]i%[nt]u%[nsigned]$
+menu  ~> `ovm_field_aa_int_int_unsigned
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_aa_int_integer
+--
+word  ~> =sv#ovm#ovm_macro#field_aa_int_integer() 
+abbr  ~> ^o%[vm]f%[ield]a%[a]i%[nt]i%[nteger]$
+menu  ~> `ovm_field_aa_int_integer
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_aa_int_integer_unsigned
+--
+word  ~> =sv#ovm#ovm_macro#field_aa_int_integer_unsigned() 
+abbr  ~> ^o%[vm]f%[ield]a%[a]i%[nt]i%[nteger]u%[nsigned]$
+menu  ~> `ovm_field_aa_int_integer_unsigned
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_aa_int_byte
+--
+word  ~> =sv#ovm#ovm_macro#field_aa_int_byte() 
+abbr  ~> ^o%[vm]f%[ield]a%[a]i%[nt]b%[yte]$
+menu  ~> `ovm_field_aa_int_byte
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_aa_int_byte_unsigned
+--
+word  ~> =sv#ovm#ovm_macro#field_aa_int_byte_unsigned() 
+abbr  ~> ^o%[vm]f%[ield]a%[a]i%[nt]b%[yte]u%[nsigned]$
+menu  ~> `ovm_field_aa_int_byte_unsigned
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_aa_int_shortint
+--
+word  ~> =sv#ovm#ovm_macro#field_aa_int_shortint() 
+abbr  ~> ^o%[vm]f%[ield]a%[a]i%[nt]s%[hortint]$
+menu  ~> `ovm_field_aa_int_shortint
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_aa_int_shortint_unsigned
+--
+word  ~> =sv#ovm#ovm_macro#field_aa_int_shortint_unsigned() 
+abbr  ~> ^o%[vm]f%[ield]a%[a]i%[nt]s%[hortint]u%[nsigned]$
+menu  ~> `ovm_field_aa_int_shortint_unsigned
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_aa_int_longint
+--
+word  ~> =sv#ovm#ovm_macro#field_aa_int_longint() 
+abbr  ~> ^o%[vm]f%[ield]a%[a]i%[nt]l%[ongint]$
+menu  ~> `ovm_field_aa_int_longint
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_aa_int_longint_unsigned
+--
+word  ~> =sv#ovm#ovm_macro#field_aa_int_longint_unsigned() 
+abbr  ~> ^o%[vm]f%[ield]a%[a]i%[nt]l%[ongint]u%[nsigned]$
+menu  ~> `ovm_field_aa_int_longint_unsigned
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_aa_int_key
+--
+word  ~> =sv#ovm#ovm_macro#field_aa_int_key() 
+abbr  ~> ^o%[vm]f%[ield]a%[a]i%[nt]k%[ey]$
+menu  ~> `ovm_field_aa_int_key
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `ovm_field_aa_int_enumkey
+--
+word  ~> =sv#ovm#ovm_macro#field_aa_int_enumkey() 
+abbr  ~> ^o%[vm]f%[ield]a%[a]i%[nt]e%[numkey]$
+menu  ~> `ovm_field_aa_int_enumkey
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+##===============================================================================
+## Sequence and Do action macros
+##===============================================================================
+
+# `ovm_declare_p_sequencer
+word  ~> =sv#ovm#ovm_macro#declare_p_sequencer() 
+abbr  ~> ^o%[vm]d%[eclare]ps%[equencer]$
+menu  ~> `ovm_declare_p_sequencer
+info  ~>This macro is used to set up a specific sequencer type with the sequence type the macro is placed in.  This macro is implicit in the <ovm_sequence_utils> macro, but may be used directly in cases when the sequence is not to be registered in the sequencer’s library.
+    \ 
+    \The example below shows using the the ovm_declare_p_sequencer macro along with the ovm_object_utils macros to set up the sequence but not register the sequence in the sequencer’s library. 
+    \ 
+    \    class mysequence extends ovm_sequence#(mydata); 
+    \      `ovm_object_utils(mysequence) 
+    \      `ovm_declare_p_sequencer(some_seqr_type) 
+    \      task body; 
+    \        //Access some variable in the user's custom sequencer 
+    \        if(p_sequencer.some_variable) begin 
+    \          ... 
+    \        end 
+    \      endtask 
+    \    endclass 
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+# `ovm_sequence_utils_begin
+word  ~> =sv#ovm#ovm_macro#sequence_utils_begin() 
+abbr  ~> ^o%[vm]s%[equence]u%[tils]b%[egin]$
+menu  ~> `ovm_sequence_utils_begin
+info  ~>The sequence macros can be used in non-parameterized <ovm_sequence> extensions to pre-register the sequence with a given <ovm_sequencer> type.
+    \For sequences that do not use any `ovm_field macros 
+    \ 
+    \    `ovm_sequence_utils(TYPE_NAME,SQR_TYPE_NAME) 
+    \ 
+    \For sequences employing with field macros 
+    \ 
+    \    `ovm_sequence_utils_begin(TYPE_NAME,SQR_TYPE_NAME) 
+    \      `ovm_field_* macro invocations here 
+    \    `ovm_sequence_utils_end 
+    \ 
+    \The sequence-specific macros perform the same function as the set of `ovm_object_*_utils macros except that they also register the sequence’s type, TYPE_NAME, with the given sequencer type, SQR_TYPE_NAME, and define the p_sequencer variable and m_set_p_sequencer method. 
+    \ 
+    \Use `ovm_sequence_utils[_begin] for non-parameterized classes and `ovm_sequence_param_utils[_begin] for parameterized classes. 
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+# `ovm_sequence_utils
+word  ~> =sv#ovm#ovm_macro#sequence_utils() 
+abbr  ~> ^o%[vm]s%[equence]u%[tils]$
+menu  ~> `ovm_sequence_utils
+info  ~>The sequence macros can be used in non-parameterized <ovm_sequence> extensions to pre-register the sequence with a given <ovm_sequencer> type.
+    \For sequences that do not use any `ovm_field macros 
+    \ 
+    \    `ovm_sequence_utils(TYPE_NAME,SQR_TYPE_NAME) 
+    \ 
+    \For sequences employing with field macros 
+    \ 
+    \    `ovm_sequence_utils_begin(TYPE_NAME,SQR_TYPE_NAME) 
+    \      `ovm_field_* macro invocations here 
+    \    `ovm_sequence_utils_end 
+    \ 
+    \The sequence-specific macros perform the same function as the set of `ovm_object_*_utils macros except that they also register the sequence’s type, TYPE_NAME, with the given sequencer type, SQR_TYPE_NAME, and define the p_sequencer variable and m_set_p_sequencer method. 
+    \ 
+    \Use `ovm_sequence_utils[_begin] for non-parameterized classes and `ovm_sequence_param_utils[_begin] for parameterized classes. 
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+# `ovm_update_sequence_lib
+word  ~> =sv#ovm#ovm_macro#update_sequence_lib() 
+abbr  ~> ^o%[vm]u%[pdate]s%[equence]l%[ib]$
+menu  ~> `ovm_update_sequence_lib
+info  ~>This macro populates the instance-specific sequence library for a sequencer.  It should be invoked inside the sequencer's constructor.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+# `ovm_update_sequence_lib_and_item
+word  ~> =sv#ovm#ovm_macro#update_sequence_lib_and_item() 
+abbr  ~> ^o%[vm]u%[pdate]s%[equence]l%[ib]a%[nd]i%[tem]$
+menu  ~> `ovm_update_sequence_lib_and_item
+info  ~>This macro populates the instance specific sequence library for a sequencer, and it registers the given USER_ITEM as an instance override for the simple sequence’s item variable.
+    \ 
+    \The macro should be invoked inside the sequencer’s constructor. 
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+# `ovm_sequencer_utils
+word  ~> =sv#ovm#ovm_macro#sequencer_utils() 
+abbr  ~> ^o%[vm]s%[equencer]u%[tils]$
+menu  ~> `ovm_sequencer_utils
+info  ~>The sequencer macros are used in ovm_sequencer-based class declarations in one of four ways.
+    \ 
+    \For simple sequencers, no field macros 
+    \ 
+    \`ovm_sequencer_utils(SQR_TYPE_NAME) 
+    \ 
+    \For simple sequencers, with field macros 
+    \ 
+    \`ovm_sequencer_utils_begin(SQR_TYPE_NAME) `ovm_field_* macros here `ovm_sequencer_utils_end 
+    \ 
+    \For parameterized sequencers, no field macros 
+    \ 
+    \`ovm_sequencer_param_utils(SQR_TYPE_NAME) 
+    \ 
+    \For parameterized sequencers, with field macros 
+    \ 
+    \`ovm_sequencer_param_utils_begin(SQR_TYPE_NAME) `ovm_field_* macros here `ovm_sequencer_utils_end 
+    \ 
+    \The sequencer-specific macros perform the same function as the set of `ovm_componenent_*utils macros except that they also declare the plumbing necessary for creating the sequencer’s sequence library.  This includes: 
+    \ 
+    \1.  Declaring the type-based static queue of strings registered on the sequencer type. 
+    \ 
+    \2.  Declaring the static function to add strings to item #1 above. 
+    \ 
+    \3.  Declaring the static function to remove strings to item #1 above. 
+    \ 
+    \4.  Declaring the function to populate the instance specific sequence library for a sequencer. 
+    \ 
+    \Use `ovm_sequencer_utils[_begin] for non-parameterized classes and `ovm_sequencer_param_utils[_begin] for parameterized classes. 
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+# `ovm_sequencer_utils_begin
+word  ~> =sv#ovm#ovm_macro#sequencer_utils_begin() 
+abbr  ~> ^o%[vm]s%[equencer]u%[tils]b%[egin]$
+menu  ~> `ovm_sequencer_utils_begin
+info  ~>The sequencer macros are used in ovm_sequencer-based class declarations in one of four ways.
+    \ 
+    \For simple sequencers, no field macros 
+    \ 
+    \`ovm_sequencer_utils(SQR_TYPE_NAME) 
+    \ 
+    \For simple sequencers, with field macros 
+    \ 
+    \`ovm_sequencer_utils_begin(SQR_TYPE_NAME) `ovm_field_* macros here `ovm_sequencer_utils_end 
+    \ 
+    \For parameterized sequencers, no field macros 
+    \ 
+    \`ovm_sequencer_param_utils(SQR_TYPE_NAME) 
+    \ 
+    \For parameterized sequencers, with field macros 
+    \ 
+    \`ovm_sequencer_param_utils_begin(SQR_TYPE_NAME) `ovm_field_* macros here `ovm_sequencer_utils_end 
+    \ 
+    \The sequencer-specific macros perform the same function as the set of `ovm_componenent_*utils macros except that they also declare the plumbing necessary for creating the sequencer’s sequence library.  This includes: 
+    \ 
+    \1.  Declaring the type-based static queue of strings registered on the sequencer type. 
+    \ 
+    \2.  Declaring the static function to add strings to item #1 above. 
+    \ 
+    \3.  Declaring the static function to remove strings to item #1 above. 
+    \ 
+    \4.  Declaring the function to populate the instance specific sequence library for a sequencer. 
+    \ 
+    \Use `ovm_sequencer_utils[_begin] for non-parameterized classes and `ovm_sequencer_param_utils[_begin] for parameterized classes. 
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+# `ovm_sequencer_param_utils
+word  ~> =sv#ovm#ovm_macro#sequencer_param_utils() 
+abbr  ~> ^o%[vm]s%[equencer]p%[aram]u%[tils]$
+menu  ~> `ovm_sequencer_param_utils
+info  ~>The sequencer macros are used in ovm_sequencer-based class declarations in one of four ways.
+    \ 
+    \For simple sequencers, no field macros 
+    \ 
+    \`ovm_sequencer_utils(SQR_TYPE_NAME) 
+    \ 
+    \For simple sequencers, with field macros 
+    \ 
+    \`ovm_sequencer_utils_begin(SQR_TYPE_NAME) `ovm_field_* macros here `ovm_sequencer_utils_end 
+    \ 
+    \For parameterized sequencers, no field macros 
+    \ 
+    \`ovm_sequencer_param_utils(SQR_TYPE_NAME) 
+    \ 
+    \For parameterized sequencers, with field macros 
+    \ 
+    \`ovm_sequencer_param_utils_begin(SQR_TYPE_NAME) `ovm_field_* macros here `ovm_sequencer_utils_end 
+    \ 
+    \The sequencer-specific macros perform the same function as the set of `ovm_componenent_*utils macros except that they also declare the plumbing necessary for creating the sequencer’s sequence library.  This includes: 
+    \ 
+    \1.  Declaring the type-based static queue of strings registered on the sequencer type. 
+    \ 
+    \2.  Declaring the static function to add strings to item #1 above. 
+    \ 
+    \3.  Declaring the static function to remove strings to item #1 above. 
+    \ 
+    \4.  Declaring the function to populate the instance specific sequence library for a sequencer. 
+    \ 
+    \Use `ovm_sequencer_utils[_begin] for non-parameterized classes and `ovm_sequencer_param_utils[_begin] for parameterized classes. 
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+# `ovm_sequencer_param_utils_begin
+word  ~> =sv#ovm#ovm_macro#sequencer_param_utils_begin() 
+abbr  ~> ^o%[vm]s%[equencer]p%[aram]u%[tils]b%[egin]$
+menu  ~> `ovm_sequencer_param_utils_begin
+info  ~>The sequencer macros are used in ovm_sequencer-based class declarations in one of four ways.
+    \ 
+    \For simple sequencers, no field macros 
+    \ 
+    \`ovm_sequencer_utils(SQR_TYPE_NAME) 
+    \ 
+    \For simple sequencers, with field macros 
+    \ 
+    \`ovm_sequencer_utils_begin(SQR_TYPE_NAME) `ovm_field_* macros here `ovm_sequencer_utils_end 
+    \ 
+    \For parameterized sequencers, no field macros 
+    \ 
+    \`ovm_sequencer_param_utils(SQR_TYPE_NAME) 
+    \ 
+    \For parameterized sequencers, with field macros 
+    \ 
+    \`ovm_sequencer_param_utils_begin(SQR_TYPE_NAME) `ovm_field_* macros here `ovm_sequencer_utils_end 
+    \ 
+    \The sequencer-specific macros perform the same function as the set of `ovm_componenent_*utils macros except that they also declare the plumbing necessary for creating the sequencer’s sequence library.  This includes: 
+    \ 
+    \1.  Declaring the type-based static queue of strings registered on the sequencer type. 
+    \ 
+    \2.  Declaring the static function to add strings to item #1 above. 
+    \ 
+    \3.  Declaring the static function to remove strings to item #1 above. 
+    \ 
+    \4.  Declaring the function to populate the instance specific sequence library for a sequencer. 
+    \ 
+    \Use `ovm_sequencer_utils[_begin] for non-parameterized classes and `ovm_sequencer_param_utils[_begin] for parameterized classes. 
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+##-------------------------------------------------------------------------------
+## Sequence Action Macros
+##-------------------------------------------------------------------------------
+
+# `ovm_create
+word  ~> =sv#ovm#ovm_macro#create() 
+abbr  ~> ^o%[vm]c%[reate]$
+menu  ~> `ovm_create
+info  ~>This action creates the item or sequence using the factory.  It intentionally does zero processing.  After this action completes, the user can manually set values, manipulate rand_mode and constraint_mode, etc.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `ovm_do
+word  ~> =sv#ovm#ovm_macro#do() 
+abbr  ~> ^o%[vm]d%[o]$
+menu  ~> `ovm_do
+info  ~>This macro takes as an argument a ovm_sequence_item variable or object. ovm_sequence_item’s are randomized at the time the sequencer grants the do request.  This is called late-randomization or late-generation.  In the case of a sequence a sub-sequence is spawned.  In the case of an item, the item is sent to the driver through the associated sequencer.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `ovm_do_pri
+word  ~> =sv#ovm#ovm_macro#do_pri() 
+abbr  ~> ^o%[vm]d%[o]p%[ri]$
+menu  ~> `ovm_do_pri
+info  ~>This is the same as `ovm_do except that the sequene item or sequence is executed with the priority specified in the argument
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `ovm_do_with
+word  ~> =sv#ovm#ovm_macro#do_with() 
+abbr  ~> ^o%[vm]d%[o]w%[ith]$
+menu  ~> `ovm_do_with
+info  ~>This is the same as `ovm_do except that the constraint block in the 2nd argument is applied to the item or sequence in a randomize with statement before execution.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `ovm_do_pri_with
+word  ~> =sv#ovm#ovm_macro#do_pri_with() 
+abbr  ~> ^o%[vm]d%[o]p%[ri]w%[ith]$
+menu  ~> `ovm_do_pri_with
+info  ~>This is the same as `ovm_do_pri except that the given constraint block is applied to the item or sequence in a randomize with statement before execution.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `ovm_send
+word  ~> =sv#ovm#ovm_macro#send() 
+abbr  ~> ^o%[vm]s%[end]$
+menu  ~> `ovm_send
+info  ~>This macro processes the item or sequence that has been created using `ovm_create.  The processing is done without randomization.  Essentially, an `ovm_do without the create or randomization.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `ovm_send_pri
+word  ~> =sv#ovm#ovm_macro#send_pri() 
+abbr  ~> ^o%[vm]s%[end]p%[ri]$
+menu  ~> `ovm_send_pri
+info  ~>This is the same as `ovm_send except that the sequene item or sequence is executed with the priority specified in the argument.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `ovm_rand_send
+word  ~> =sv#ovm#ovm_macro#rand_send() 
+abbr  ~> ^o%[vm]r%[and]s%[end]$
+menu  ~> `ovm_rand_send
+info  ~>This macro processes the item or sequence that has been already been allocated (possibly with `ovm_create).  The processing is done with randomization.  Essentially, an `ovm_do without the create.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `ovm_rand_send_pri
+word  ~> =sv#ovm#ovm_macro#rand_send_pri() 
+abbr  ~> ^o%[vm]r%[and]s%[end]p%[ri]$
+menu  ~> `ovm_rand_send_pri
+info  ~>This is the same as `ovm_rand_send except that the sequene item or sequence is executed with the priority specified in the argument.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `ovm_rand_send_with
+word  ~> =sv#ovm#ovm_macro#rand_send_with() 
+abbr  ~> ^o%[vm]r%[and]s%[end]w%[ith]$
+menu  ~> `ovm_rand_send_with
+info  ~>This is the same as `ovm_rand_send except that the given constraint block is applied to the item or sequence in a randomize with statement before execution.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `ovm_rand_send_pri_with
+word  ~> =sv#ovm#ovm_macro#rand_send_pri_with() 
+abbr  ~> ^o%[vm]r%[and]s%[end]p%[ri]w%[ith]$
+menu  ~> `ovm_rand_send_pri_with
+info  ~>This is the same as `ovm_rand_send_pri except that the given constraint block is applied to the item or sequence in a randomize with statement before execution.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+##-------------------------------------------------------------------------------
+## Sequence on Sequencer Action Macros
+##-------------------------------------------------------------------------------
+
+# `ovm_create_on
+word  ~> =sv#ovm#ovm_macro#create_on() 
+abbr  ~> ^o%[vm]c%[reate]o%[n]$
+menu  ~> `ovm_create_on
+info  ~>This is the same as `ovm_create except that it also sets the parent sequence to the sequence in which the macro is invoked, and it sets the sequencer to the specified SEQUENCER_REF argument.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `ovm_do_on
+word  ~> =sv#ovm#ovm_macro#do_on() 
+abbr  ~> ^o%[vm]d%[o]o%[n]$
+menu  ~> `ovm_do_on
+info  ~>This is the same as `ovm_do except that it also sets the parent sequence to the sequence in which the macro is invoked, and it sets the sequencer to the specified SEQUENCER_REF argument.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `ovm_do_on_pri
+word  ~> =sv#ovm#ovm_macro#do_on_pri() 
+abbr  ~> ^o%[vm]d%[o]o%[n]p%[ri]$
+menu  ~> `ovm_do_on_pri
+info  ~>This is the same as `ovm_do_pri except that it also sets the parent sequence to the sequence in which the macro is invoked, and it sets the sequencer to the specified SEQUENCER_REF argument.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `ovm_do_on_with
+word  ~> =sv#ovm#ovm_macro#do_on_with() 
+abbr  ~> ^o%[vm]d%[o]o%[n]w%[ith]$
+menu  ~> `ovm_do_on_with
+info  ~>This is the same as `ovm_do_with except that it also sets the parent sequence to the sequence in which the macro is invoked, and it sets the sequencer to the specified SEQUENCER_REF argument.  The user must supply brackets around the constraints.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `ovm_do_on_pri_with
+word  ~> =sv#ovm#ovm_macro#do_on_pri_with() 
+abbr  ~> ^o%[vm]d%[o]o%[n]p%[ri]w%[ith]$
+menu  ~> `ovm_do_on_pri_with
+info  ~>This is the same as `ovm_do_pri_with except that it also sets the parent sequence to the sequence in which the macro is invoked, and it sets the sequencer to the specified SEQUENCER_REF argument.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+##-------------------------------------------------------------------------------
+## Report Macros
+##-------------------------------------------------------------------------------
+# `ovm_info
+word  ~> `ovm_info(get_name(), $psprintf("maa", ),OVM_LOW)`aa
+abbr  ~> ^o%[vm]i%[nfo]$
+menu  ~> `ovm_info
+info  ~> Calls ovm_report_info if VERBOSITY is lower than the configured verbosity of the associated reporter.  ID is given as the message tag and MSG is given as the message text.  The file and line are also sent to the ovm_report_info call.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `ovm_warning
+word  ~> `ovm_warning(get_type_name(), "maa")`aa
+abbr  ~> ^o%[vm]w%[arning]$
+menu  ~> `ovm_warning
+info  ~> Calls ovm_report_warning with a verbosity of OVM_NONE.  The message can not be turned off using the reporter’s verbosity setting, but can be turned off by setting the action for the message.  ID is given as the message tag and MSG is given as the message text.  The file and line are also sent to the ovm_report_warning call.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `ovm_error
+word  ~> `ovm_error(get_type_name(), "maa")`aa
+abbr  ~> ^o%[vm]e%[rror]$
+menu  ~> `ovm_error
+info  ~> Calls ovm_report_error with a verbosity of OVM_NONE.  The message can not be turned off using the reporter’s verbosity setting, but can be turned off by setting the action for the message.  ID is given as the message tag and MSG is given as the message text.  The file and line are also sent to the ovm_report_error call.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `ovm_fatal
+word  ~> `ovm_fatal(get_type_name(), "maa")`aa
+abbr  ~> ^o%[vm]f%[atal]$
+menu  ~> `ovm_fatal
+info  ~> Calls ovm_report_fatal with a verbosity of OVM_NONE.  The message can not be turned off using the reporter’s verbosity setting, but can be turned off by setting the action for the message.  ID is given as the message tag and MSG is given as the message text.  The file and line are also sent to the ovm_report_fatal call.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+##-------------------------------------------------------------------------------
+## ovm ports and implementation
+##-------------------------------------------------------------------------------
+# `ovm_analysis_imp_decl
+word  ~> `ovm_analysis_imp_decl(maa)`aa
+abbr  ~> ^o%[vm]a%[nalysis]i%[mp]d%[ecl]$
+menu  ~> `ovm_analysis_imp_decl
+info  ~> 
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+ 

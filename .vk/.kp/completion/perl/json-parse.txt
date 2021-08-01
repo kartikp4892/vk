@@ -1,0 +1,6 @@
+# parse_json ()
+word  ~> parse_json (maa)`aa
+abbr  ~> p%[arse]j%[son]$
+menu  ~> parse_json ()
+--
+

@@ -1,0 +1,41 @@
+###############################################################################
+# Description: This file consists of global variables that are set 
+#              which can be used for project compilation and simulation 
+###############################################################################
+# Set the environment variables
+if (`uname -o` == 'Cygwin') then
+  setenv BASE_DIR `cygpath -m $PWD`
+  setenv CYG_BASE_DIR $PWD
+  setenv PATH "${PATH}:$CYG_BASE_DIR/bin"
+else
+  setenv BASE_DIR `pwd` 
+  setenv PATH "${PATH}:$BASE_DIR/bin"
+endif
+
+setenv MICROSEMI_LIBS $BASE_DIR/libs/microsemi/questa/10.0
+
+# Source the questa 10.5c
+#source /tools/source/mentor/cshrc/go_questa_10_5c
+
+setenv SRCDIR "$BASE_DIR/rtl"
+setenv SIMDIR "$BASE_DIR/verif/sim"
+setenv SEQDIR "$BASE_DIR/verif/env"
+setenv TESTDIR "$BASE_DIR/verif/tests"
+setenv BINDIR "$BASE_DIR/verif/bin"
+setenv LOGDIR "$BASE_DIR/verif/sim/log"
+setenv WORKDIR "$BASE_DIR/verif/sim/work"
+setenv PATH "${PATH}:$BINDIR"
+setenv MODELSIM "$BINDIR/modelsim.ini"
+
+alias base "cd $BASE_DIR;clear;ls"
+alias src "cd $SRCDIR;clear;ls"
+alias sim "cd $SIMDIR;clear;ls"
+alias bin "cd $BINDIR;clear;ls"
+alias log "cd $LOGDIR;clear;ls"
+alias work "cd $WORKDIR;clear;ls"
+alias test "cd $TESTDIR;clear;ls"
+
+# setenv PERL5LIB $BASE_DIR/proc/perl_lib/lib/:$BASE_DIR/proc/perl_lib/lib/perl5/:
+
+
+

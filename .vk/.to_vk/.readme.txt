@@ -1,0 +1,3 @@
+Perform below steps
+cp $HOME/.vk/.to_vk/.vim $HOME/ -rf
+cp .kprc.py $HOME/.kprc

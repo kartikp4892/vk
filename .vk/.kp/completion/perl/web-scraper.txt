@@ -1,0 +1,41 @@
+# scraper
+word  ~> =perl#web_scraper#scraper() 
+abbr  ~> ^w%[eb]s%[craper]s%[craper]$
+menu  ~> scraper
+--
+
+# scraper with default variables
+word  ~> =perl#web_scraper#default_scraper() 
+abbr  ~> ^w%[eb]s%[craper]s%[craper]d%[efault]$
+menu  ~> scraper
+--
+
+# scrape
+word  ~> scrape (maa)`aa
+abbr  ~> ^w%[eb]s%[craper]s%[crape]$
+menu  ~> scrape
+--
+
+# sub
+word  ~> =perl#web_scraper#sub() 
+abbr  ~> ^w%[eb]s%[craper]s%[ub]$
+menu  ~> sub
+--
+
+# process with sub ref defined
+word  ~> =perl#web_scraper#process(1) 
+abbr  ~> ^w%[eb]s%[craper]p%[rocess]$
+menu  ~> process
+--
+# process
+word  ~> =perl#web_scraper#process(0) 
+abbr  ~> ^w%[eb]s%[craper]p%[rocess]$
+menu  ~> process
+--
+
+# conver to xpath
+word  ~> =((@+ =~ '=') ? (perl#web_scraper#conv_xpath()) : (perl#web_scraper#css2xpath())) 
+abbr  ~> xpath
+menu  ~> xpath
+--
+

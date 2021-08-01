@@ -1,0 +1,60 @@
+#findnodes ($path)
+word  ~> $ht -> findnodes (maa)`aa
+abbr  ~> ^h%[tml]t%[reebuilder]x%[path]f%[indnodes]$
+menu  ~> findnodes ($path)
+--
+
+#findnodes_as_string ($path)
+word  ~> $ht -> findnodes_as_string (maa)`aa
+abbr  ~> ^h%[tml]t%[reebuilder]x%[path]f%[indnodes]a%[s]s%[tring]$
+menu  ~> findnodes_as_string ($path)
+--
+
+#findnodes_as_strings ($path)
+word  ~> $ht -> findnodes_as_strings (maa)`aa
+abbr  ~> ^h%[tml]t%[reebuilder]x%[path]f%[indnodes]a%[s]s%[trings]$
+menu  ~> findnodes_as_strings ($path)
+--
+
+#findvalue ($path)
+word  ~> $ht -> findvalue (maa)`aa
+abbr  ~> ^h%[tml]t%[reebuilder]x%[path]f%[indvalue]$
+menu  ~> findvalue ($path)
+--
+
+#findvalues ($path)
+word  ~> $ht -> findvalues (maa)`aa
+abbr  ~> ^h%[tml]t%[reebuilder]x%[path]f%[indvalues]$
+menu  ~> findvalues ($path)
+--
+
+#exists ($path)
+word  ~> $ht -> exists (maa)`aa
+abbr  ~> ^h%[tml]t%[reebuilder]x%[path]e%[xists]$
+menu  ~> exists ($path)
+--
+
+#matches($path)
+word  ~> $ht -> matches(maa)`aa
+abbr  ~> ^h%[tml]t%[reebuilder]x%[path]m%[atches]$
+menu  ~> matches($path)
+--
+
+#find ($path)
+word  ~> $ht -> find (maa)`aa
+abbr  ~> ^h%[tml]t%[reebuilder]x%[path]f%[ind]$
+menu  ~> find ($path)
+--
+
+#as_XML_compact
+word  ~> $ht -> as_XML_compact(maa)`aa
+abbr  ~> ^h%[tml]t%[reebuilder]x%[path]a%[s]X%[ML]c%[ompact]$
+menu  ~> as_XML_compact
+--
+
+#as_XML_indented
+word  ~> $ht -> as_XML_indented(maa)`aa
+abbr  ~> ^h%[tml]t%[reebuilder]x%[path]a%[s]X%[ML]i%[ndented]$
+menu  ~> as_XML_indented
+--
+

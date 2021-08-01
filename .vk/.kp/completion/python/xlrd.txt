@@ -1,0 +1,766 @@
+word  ~> =python#xlrd#Book() 
+abbr  ~> ^x%[l]r%[d]b%[ook]$
+menu  ~> Book(filename=None, file_contents=None, logfile=sys.stdout, verbosity=0, pickleable=True, use_mmap=USE_MMAP, encoding_override=None, formatting_info=False, ) (class)
+--
+word  ~> =python#xlrd#Cell() 
+abbr  ~> ^x%[l]r%[d]c%[ell]$
+menu  ~> Cell(ctype, value, xf_index=None) (class)
+--
+word  ~> =python#xlrd#cellname() 
+abbr  ~> ^x%[l]r%[d]c%[ellname]$
+menu  ~> cellname(rowx, colx)
+--
+word  ~> =python#xlrd#cellnameabs() 
+abbr  ~> ^x%[l]r%[d]c%[ellnameabs]$
+menu  ~> cellnameabs(rowx, colx)
+--
+word  ~> =python#xlrd#Colinfo() 
+abbr  ~> ^x%[l]r%[d]c%[olinfo]$
+menu  ~> Colinfo (class)
+--
+word  ~> =python#xlrd#colname() 
+abbr  ~> ^x%[l]r%[d]c%[olname]$
+menu  ~> colname(colx)
+--
+word  ~> =python#xlrd#count_records() 
+abbr  ~> ^x%[l]r%[d]c%[ount]r%[ecords]$
+menu  ~> count_records(filename, outfile=sys.stdout)
+--
+word  ~> =python#xlrd#dump() 
+abbr  ~> ^x%[l]r%[d]d%[ump]$
+menu  ~> dump(filename, outfile=sys.stdout)
+--
+word  ~> =python#xlrd#empty_cell() 
+abbr  ~> ^x%[l]r%[d]e%[mpty]c%[ell]$
+menu  ~> empty_cell (variable)
+--
+word  ~> =python#xlrd#EqNeAttrs() 
+abbr  ~> ^x%[l]r%[d]e%[qneattrs]$
+menu  ~> EqNeAttrs (class)
+--
+word  ~> =python#xlrd#error_text_from_code() 
+abbr  ~> ^x%[l]r%[d]e%[rror]t%[ext]f%[rom]c%[ode]$
+menu  ~> error_text_from_code (variable)
+--
+word  ~> =python#xlrd#Font() 
+abbr  ~> ^x%[l]r%[d]f%[ont]$
+menu  ~> Font (class)
+--
+word  ~> =python#xlrd#Format() 
+abbr  ~> ^x%[l]r%[d]f%[ormat]$
+menu  ~> Format(format_key, ty, format_str) (class)
+--
+word  ~> =python#xlrd#Name() 
+abbr  ~> ^x%[l]r%[d]n%[ame]$
+menu  ~> Name (class)
+--
+word  ~> =python#xlrd#open_workbook() 
+abbr  ~> ^x%[l]r%[d]o%[pen]w%[orkbook]$
+menu  ~> open_workbook(filename=None, logfile=sys.stdout, verbosity=0, pickleable=True, use_mmap=USE_MMAP, file_contents=None, encoding_override=None, formatting_info=False, )
+--
+word  ~> =python#xlrd#Operand() 
+abbr  ~> ^x%[l]r%[d]o%[perand]$
+menu  ~> Operand(akind=None, avalue=None, arank=0, atext='?') (class)
+--
+word  ~> =python#xlrd#rangename3d() 
+abbr  ~> ^x%[l]r%[d]r%[angename3d]$
+menu  ~> rangename3d(book, ref3d)
+--
+word  ~> =python#xlrd#rangename3drel() 
+abbr  ~> ^x%[l]r%[d]r%[angename3drel]$
+menu  ~> rangename3drel(book, ref3d)
+--
+word  ~> =python#xlrd#Ref3D() 
+abbr  ~> ^x%[l]r%[d]r%[ef3d]$
+menu  ~> Ref3D(atuple) (class)
+--
+word  ~> =python#xlrd#Rowinfo() 
+abbr  ~> ^x%[l]r%[d]r%[owinfo]$
+menu  ~> Rowinfo (class)
+--
+word  ~> =python#xlrd#Sheet() 
+abbr  ~> ^x%[l]r%[d]s%[heet]$
+menu  ~> Sheet(book, position, name, number) (class)
+--
+word  ~> =python#xlrd#XF() 
+abbr  ~> ^x%[l]r%[d]x%[f]$
+menu  ~> XF (class)
+--
+word  ~> =python#xlrd#XFAlignment() 
+abbr  ~> ^x%[l]r%[d]x%[falignment]$
+menu  ~> XFAlignment (class)
+--
+word  ~> =python#xlrd#XFBackground() 
+abbr  ~> ^x%[l]r%[d]x%[fbackground]$
+menu  ~> XFBackground (class)
+--
+word  ~> =python#xlrd#XFBorder() 
+abbr  ~> ^x%[l]r%[d]x%[fborder]$
+menu  ~> XFBorder (class)
+--
+word  ~> =python#xlrd#XFProtection() 
+abbr  ~> ^x%[l]r%[d]x%[fprotection]$
+menu  ~> XFProtection (class)
+--
+word  ~> =python#xlrd#xldate_as_tuple() 
+abbr  ~> ^x%[l]r%[d]x%[ldate]a%[s]t%[uple]$
+menu  ~> xldate_as_tuple(xldate, datemode)
+--
+word  ~> =python#xlrd#xldate_from_date_tuple() 
+abbr  ~> ^x%[l]r%[d]x%[ldate]f%[rom]d%[ate]t%[uple]$
+menu  ~> xldate_from_date_tuple((year, month, day), datemode)
+--
+word  ~> =python#xlrd#xldate_from_datetime_tuple() 
+abbr  ~> ^x%[l]r%[d]x%[ldate]f%[rom]d%[atetime]t%[uple]$
+menu  ~> xldate_from_datetime_tuple(datetime_tuple, datemode)
+--
+word  ~> =python#xlrd#xldate_from_time_tuple() 
+abbr  ~> ^x%[l]r%[d]x%[ldate]f%[rom]t%[ime]t%[uple]$
+menu  ~> xldate_from_time_tuple((hour, minute, second))
+--
+word  ~> =python#xlrd#BaseObject() 
+abbr  ~> ^x%[l]r%[d]b%[aseobject]$
+menu  ~> BaseObject (class)
+--
+word  ~> =python#xlrd#dump() 
+abbr  ~> ^x%[l]r%[d]d%[ump]$
+menu  ~> dump(f=None, header=None, footer=None, indent=0)
+--
+word  ~> =python#xlrd#Book() 
+abbr  ~> ^x%[l]r%[d]b%[ook]$
+menu  ~> Book(filename=None, file_contents=None, logfile=sys.stdout, verbosity=0, pickleable=True, use_mmap=USE_MMAP, encoding_override=None, formatting_info=False, ) (class)
+--
+word  ~> =python#xlrd#biff_version() 
+abbr  ~> ^x%[l]r%[d]b%[iff]v%[ersion]$
+menu  ~> biff_version
+--
+word  ~> =python#xlrd#codepage() 
+abbr  ~> ^x%[l]r%[d]c%[odepage]$
+menu  ~> codepage
+--
+word  ~> =python#xlrd#colour_map() 
+abbr  ~> ^x%[l]r%[d]c%[olour]m%[ap]$
+menu  ~> colour_map
+--
+word  ~> =python#xlrd#countries() 
+abbr  ~> ^x%[l]r%[d]c%[ountries]$
+menu  ~> countries
+--
+word  ~> =python#xlrd#datemode() 
+abbr  ~> ^x%[l]r%[d]d%[atemode]$
+menu  ~> datemode
+--
+word  ~> =python#xlrd#encoding() 
+abbr  ~> ^x%[l]r%[d]e%[ncoding]$
+menu  ~> encoding
+--
+word  ~> =python#xlrd#font_list() 
+abbr  ~> ^x%[l]r%[d]f%[ont]l%[ist]$
+menu  ~> font_list
+--
+word  ~> =python#xlrd#format_list() 
+abbr  ~> ^x%[l]r%[d]f%[ormat]l%[ist]$
+menu  ~> format_list
+--
+word  ~> =python#xlrd#format_map() 
+abbr  ~> ^x%[l]r%[d]f%[ormat]m%[ap]$
+menu  ~> format_map
+--
+word  ~> =python#xlrd#load_time_stage_1() 
+abbr  ~> ^x%[l]r%[d]l%[oad]t%[ime]s%[tage]1$
+menu  ~> load_time_stage_1
+--
+word  ~> =python#xlrd#load_time_stage_2() 
+abbr  ~> ^x%[l]r%[d]l%[oad]t%[ime]s%[tage]2$
+menu  ~> load_time_stage_2
+--
+word  ~> =python#xlrd#name_and_scope_map() 
+abbr  ~> ^x%[l]r%[d]n%[ame]a%[nd]s%[cope]m%[ap]$
+menu  ~> name_and_scope_map
+--
+word  ~> =python#xlrd#name_map() 
+abbr  ~> ^x%[l]r%[d]n%[ame]m%[ap]$
+menu  ~> name_map
+--
+word  ~> =python#xlrd#name_obj_list() 
+abbr  ~> ^x%[l]r%[d]n%[ame]o%[bj]l%[ist]$
+menu  ~> name_obj_list
+--
+word  ~> =python#xlrd#nsheets() 
+abbr  ~> ^x%[l]r%[d]n%[sheets]$
+menu  ~> nsheets
+--
+word  ~> =python#xlrd#palette_record() 
+abbr  ~> ^x%[l]r%[d]p%[alette]r%[ecord]$
+menu  ~> palette_record
+--
+word  ~> =python#xlrd#sheet_by_index() 
+abbr  ~> ^x%[l]r%[d]s%[heet]b%[y]i%[ndex]$
+menu  ~> sheet_by_index(sheetx)
+--
+word  ~> =python#xlrd#sheet_by_name() 
+abbr  ~> ^x%[l]r%[d]s%[heet]b%[y]n%[ame]$
+menu  ~> sheet_by_name(sheet_name)
+--
+word  ~> =python#xlrd#sheet_names() 
+abbr  ~> ^x%[l]r%[d]s%[heet]n%[ames]$
+menu  ~> sheet_names()
+--
+word  ~> =python#xlrd#sheets() 
+abbr  ~> ^x%[l]r%[d]s%[heets]$
+menu  ~> sheets()
+--
+word  ~> =python#xlrd#style_name_map() 
+abbr  ~> ^x%[l]r%[d]s%[tyle]n%[ame]m%[ap]$
+menu  ~> style_name_map
+--
+word  ~> =python#xlrd#user_name() 
+abbr  ~> ^x%[l]r%[d]u%[ser]n%[ame]$
+menu  ~> user_name
+--
+word  ~> =python#xlrd#xf_list() 
+abbr  ~> ^x%[l]r%[d]x%[f]l%[ist]$
+menu  ~> xf_list
+--
+word  ~> =python#xlrd#Cell() 
+abbr  ~> ^x%[l]r%[d]c%[ell]$
+menu  ~> Cell(ctype, value, xf_index=None) (class)
+--
+word  ~> =python#xlrd#Colinfo() 
+abbr  ~> ^x%[l]r%[d]c%[olinfo]$
+menu  ~> Colinfo (class)
+--
+word  ~> =python#xlrd#bit1_flag() 
+abbr  ~> ^x%[l]r%[d]b%[it1]f%[lag]$
+menu  ~> bit1_flag
+--
+word  ~> =python#xlrd#collapsed() 
+abbr  ~> ^x%[l]r%[d]c%[ollapsed]$
+menu  ~> collapsed
+--
+word  ~> =python#xlrd#hidden() 
+abbr  ~> ^x%[l]r%[d]h%[idden]$
+menu  ~> hidden
+--
+word  ~> =python#xlrd#outline_level() 
+abbr  ~> ^x%[l]r%[d]o%[utline]l%[evel]$
+menu  ~> outline_level
+--
+word  ~> =python#xlrd#width() 
+abbr  ~> ^x%[l]r%[d]w%[idth]$
+menu  ~> width
+--
+word  ~> =python#xlrd#xf_index() 
+abbr  ~> ^x%[l]r%[d]x%[f]i%[ndex]$
+menu  ~> xf_index
+--
+word  ~> =python#xlrd#EqNeAttrs() 
+abbr  ~> ^x%[l]r%[d]e%[qneattrs]$
+menu  ~> EqNeAttrs (class)
+--
+word  ~> =python#xlrd#Font() 
+abbr  ~> ^x%[l]r%[d]f%[ont]$
+menu  ~> Font (class)
+--
+word  ~> =python#xlrd#bold() 
+abbr  ~> ^x%[l]r%[d]b%[old]$
+menu  ~> bold
+--
+word  ~> =python#xlrd#character_set() 
+abbr  ~> ^x%[l]r%[d]c%[haracter]s%[et]$
+menu  ~> character_set
+--
+word  ~> =python#xlrd#colour_index() 
+abbr  ~> ^x%[l]r%[d]c%[olour]i%[ndex]$
+menu  ~> colour_index
+--
+word  ~> =python#xlrd#escapement() 
+abbr  ~> ^x%[l]r%[d]e%[scapement]$
+menu  ~> escapement
+--
+word  ~> =python#xlrd#family() 
+abbr  ~> ^x%[l]r%[d]f%[amily]$
+menu  ~> family
+--
+word  ~> =python#xlrd#font_index() 
+abbr  ~> ^x%[l]r%[d]f%[ont]i%[ndex]$
+menu  ~> font_index
+--
+word  ~> =python#xlrd#height() 
+abbr  ~> ^x%[l]r%[d]h%[eight]$
+menu  ~> height
+--
+word  ~> =python#xlrd#italic() 
+abbr  ~> ^x%[l]r%[d]i%[talic]$
+menu  ~> italic
+--
+word  ~> =python#xlrd#name() 
+abbr  ~> ^x%[l]r%[d]n%[ame]$
+menu  ~> name
+--
+word  ~> =python#xlrd#outline() 
+abbr  ~> ^x%[l]r%[d]o%[utline]$
+menu  ~> outline
+--
+word  ~> =python#xlrd#shadow() 
+abbr  ~> ^x%[l]r%[d]s%[hadow]$
+menu  ~> shadow
+--
+word  ~> =python#xlrd#struck_out() 
+abbr  ~> ^x%[l]r%[d]s%[truck]o%[ut]$
+menu  ~> struck_out
+--
+word  ~> =python#xlrd#underline_type() 
+abbr  ~> ^x%[l]r%[d]u%[nderline]t%[ype]$
+menu  ~> underline_type
+--
+word  ~> =python#xlrd#underlined() 
+abbr  ~> ^x%[l]r%[d]u%[nderlined]$
+menu  ~> underlined
+--
+word  ~> =python#xlrd#weight() 
+abbr  ~> ^x%[l]r%[d]w%[eight]$
+menu  ~> weight
+--
+word  ~> =python#xlrd#Format() 
+abbr  ~> ^x%[l]r%[d]f%[ormat]$
+menu  ~> Format(format_key, ty, format_str) (class)
+--
+word  ~> =python#xlrd#format_key() 
+abbr  ~> ^x%[l]r%[d]f%[ormat]k%[ey]$
+menu  ~> format_key
+--
+word  ~> =python#xlrd#format_str() 
+abbr  ~> ^x%[l]r%[d]f%[ormat]s%[tr]$
+menu  ~> format_str
+--
+word  ~> =python#xlrd#type() 
+abbr  ~> ^x%[l]r%[d]t%[ype]$
+menu  ~> type
+--
+word  ~> =python#xlrd#Name() 
+abbr  ~> ^x%[l]r%[d]n%[ame]$
+menu  ~> Name (class)
+--
+word  ~> =python#xlrd#binary() 
+abbr  ~> ^x%[l]r%[d]b%[inary]$
+menu  ~> binary
+--
+word  ~> =python#xlrd#builtin() 
+abbr  ~> ^x%[l]r%[d]b%[uiltin]$
+menu  ~> builtin
+--
+word  ~> =python#xlrd#cell() 
+abbr  ~> ^x%[l]r%[d]c%[ell]$
+menu  ~> cell()
+--
+word  ~> =python#xlrd#complex() 
+abbr  ~> ^x%[l]r%[d]c%[omplex]$
+menu  ~> complex
+--
+word  ~> =python#xlrd#func() 
+abbr  ~> ^x%[l]r%[d]f%[unc]$
+menu  ~> func
+--
+word  ~> =python#xlrd#funcgroup() 
+abbr  ~> ^x%[l]r%[d]f%[uncgroup]$
+menu  ~> funcgroup
+--
+word  ~> =python#xlrd#hidden() 
+abbr  ~> ^x%[l]r%[d]h%[idden]$
+menu  ~> hidden
+--
+word  ~> =python#xlrd#macro() 
+abbr  ~> ^x%[l]r%[d]m%[acro]$
+menu  ~> macro
+--
+word  ~> =python#xlrd#name() 
+abbr  ~> ^x%[l]r%[d]n%[ame]$
+menu  ~> name
+--
+word  ~> =python#xlrd#name_index() 
+abbr  ~> ^x%[l]r%[d]n%[ame]i%[ndex]$
+menu  ~> name_index
+--
+word  ~> =python#xlrd#raw_formula() 
+abbr  ~> ^x%[l]r%[d]r%[aw]f%[ormula]$
+menu  ~> raw_formula
+--
+word  ~> =python#xlrd#result() 
+abbr  ~> ^x%[l]r%[d]r%[esult]$
+menu  ~> result
+--
+word  ~> =python#xlrd#scope() 
+abbr  ~> ^x%[l]r%[d]s%[cope]$
+menu  ~> scope
+--
+word  ~> =python#xlrd#vbasic() 
+abbr  ~> ^x%[l]r%[d]v%[basic]$
+menu  ~> vbasic
+--
+word  ~> =python#xlrd#Operand() 
+abbr  ~> ^x%[l]r%[d]o%[perand]$
+menu  ~> Operand(akind=None, avalue=None, arank=0, atext='?') (class)
+--
+word  ~> =python#xlrd#kind() 
+abbr  ~> ^x%[l]r%[d]k%[ind]$
+menu  ~> kind
+--
+word  ~> =python#xlrd#text() 
+abbr  ~> ^x%[l]r%[d]t%[ext]$
+menu  ~> text
+--
+word  ~> =python#xlrd#value() 
+abbr  ~> ^x%[l]r%[d]v%[alue]$
+menu  ~> value
+--
+word  ~> =python#xlrd#Ref3D() 
+abbr  ~> ^x%[l]r%[d]r%[ef3d]$
+menu  ~> Ref3D(atuple) (class)
+--
+word  ~> =python#xlrd#Rowinfo() 
+abbr  ~> ^x%[l]r%[d]r%[owinfo]$
+menu  ~> Rowinfo (class)
+--
+word  ~> =python#xlrd#additional_space_above() 
+abbr  ~> ^x%[l]r%[d]a%[dditional]s%[pace]a%[bove]$
+menu  ~> additional_space_above
+--
+word  ~> =python#xlrd#additional_space_below() 
+abbr  ~> ^x%[l]r%[d]a%[dditional]s%[pace]b%[elow]$
+menu  ~> additional_space_below
+--
+word  ~> =python#xlrd#has_default_height() 
+abbr  ~> ^x%[l]r%[d]h%[as]d%[efault]h%[eight]$
+menu  ~> has_default_height
+--
+word  ~> =python#xlrd#has_default_xf_index() 
+abbr  ~> ^x%[l]r%[d]h%[as]d%[efault]x%[f]i%[ndex]$
+menu  ~> has_default_xf_index
+--
+word  ~> =python#xlrd#height() 
+abbr  ~> ^x%[l]r%[d]h%[eight]$
+menu  ~> height
+--
+word  ~> =python#xlrd#height_mismatch() 
+abbr  ~> ^x%[l]r%[d]h%[eight]m%[ismatch]$
+menu  ~> height_mismatch
+--
+word  ~> =python#xlrd#hidden() 
+abbr  ~> ^x%[l]r%[d]h%[idden]$
+menu  ~> hidden
+--
+word  ~> =python#xlrd#outline_group_starts_ends() 
+abbr  ~> ^x%[l]r%[d]o%[utline]g%[roup]s%[tarts]e%[nds]$
+menu  ~> outline_group_starts_ends
+--
+word  ~> =python#xlrd#outline_level() 
+abbr  ~> ^x%[l]r%[d]o%[utline]l%[evel]$
+menu  ~> outline_level
+--
+word  ~> =python#xlrd#xf_index() 
+abbr  ~> ^x%[l]r%[d]x%[f]i%[ndex]$
+menu  ~> xf_index
+--
+word  ~> =python#xlrd#Sheet() 
+abbr  ~> ^x%[l]r%[d]s%[heet]$
+menu  ~> Sheet(book, position, name, number) (class)
+--
+word  ~> =python#xlrd#cell() 
+abbr  ~> ^x%[l]r%[d]c%[ell]$
+menu  ~> cell(rowx, colx)
+--
+word  ~> =python#xlrd#cell_type() 
+abbr  ~> ^x%[l]r%[d]c%[ell]t%[ype]$
+menu  ~> cell_type(rowx, colx)
+--
+word  ~> =python#xlrd#cell_value() 
+abbr  ~> ^x%[l]r%[d]c%[ell]v%[alue]$
+menu  ~> cell_value(rowx, colx)
+--
+word  ~> =python#xlrd#cell_xf_index() 
+abbr  ~> ^x%[l]r%[d]c%[ell]x%[f]i%[ndex]$
+menu  ~> cell_xf_index(rowx, colx)
+--
+word  ~> =python#xlrd#col() 
+abbr  ~> ^x%[l]r%[d]c%[ol]$
+menu  ~> col(colx)
+--
+word  ~> =python#xlrd#col_label_ranges() 
+abbr  ~> ^x%[l]r%[d]c%[ol]l%[abel]r%[anges]$
+menu  ~> col_label_ranges
+--
+word  ~> =python#xlrd#col_slice() 
+abbr  ~> ^x%[l]r%[d]c%[ol]s%[lice]$
+menu  ~> col_slice(colx, start_rowx=0, end_rowx=None)
+--
+word  ~> =python#xlrd#col_types() 
+abbr  ~> ^x%[l]r%[d]c%[ol]t%[ypes]$
+menu  ~> col_types(colx, start_rowx=0, end_rowx=None)
+--
+word  ~> =python#xlrd#col_values() 
+abbr  ~> ^x%[l]r%[d]c%[ol]v%[alues]$
+menu  ~> col_values(colx, start_rowx=0, end_rowx=None)
+--
+word  ~> =python#xlrd#colinfo_map() 
+abbr  ~> ^x%[l]r%[d]c%[olinfo]m%[ap]$
+menu  ~> colinfo_map
+--
+word  ~> =python#xlrd#computed_column_width() 
+abbr  ~> ^x%[l]r%[d]c%[omputed]c%[olumn]w%[idth]$
+menu  ~> computed_column_width(colx)
+--
+word  ~> =python#xlrd#default_additional_space_above() 
+abbr  ~> ^x%[l]r%[d]d%[efault]a%[dditional]s%[pace]a%[bove]$
+menu  ~> default_additional_space_above
+--
+word  ~> =python#xlrd#default_additional_space_below() 
+abbr  ~> ^x%[l]r%[d]d%[efault]a%[dditional]s%[pace]b%[elow]$
+menu  ~> default_additional_space_below
+--
+word  ~> =python#xlrd#default_row_height() 
+abbr  ~> ^x%[l]r%[d]d%[efault]r%[ow]h%[eight]$
+menu  ~> default_row_height
+--
+word  ~> =python#xlrd#default_row_height_mismatch() 
+abbr  ~> ^x%[l]r%[d]d%[efault]r%[ow]h%[eight]m%[ismatch]$
+menu  ~> default_row_height_mismatch
+--
+word  ~> =python#xlrd#default_row_hidden() 
+abbr  ~> ^x%[l]r%[d]d%[efault]r%[ow]h%[idden]$
+menu  ~> default_row_hidden
+--
+word  ~> =python#xlrd#defcolwidth() 
+abbr  ~> ^x%[l]r%[d]d%[efcolwidth]$
+menu  ~> defcolwidth
+--
+word  ~> =python#xlrd#gcw() 
+abbr  ~> ^x%[l]r%[d]g%[cw]$
+menu  ~> gcw
+--
+word  ~> =python#xlrd#merged_cells() 
+abbr  ~> ^x%[l]r%[d]m%[erged]c%[ells]$
+menu  ~> merged_cells
+--
+word  ~> =python#xlrd#name() 
+abbr  ~> ^x%[l]r%[d]n%[ame]$
+menu  ~> name
+--
+word  ~> =python#xlrd#ncols() 
+abbr  ~> ^x%[l]r%[d]n%[cols]$
+menu  ~> ncols
+--
+word  ~> =python#xlrd#nrows() 
+abbr  ~> ^x%[l]r%[d]n%[rows]$
+menu  ~> nrows
+--
+word  ~> =python#xlrd#row() 
+abbr  ~> ^x%[l]r%[d]r%[ow]$
+menu  ~> row(rowx)
+--
+word  ~> =python#xlrd#row_label_ranges() 
+abbr  ~> ^x%[l]r%[d]r%[ow]l%[abel]r%[anges]$
+menu  ~> row_label_ranges
+--
+word  ~> =python#xlrd#row_slice() 
+abbr  ~> ^x%[l]r%[d]r%[ow]s%[lice]$
+menu  ~> row_slice(rowx, start_colx=0, end_colx=None)
+--
+word  ~> =python#xlrd#row_types() 
+abbr  ~> ^x%[l]r%[d]r%[ow]t%[ypes]$
+menu  ~> row_types(rowx, start_colx=0, end_colx=None)
+--
+word  ~> =python#xlrd#row_values() 
+abbr  ~> ^x%[l]r%[d]r%[ow]v%[alues]$
+menu  ~> row_values(rowx, start_colx=0, end_colx=None)
+--
+word  ~> =python#xlrd#rowinfo_map() 
+abbr  ~> ^x%[l]r%[d]r%[owinfo]m%[ap]$
+menu  ~> rowinfo_map
+--
+word  ~> =python#xlrd#standardwidth() 
+abbr  ~> ^x%[l]r%[d]s%[tandardwidth]$
+menu  ~> standardwidth
+--
+word  ~> =python#xlrd#visibility() 
+abbr  ~> ^x%[l]r%[d]v%[isibility]$
+menu  ~> visibility
+--
+word  ~> =python#xlrd#XF() 
+abbr  ~> ^x%[l]r%[d]x%[f]$
+menu  ~> XF (class)
+--
+word  ~> =python#xlrd#_alignment_flag() 
+abbr  ~> ^x%[l]r%[d]a%[lignment]f%[lag]$
+menu  ~> _alignment_flag
+--
+word  ~> =python#xlrd#_background_flag() 
+abbr  ~> ^x%[l]r%[d]b%[ackground]f%[lag]$
+menu  ~> _background_flag
+--
+word  ~> =python#xlrd#_border_flag() 
+abbr  ~> ^x%[l]r%[d]b%[order]f%[lag]$
+menu  ~> _border_flag
+--
+word  ~> =python#xlrd#_font_flag() 
+abbr  ~> ^x%[l]r%[d]f%[ont]f%[lag]$
+menu  ~> _font_flag
+--
+word  ~> =python#xlrd#_format_flag() 
+abbr  ~> ^x%[l]r%[d]f%[ormat]f%[lag]$
+menu  ~> _format_flag
+--
+word  ~> =python#xlrd#_protection_flag() 
+abbr  ~> ^x%[l]r%[d]p%[rotection]f%[lag]$
+menu  ~> _protection_flag
+--
+word  ~> =python#xlrd#alignment() 
+abbr  ~> ^x%[l]r%[d]a%[lignment]$
+menu  ~> alignment
+--
+word  ~> =python#xlrd#background() 
+abbr  ~> ^x%[l]r%[d]b%[ackground]$
+menu  ~> background
+--
+word  ~> =python#xlrd#border() 
+abbr  ~> ^x%[l]r%[d]b%[order]$
+menu  ~> border
+--
+word  ~> =python#xlrd#font_index() 
+abbr  ~> ^x%[l]r%[d]f%[ont]i%[ndex]$
+menu  ~> font_index
+--
+word  ~> =python#xlrd#format_key() 
+abbr  ~> ^x%[l]r%[d]f%[ormat]k%[ey]$
+menu  ~> format_key
+--
+word  ~> =python#xlrd#is_style() 
+abbr  ~> ^x%[l]r%[d]i%[s]s%[tyle]$
+menu  ~> is_style
+--
+word  ~> =python#xlrd#parent_style_index() 
+abbr  ~> ^x%[l]r%[d]p%[arent]s%[tyle]i%[ndex]$
+menu  ~> parent_style_index
+--
+word  ~> =python#xlrd#protection() 
+abbr  ~> ^x%[l]r%[d]p%[rotection]$
+menu  ~> protection
+--
+word  ~> =python#xlrd#xf_index() 
+abbr  ~> ^x%[l]r%[d]x%[f]i%[ndex]$
+menu  ~> xf_index
+--
+word  ~> =python#xlrd#XFAlignment() 
+abbr  ~> ^x%[l]r%[d]x%[falignment]$
+menu  ~> XFAlignment (class)
+--
+word  ~> =python#xlrd#hor_align() 
+abbr  ~> ^x%[l]r%[d]h%[or]a%[lign]$
+menu  ~> hor_align
+--
+word  ~> =python#xlrd#indent_level() 
+abbr  ~> ^x%[l]r%[d]i%[ndent]l%[evel]$
+menu  ~> indent_level
+--
+word  ~> =python#xlrd#rotation() 
+abbr  ~> ^x%[l]r%[d]r%[otation]$
+menu  ~> rotation
+--
+word  ~> =python#xlrd#shrink_to_fit() 
+abbr  ~> ^x%[l]r%[d]s%[hrink]t%[o]f%[it]$
+menu  ~> shrink_to_fit
+--
+word  ~> =python#xlrd#text_direction() 
+abbr  ~> ^x%[l]r%[d]t%[ext]d%[irection]$
+menu  ~> text_direction
+--
+word  ~> =python#xlrd#text_wrapped() 
+abbr  ~> ^x%[l]r%[d]t%[ext]w%[rapped]$
+menu  ~> text_wrapped
+--
+word  ~> =python#xlrd#vert_align() 
+abbr  ~> ^x%[l]r%[d]v%[ert]a%[lign]$
+menu  ~> vert_align
+--
+word  ~> =python#xlrd#XFBackground() 
+abbr  ~> ^x%[l]r%[d]x%[fbackground]$
+menu  ~> XFBackground (class)
+--
+word  ~> =python#xlrd#background_colour_index() 
+abbr  ~> ^x%[l]r%[d]b%[ackground]c%[olour]i%[ndex]$
+menu  ~> background_colour_index
+--
+word  ~> =python#xlrd#fill_pattern() 
+abbr  ~> ^x%[l]r%[d]f%[ill]p%[attern]$
+menu  ~> fill_pattern
+--
+word  ~> =python#xlrd#pattern_colour_index() 
+abbr  ~> ^x%[l]r%[d]p%[attern]c%[olour]i%[ndex]$
+menu  ~> pattern_colour_index
+--
+word  ~> =python#xlrd#XFBorder() 
+abbr  ~> ^x%[l]r%[d]x%[fborder]$
+menu  ~> XFBorder (class)
+--
+word  ~> =python#xlrd#bottom_colour_index() 
+abbr  ~> ^x%[l]r%[d]b%[ottom]c%[olour]i%[ndex]$
+menu  ~> bottom_colour_index
+--
+word  ~> =python#xlrd#bottom_line_style() 
+abbr  ~> ^x%[l]r%[d]b%[ottom]l%[ine]s%[tyle]$
+menu  ~> bottom_line_style
+--
+word  ~> =python#xlrd#diag_colour_index() 
+abbr  ~> ^x%[l]r%[d]d%[iag]c%[olour]i%[ndex]$
+menu  ~> diag_colour_index
+--
+word  ~> =python#xlrd#diag_down() 
+abbr  ~> ^x%[l]r%[d]d%[iag]d%[own]$
+menu  ~> diag_down
+--
+word  ~> =python#xlrd#diag_line_style() 
+abbr  ~> ^x%[l]r%[d]d%[iag]l%[ine]s%[tyle]$
+menu  ~> diag_line_style
+--
+word  ~> =python#xlrd#diag_up() 
+abbr  ~> ^x%[l]r%[d]d%[iag]u%[p]$
+menu  ~> diag_up
+--
+word  ~> =python#xlrd#left_colour_index() 
+abbr  ~> ^x%[l]r%[d]l%[eft]c%[olour]i%[ndex]$
+menu  ~> left_colour_index
+--
+word  ~> =python#xlrd#left_line_style() 
+abbr  ~> ^x%[l]r%[d]l%[eft]l%[ine]s%[tyle]$
+menu  ~> left_line_style
+--
+word  ~> =python#xlrd#right_colour_index() 
+abbr  ~> ^x%[l]r%[d]r%[ight]c%[olour]i%[ndex]$
+menu  ~> right_colour_index
+--
+word  ~> =python#xlrd#right_line_style() 
+abbr  ~> ^x%[l]r%[d]r%[ight]l%[ine]s%[tyle]$
+menu  ~> right_line_style
+--
+word  ~> =python#xlrd#top_colour_index() 
+abbr  ~> ^x%[l]r%[d]t%[op]c%[olour]i%[ndex]$
+menu  ~> top_colour_index
+--
+word  ~> =python#xlrd#top_line_style() 
+abbr  ~> ^x%[l]r%[d]t%[op]l%[ine]s%[tyle]$
+menu  ~> top_line_style
+--
+word  ~> =python#xlrd#XFProtection() 
+abbr  ~> ^x%[l]r%[d]x%[fprotection]$
+menu  ~> XFProtection (class)
+--
+word  ~> =python#xlrd#cell_locked() 
+abbr  ~> ^x%[l]r%[d]c%[ell]l%[ocked]$
+menu  ~> cell_locked
+--
+word  ~> =python#xlrd#formula_hidden() 
+abbr  ~> ^x%[l]r%[d]f%[ormula]h%[idden]$
+menu  ~> formula_hidden
+--
+
+

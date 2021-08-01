@@ -1,0 +1,150 @@
+# open csv file
+word  ~> =perl#csv#open() 
+abbr  ~> ^t%[ext]c%[sv]o%[pen]$
+menu  ~> open
+--
+
+#Unicode (UTF8)
+word  ~> $csv -> Unicode (maa)`aa
+abbr  ~> ^t%[ext]c%[sv]u%[nicode]$
+menu  ~> Unicode (UTF8)
+--
+
+#version ()
+word  ~> $csv -> version (maa)`aa
+abbr  ~> ^t%[ext]c%[sv]v%[ersion]$
+menu  ~> version ()
+--
+
+#new (\%attr)
+word  ~> my $csv = Text::CSV_PP -> new ();$csv -> eol ("\n");
+abbr  ~> ^t%[ext]c%[sv]n%[ew]$
+menu  ~> new (\%attr)
+--
+
+#print
+word  ~> $csv -> print(maa);`aa
+abbr  ~> ^t%[ext]c%[sv]p%[rint]$
+menu  ~> print
+--
+
+#combine
+word  ~> $csv -> combine(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]c%[ombine]$
+menu  ~> combine
+--
+
+#string
+word  ~> $csv -> string(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]s%[tring]$
+menu  ~> string
+--
+
+#getline
+word  ~> $csv -> getline(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]g%[etline]$
+menu  ~> getline
+--
+
+#getline_all
+word  ~> $csv -> getline_all(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]g%[etline]a%[ll]$
+menu  ~> getline_all
+--
+
+#parse
+word  ~> $csv -> parse(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]p%[arse]$
+menu  ~> parse
+--
+
+#getline_hr
+word  ~> $csv -> getline_hr(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]g%[etline]h%[r]$
+menu  ~> getline_hr
+--
+
+#getline_hr_all
+word  ~> $csv -> getline_hr_all(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]g%[etline]h%[r]a%[ll]$
+menu  ~> getline_hr_all
+--
+
+#column_names
+word  ~> $csv -> column_names(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]c%[olumn]n%[ames]$
+menu  ~> column_names
+--
+
+#bind_columns
+word  ~> $csv -> bind_columns(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]b%[ind]c%[olumns]$
+menu  ~> bind_columns
+--
+
+#eol
+word  ~> $csv -> eol("\n");
+abbr  ~> ^t%[ext]c%[sv]e%[ol]$
+menu  ~> eol
+--
+
+#eof
+word  ~> $csv -> eof(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]e%[of]$
+menu  ~> eof
+--
+
+#types
+word  ~> $csv -> types(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]t%[ypes]$
+menu  ~> types
+--
+
+#fields
+word  ~> $csv -> fields(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]f%[ields]$
+menu  ~> fields
+--
+
+#meta_info
+word  ~> $csv -> meta_info(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]m%[eta]i%[nfo]$
+menu  ~> meta_info
+--
+
+#is_quoted
+word  ~> $csv -> is_quoted(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]i%[s]q%[uoted]$
+menu  ~> is_quoted
+--
+
+#is_binary
+word  ~> $csv -> is_binary(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]i%[s]b%[inary]$
+menu  ~> is_binary
+--
+
+#status
+word  ~> $csv -> status(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]s%[tatus]$
+menu  ~> status
+--
+
+#error_input
+word  ~> $csv -> error_input(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]e%[rror]i%[nput]$
+menu  ~> error_input
+--
+
+#error_diag
+word  ~> $csv -> error_diag(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]e%[rror]d%[iag]$
+menu  ~> error_diag
+--
+
+#SetDiag
+word  ~> $csv -> SetDiag(maa)`aa
+abbr  ~> ^t%[ext]c%[sv]s%[etdiag]$
+menu  ~> SetDiag
+--
+

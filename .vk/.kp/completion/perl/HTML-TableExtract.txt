@@ -1,0 +1,24 @@
+#new
+word  ~> my $te = HTML::TableExtract -> new(headers => [qw(maa)])`aa
+abbr  ~> ^h%[tml]t%[able]%[extract]n%[ew]$
+menu  ~> HTML::TableExtract -> new
+--
+
+#parse
+word  ~> $te->parse(maa);`aa
+abbr  ~> ^h%[tml]t%[able]%[extract]p%[arse]$
+menu  ~> $te->parse($html_string);
+--
+
+#tables
+word  ~> $te->tables
+abbr  ~> ^h%[tml]t%[able]%[extract]t%[ables]$
+menu  ~> $te->tables
+--
+
+#rows
+word  ~> $te->rows
+abbr  ~> ^h%[tml]t%[able]%[extract]r%[ows]$
+menu  ~> $te->rows
+--
+

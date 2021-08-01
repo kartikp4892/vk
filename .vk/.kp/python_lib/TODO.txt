@@ -1,0 +1,2 @@
+1. Goto tag where handle of the current class is declared.
+2. Goto tag where current variable is assigned.

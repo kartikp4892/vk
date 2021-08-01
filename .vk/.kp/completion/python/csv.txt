@@ -1,0 +1,144 @@
+word  ~> =python#csv#open() 
+abbr  ~> ^c%[sv]o%[pen]$
+menu  ~> csv.open()
+--
+word  ~> =python#csv#reader() 
+abbr  ~> ^c%[sv]r%[eader]$
+menu  ~> csv.reader()
+--
+word  ~> =python#csv#register_dialect() 
+abbr  ~> ^c%[sv]r%[egister_]d%[ialect]$
+menu  ~> csv.register_dialect()
+--
+word  ~> =python#csv#unregister_dialect() 
+abbr  ~> ^c%[sv]u%[nregister_]d%[ialect]$
+menu  ~> csv.unregister_dialect()
+--
+word  ~> =python#csv#get_dialect() 
+abbr  ~> ^c%[sv]g%[et_]d%[ialect]$
+menu  ~> csv.get_dialect()
+--
+word  ~> =python#csv#list_dialects() 
+abbr  ~> ^c%[sv]l%[ist_]d%[ialects]$
+menu  ~> csv.list_dialects()
+--
+word  ~> =python#csv#field_size_limit() 
+abbr  ~> ^c%[sv]f%[ield_]s%[ize_]l%[imit]$
+menu  ~> csv.field_size_limit()
+--
+word  ~> =python#csv#DictReader() 
+abbr  ~> ^c%[sv]d%[ict]r%[eader]$
+menu  ~> csv.DictReader()
+--
+word  ~> =python#csv#DictWriter() 
+abbr  ~> ^c%[sv]d%[ict]w%[riter]$
+menu  ~> csv.DictWriter()
+--
+word  ~> =python#csv#Dialect() 
+abbr  ~> ^c%[sv]d%[ialect]$
+menu  ~> csv.Dialect()
+--
+word  ~> =python#csv#excel() 
+abbr  ~> ^c%[sv]e%[xcel]$
+menu  ~> csv.excel()
+--
+word  ~> =python#csv#excel_tab() 
+abbr  ~> ^c%[sv]e%[xcel_]t%[ab]$
+menu  ~> csv.excel_tab()
+--
+word  ~> =python#csv#Sniffer() 
+abbr  ~> ^c%[sv]s%[niffer]$
+menu  ~> csv.Sniffer()
+--
+word  ~> =python#csv#QUOTE_ALL() 
+abbr  ~> ^c%[sv]Q%[UOTE_]%[ALL]$
+menu  ~> csv.QUOTE_ALL()
+--
+word  ~> =python#csv#QUOTE_MINIMAL() 
+abbr  ~> ^c%[sv]Q%[UOTE_]%[MINIMAL]$
+menu  ~> csv.QUOTE_MINIMAL()
+--
+word  ~> =python#csv#QUOTE_NONNUMERIC() 
+abbr  ~> ^c%[sv]Q%[UOTE_]%[NON]%[NUMERIC]$
+menu  ~> csv.QUOTE_NONNUMERIC()
+--
+word  ~> =python#csv#QUOTE_NONE() 
+abbr  ~> ^c%[sv]Q%[UOTE_]%[NONE]$
+menu  ~> csv.QUOTE_NONE()
+--
+word  ~> =python#csv#try_except() 
+abbr  ~> ^c%[sv]t%[ry_]%[except]$
+menu  ~> csv.try_except()
+--
+word  ~> =python#csv#writer() 
+abbr  ~> ^c%[sv]%[writer]$
+menu  ~> csv.writer()
+--
+word  ~> =python#csv#csvwriter_writerow() 
+abbr  ~> ^c%[sv]%[writer]w%[rite]%[row]$
+menu  ~> csv.csvwriter_writerow()
+--
+word  ~> =python#csv#csvwriter_writerow() 
+abbr  ~> ^c%[sv]%[writer]$
+menu  ~> csv.csvwriter_writerow()
+--
+word  ~> =python#csv#csvwriter_dialect() 
+abbr  ~> ^c%[sv]%[writer]d%[ialect]$
+menu  ~> csv.csvwriter_dialect()
+--
+word  ~> =python#csv#csvwriter_writerows() 
+abbr  ~> ^c%[sv]%[writer]w%[rite]%[row]s$
+menu  ~> csv.csvwriter_writerows()
+--
+word  ~> =python#csv#Dictwriter_writeheader() 
+abbr  ~> ^d%[ict]%[writer]w%[rite]%[header]$
+menu  ~> csv.Dictwriter_writeheader()
+--
+word  ~> =python#csv#csvreader_next() 
+abbr  ~> ^c%[sv]%[reader]n%[ext]$
+menu  ~> csv.csvreader_next()
+--
+word  ~> =python#csv#csvreader_dialect() 
+abbr  ~> ^c%[sv]%[reader]d%[ialect]$
+menu  ~> csv.csvreader_dialect()
+--
+word  ~> =python#csv#csvreader_line_num() 
+abbr  ~> ^c%[sv]%[reader]l%[ine_]%[num]$
+menu  ~> csv.csvreader_line_num()
+--
+word  ~> =python#csv#csvreader_fieldnames() 
+abbr  ~> ^c%[sv]%[reader]f%[ield]%[name]s$
+menu  ~> csv.csvreader_fieldnames()
+--
+word  ~> =python#csv#dialect_delimiter() 
+abbr  ~> ^d%[ialect]d%[elimiter]$
+menu  ~> csv.dialect_delimiter()
+--
+word  ~> =python#csv#dialect_doublequote() 
+abbr  ~> ^d%[ialect]d%[ouble]%[quote]$
+menu  ~> csv.dialect_doublequote()
+--
+word  ~> =python#csv#dialect_escapechar() 
+abbr  ~> ^d%[ialect]e%[scape]%[char]$
+menu  ~> csv.dialect_escapechar()
+--
+word  ~> =python#csv#dialect_lineterminator() 
+abbr  ~> ^d%[ialect]l%[ine]%[terminator]$
+menu  ~> csv.dialect_lineterminator()
+--
+word  ~> =python#csv#dialect_quotechar() 
+abbr  ~> ^d%[ialect]q%[uote]c%[har]$
+menu  ~> csv.dialect_quotechar()
+--
+word  ~> =python#csv#dialect_quoting() 
+abbr  ~> ^d%[ialect]q%[uoting]$
+menu  ~> csv.dialect_quoting()
+--
+word  ~> =python#csv#dialect_skipinitialspace() 
+abbr  ~> ^d%[ialect]s%[kip]%[initial]%[space]$
+menu  ~> csv.dialect_skipinitialspace()
+--
+word  ~> =python#csv#dialect_strict() 
+abbr  ~> ^d%[ialect]s%[trict]$
+menu  ~> csv.dialect_strict()
+--

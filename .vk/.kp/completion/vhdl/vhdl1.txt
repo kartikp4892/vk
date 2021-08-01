@@ -1,0 +1,110 @@
+# word	        the text that will be inserted, mandatory
+# abbr	        abbreviation of "word"; when not empty it is used in
+# 	        the menu instead of "word"
+# menu	        extra text for the popup menu, displayed after "word"
+# 	        or "abbr"
+# info	        more information about the item, can be displayed in a
+# 	        preview window
+# kind	        single letter indicating the type of completion
+# icase	        when non-zero case is to be ignored when comparing
+# 	        items to be equal; when omitted zero is used, thus
+# 	        items that only differ in case are added
+# dup	        when non-zero this match will be added even when an
+# 	        item with the same word is already present.
+# 
+word ~> ENTITY 
+abbr ~> entity
+kind ~> e
+--
+word ~> ARCHITECTURE 
+abbr ~> architecture
+kind ~> a
+--
+word ~> SIGNAL 
+abbr ~> signal
+kind ~> s
+--
+word ~> VARIABLE 
+abbr ~> variable
+kind ~> v
+--
+word ~> STD_LOGIC 
+abbr ~> std_logic
+kind ~> t
+--
+word ~> STD_LOGIC_VECTOR ( maa downto mba )`aa
+abbr ~> std_logic_vector
+kind ~> t
+--
+word ~> BEGIN 
+       \  maa 
+       \END`aa
+abbr ~> begin
+kind ~> b
+--
+word ~> END 
+abbr ~> end
+kind ~> k
+--
+word ~> WHILE 
+       \     
+       \BEGIN 
+       \  maa 
+       \END 
+       \ 
+       \ENDWHILE`aa
+abbr ~> while
+kind ~> b
+--
+word ~> COMPONENT 
+abbr ~> component
+kind ~> k
+--
+word ~> SHARED 
+abbr ~> shared
+kind ~> k
+--
+word ~> INTEGER 
+abbr ~> integer
+kind ~> k
+--
+word ~> BOOLEAN 
+abbr ~> boolean
+kind ~> k
+--
+word ~> TRUE 
+abbr ~> true
+kind ~> k
+--
+word ~> FALSE 
+abbr ~> false
+kind ~> k
+--
+word ~> PROCESS 
+abbr ~> process
+kind ~> k
+--
+word ~> PROCEDURE 
+abbr ~> procedure
+kind ~> k
+--
+word ~> FUNCTION 
+abbr ~> function
+kind ~> k
+--
+word ~> '0'
+abbr ~> 0
+kind ~> v
+--
+word ~> '1'
+abbr ~> 1
+kind ~> v
+--
+word ~> 'Z'
+abbr ~> z
+kind ~> v
+--
+word ~> ( others => 'maa' )`aa
+abbr ~> others
+kind ~> k
+--

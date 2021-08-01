@@ -1,0 +1,4 @@
+# Loading sv_std.std
+# Loading work.fpga3_com_typedef_pkg(fast)
+# UVM_INFO /home/kartikp/projects/bae_ace_fpgas/ace_fpgas/bae_ace_fpgas/trunk/IFCE_ACE_NM_COM3/../common/vip/eadin/eadin_monitor.sv(1421) @ 4501700000: reporter [uvm_test_top.env.imb_tx_agt[2].m_monitor.EADIN_CRC_IN_DATA_FIELD_CHECK] PASS : Received CRC in data field, ACT = 0X8512, EXP = 0X8512
+# UVM_INFO /home/kartikp/projects/bae_ace_fpgas/ace_fpgas/bae_ace_fpgas/trunk/IFCE_ACE_NM_COM3/../common/packages/imb_on_eadin/imb_on_eadin_monitor.sv(126) @ 4501700000: reporter [uvm_test_top.env.eadin_to_imb[2].IMB_COMMAND_TYPE_CHECK] PASS : Valid IMB command BULK_WRITE_CMD is received for the message ID 0x20. IMB supports only BULK_WRITE_CMD

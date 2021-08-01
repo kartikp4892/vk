@@ -1,0 +1,120 @@
+# use HTML::Element;
+word  ~> use HTML::Element; 
+abbr  ~> ^u%[se]h%[tml]e%[lement]$
+menu  ~> use HTML::Element
+--
+
+# use HTML::Treebuilder;
+word  ~> use HTML::Treebuilder; 
+abbr  ~> ^u%[se]h%[tml]t%[ree]%[builder]$
+menu  ~> use HTML::Treebuilder
+--
+
+# use HTML::Treebuilder::Xpath;
+word  ~> use HTML::Treebuilder::Xpath; 
+abbr  ~> ^u%[se]h%[tml]t%[ree]%[builder]x%[path]$
+menu  ~> use HTML::Treebuilder::Xpath;
+--
+
+# use Text::CSV_PP;
+word  ~> use Text::CSV_PP; 
+abbr  ~> ^u%[se]t%[ext]c%[sv]%[pp]$
+menu  ~> use Text::CSV_PP
+--
+
+# use Web::Scraper
+word  ~> use Web::Scraper; 
+abbr  ~> ^u%[se]w%[eb]s%[craper]$
+menu  ~> use Web::Scraper
+--
+
+# use WWW::Mechanize::Firefox
+word  ~> use WWW::Mechanize::Firefox; 
+abbr  ~> ^u%[se]w%[ww]m%[echanize]f%[irefox]$
+menu  ~> use WWW::Mechanize::Firefox
+--
+
+# use WWW::Mechanize
+word  ~> use WWW::Mechanize; 
+abbr  ~> ^u%[se]w%[ww]m%[echanize]$
+menu  ~> use WWW::Mechanize;
+--
+
+# use Data::Dump;
+word  ~> use Data::Dump; 
+abbr  ~> ^u%[se]d%[ata]d%[ump]$
+menu  ~> use Data::Dump;
+--
+
+# use Win32::OLE;
+word  ~> use Win32::OLE; 
+abbr  ~> ^u%[se]w%[in32]o%[le]$
+menu  ~> use Win32::OLE;
+--
+
+# use Win32::OLE qw (in);
+word  ~> use Win32::OLE qw (in); 
+abbr  ~> ^u%[se]w%[in32]o%[le]i%[n]
+menu  ~> use Win32::OLE qw (in);
+--
+
+# use Win32::OLE::Const 'Microsoft Excel';
+word  ~> use Win32::OLE::Const 'Microsoft Excel'; 
+abbr  ~> ^u%[se]w%[in32]o%[le]e%[xcel]$
+menu  ~> use Win32::OLE::Const 'Microsoft Excel';
+--
+
+# use Win32::OLE::Const 'Microsoft Word';
+word  ~> use Win32::OLE::Const 'Microsoft Word'; 
+abbr  ~> ^u%[se]w%[in32]o%[le]w%[ord]$
+menu  ~> use Win32::OLE::Const 'Microsoft Word';
+--
+
+# use Cwd;
+word  ~> use Cwd;my $cwd_path = getcwd(); 
+abbr  ~> ^u%[se]c%[wd]$
+menu  ~> use Cwd;
+--
+
+# use Tk;
+word  ~> use Tk; 
+abbr  ~> ^u%[se]t%[k]$
+menu  ~> use Tk;
+--
+
+# use JSON::Parse;
+word  ~> use JSON::Parse; 
+abbr  ~> ^u%[se]j%[son]p%[arse]$
+menu  ~> use JSON::Parse;
+--
+
+# use WWW::Selenium;
+word  ~> use WWW::Selenium; 
+abbr  ~> ^u%[se]w%[ww]s%[elenium]
+menu  ~> use WWW::Selenium;
+--
+
+# use HTML::TableExtract
+word  ~> use HTML::TableExtract; 
+abbr  ~> ^u%[se]h%[tml]t%[able]e%[xtract]$
+menu  ~> use HTML::TableExtract;
+--
+
+# use Parallel::ForkManager
+word  ~> use Parallel::ForkManager; 
+abbr  ~> ^u%[se]p%[arallel]f%[ork]%[manager]$
+menu  ~> use Parallel::ForkManager;
+--
+
+# use Error qw(:try);
+word  ~> use Error qw(:try); 
+abbr  ~> ^u%[se]e%[rror]$
+menu  ~> use Error qw(:try);
+--
+
+# use Tie::File;
+word  ~> use Tie::File; 
+abbr  ~> ^u%[se]t%[ie]f%[ile]$
+menu  ~> use Tie::File;
+--
+

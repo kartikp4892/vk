@@ -1,0 +1,6 @@
+# tie
+word  ~> =perl#tie_file#tie() 
+abbr  ~> ^t%[ie]f%[ile]t%[ie]$
+menu  ~> tie
+--
+

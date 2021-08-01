@@ -1,0 +1,961 @@
+# word	        the text that will be inserted, mandatory
+# abbr	        abbreviation of "word"; when not empty it is used in
+# 	        the menu instead of "word"
+# menu	        extra text for the popup menu, displayed after "word"
+# 	        or "abbr"
+# info	        more information about the item, can be displayed in a
+# 	        preview window
+# kind	        single letter indicating the type of completion
+# icase	        when non-zero case is to be ignored when comparing
+# 	        items to be equal; when omitted zero is used, thus
+# 	        items that only differ in case are added
+# dup	        when non-zero this match will be added even when an
+# 	        item with the same word is already present.
+# 
+
+#################################################################################
+# UVM
+#################################################################################
+# `uvm_component_utils_begin
+--
+word  ~> =sv#uvm#uvm_macros#component_utils_begin() 
+abbr  ~> ^u%[vm]c%[omponent]u%[tils]b%[egin]$
+menu  ~> `uvm_component_utils_begin
+info  ~> Simple (non-parameterized) components must use the uvm_components_utils* versions, which do the following: 
+  \ 
+  \    * Implements get_type_name, which returns TYPE as a string. 
+  \    * Implements create, which allocates a component of type TYPE using a two argument constructor.  TYPE’s constructor must have a name and a parent argument. 
+  \    * Registers the TYPE with the factory, using the string TYPE as the factory lookup string for the type. 
+  \    * Implements the static get_type() method which returns a factory proxy object for the type. 
+  \    * Implements the virtual get_object_type() method which works just like the static get_type() method, but operates on an already allocated object.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_component_param_utils_begin
+--
+word  ~> =sv#uvm#uvm_macros#component_param_utils_begin() 
+abbr  ~> ^u%[vm]c%[omponent]p%[aram]u%[tils]b%[egin]$
+menu  ~> `uvm_component_param_utils_begin
+info  ~> Parameterized classes must use the uvm_object_param_utils* versions.  They differ from `uvm_object_utils only in that they do not supply a type name when registering the object with the factory.  As such, name-based lookup with the factory for parameterized classes is not possible. 
+  \ 
+  \The macros with _begin suffixes are the same as the non-suffixed versions except that they also start a block in which `uvm_field_* macros can be placed.  The block must be terminated by `uvm_component_utils_end. 
+  \ 
+  \Components deriving from uvm_sequencer must use the `uvm_sequencer_* macros instead of these macros.  See `uvm_sequencer_utils for details.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_component_utils
+--
+word  ~> =sv#uvm#uvm_macros#component_utils() 
+abbr  ~> ^u%[vm]c%[omponent]u%[tils]$
+menu  ~> `uvm_component_utils
+info  ~> Simple (non-parameterized) components must use the uvm_components_utils* versions, which do the following: 
+  \ 
+  \    * Implements get_type_name, which returns TYPE as a string. 
+  \    * Implements create, which allocates a component of type TYPE using a two argument constructor.  TYPE’s constructor must have a name and a parent argument. 
+  \    * Registers the TYPE with the factory, using the string TYPE as the factory lookup string for the type. 
+  \    * Implements the static get_type() method which returns a factory proxy object for the type. 
+  \    * Implements the virtual get_object_type() method which works just like the static get_type() method, but operates on an already allocated object.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_component_param_utils
+--
+word  ~> =sv#uvm#uvm_macros#component_param_utils() 
+abbr  ~> ^u%[vm]c%[omponent]p%[aram]u%[tils]$
+menu  ~> `uvm_component_param_utils
+info  ~> Parameterized classes must use the uvm_object_param_utils* versions.  They differ from `uvm_object_utils only in that they do not supply a type name when registering the object with the factory.  As such, name-based lookup with the factory for parameterized classes is not possible. 
+  \ 
+  \The macros with _begin suffixes are the same as the non-suffixed versions except that they also start a block in which `uvm_field_* macros can be placed.  The block must be terminated by `uvm_component_utils_end. 
+  \ 
+  \Components deriving from uvm_sequencer must use the `uvm_sequencer_* macros instead of these macros.  See `uvm_sequencer_utils for details.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_object_utils_begin
+word  ~> =sv#uvm#uvm_macros#object_utils_begin() 
+abbr  ~> ^u%[vm]o%[bject]u%[tils]b%[egin]$
+menu  ~> `uvm_object_utils_begin
+info  ~> Simple (non-parameterized) objects use the uvm_object_utils* versions, which do the following: 
+  \ 
+  \    * Implements get_type_name, which returns TYPE as a string 
+  \    * Implements create, which allocates an object of type TYPE by calling its constructor with no arguments. 
+  \      TYPE’s constructor, if defined, must have default values on all it arguments. 
+  \    * Registers the TYPE with the factory, using the string TYPE as the factory lookup string for the type. 
+  \    * Implements the static get_type() method which returns a factory proxy object for the type. 
+  \    * Implements the virtual get_object_type() method which works just like the static get_type() method, but operates on an already allocated object.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_object_param_utils_begin
+word  ~> =sv#uvm#uvm_macros#object_param_utils_begin() 
+abbr  ~> ^u%[vm]o%[bject]p%[aram]u%[tils]b%[egin]$
+menu  ~> `uvm_object_param_utils_begin
+info  ~> Parameterized classes must use the uvm_object_param_utils* versions.  They differ from `uvm_object_utils only in that they do not supply a type name when registering the object with the factory.  As such, name-based lookup with the factory for parameterized classes is not possible. 
+  \ 
+  \The macros with _begin suffixes are the same as the non-suffixed versions except that they also start a block in which `uvm_field_* macros can be placed.  The block must be terminated by `uvm_object_utils_end. 
+  \ 
+  \Objects deriving from uvm_sequence must use the `uvm_sequence_* macros instead of these macros.  See `uvm_sequence_utils for details.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_object_utils
+--
+word  ~> =sv#uvm#uvm_macros#object_utils() 
+abbr  ~> ^u%[vm]o%[bject]u%[tils]$
+menu  ~> `uvm_object_utils
+info  ~> Simple (non-parameterized) objects use the uvm_object_utils* versions, which do the following: 
+  \ 
+  \    * Implements get_type_name, which returns TYPE as a string 
+  \    * Implements create, which allocates an object of type TYPE by calling its constructor with no arguments. 
+  \      TYPE’s constructor, if defined, must have default values on all it arguments. 
+  \    * Registers the TYPE with the factory, using the string TYPE as the factory lookup string for the type. 
+  \    * Implements the static get_type() method which returns a factory proxy object for the type. 
+  \    * Implements the virtual get_object_type() method which works just like the static get_type() method, but operates on an already allocated object.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_object_param_utils
+--
+word  ~> =sv#uvm#uvm_macros#object_param_utils() 
+abbr  ~> ^u%[vm]o%[bject]p%[aram]u%[tils]$
+menu  ~> `uvm_object_param_utils
+info  ~> Parameterized classes must use the uvm_object_param_utils* versions.  They differ from `uvm_object_utils only in that they do not supply a type name when registering the object with the factory.  As such, name-based lookup with the factory for parameterized classes is not possible. 
+  \ 
+  \The macros with _begin suffixes are the same as the non-suffixed versions except that they also start a block in which `uvm_field_* macros can be placed.  The block must be terminated by `uvm_object_utils_end. 
+  \ 
+  \Objects deriving from uvm_sequence must use the `uvm_sequence_* macros instead of these macros.  See `uvm_sequence_utils for details.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_utils_begin
+--
+word  ~> =sv#uvm#uvm_macros#field_utils_begin() 
+abbr  ~> ^u%[vm]f%[ield]u%[tils]b%[egin]$
+menu  ~> `uvm_field_utils_begin
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_int
+--
+word  ~> =sv#uvm#uvm_macros#field_int() 
+abbr  ~> ^u%[vm]f%[ield]i%[nt]$
+menu  ~> `uvm_field_int
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_object
+--
+word  ~> =sv#uvm#uvm_macros#field_object() 
+abbr  ~> ^u%[vm]f%[ield]o%[bject]$
+menu  ~> `uvm_field_object
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_string
+--
+word  ~> =sv#uvm#uvm_macros#field_string() 
+abbr  ~> ^u%[vm]f%[ield]s%[tring]$
+menu  ~> `uvm_field_string
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_enum
+--
+word  ~> =sv#uvm#uvm_macros#field_enum() 
+abbr  ~> ^u%[vm]f%[ield]e%[num]$
+menu  ~> `uvm_field_enum
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_real
+--
+word  ~> =sv#uvm#uvm_macros#field_real() 
+abbr  ~> ^u%[vm]f%[ield]r%[eal]$
+menu  ~> `uvm_field_real
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_event
+--
+word  ~> =sv#uvm#uvm_macros#field_event() 
+abbr  ~> ^u%[vm]f%[ield]e%[vent]$
+menu  ~> `uvm_field_event
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_sarray_int
+--
+word  ~> =sv#uvm#uvm_macros#field_sarray_int() 
+abbr  ~> ^u%[vm]f%[ield]s%[array]i%[nt]$
+menu  ~> `uvm_field_sarray_int
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_sarray_object
+--
+word  ~> =sv#uvm#uvm_macros#field_sarray_object() 
+abbr  ~> ^u%[vm]f%[ield]s%[array]o%[bject]$
+menu  ~> `uvm_field_sarray_object
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_sarray_string
+--
+word  ~> =sv#uvm#uvm_macros#field_sarray_string() 
+abbr  ~> ^u%[vm]f%[ield]s%[array]s%[tring]$
+menu  ~> `uvm_field_sarray_string
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_sarray_enum
+--
+word  ~> =sv#uvm#uvm_macros#field_sarray_enum() 
+abbr  ~> ^u%[vm]f%[ield]s%[array]e%[num]$
+menu  ~> `uvm_field_sarray_enum
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_array_int
+--
+word  ~> =sv#uvm#uvm_macros#field_array_int() 
+abbr  ~> ^u%[vm]f%[ield]a%[rray]i%[nt]$
+menu  ~> `uvm_field_array_int
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_array_object
+--
+word  ~> =sv#uvm#uvm_macros#field_array_object() 
+abbr  ~> ^u%[vm]f%[ield]a%[rray]o%[bject]$
+menu  ~> `uvm_field_array_object
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_array_string
+--
+word  ~> =sv#uvm#uvm_macros#field_array_string() 
+abbr  ~> ^u%[vm]f%[ield]a%[rray]s%[tring]$
+menu  ~> `uvm_field_array_string
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_array_enum
+--
+word  ~> =sv#uvm#uvm_macros#field_array_enum() 
+abbr  ~> ^u%[vm]f%[ield]a%[rray]e%[num]$
+menu  ~> `uvm_field_array_enum
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_queue_int
+--
+word  ~> =sv#uvm#uvm_macros#field_queue_int() 
+abbr  ~> ^u%[vm]f%[ield]q%[ueue]i%[nt]$
+menu  ~> `uvm_field_queue_int
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_queue_object
+--
+word  ~> =sv#uvm#uvm_macros#field_queue_object() 
+abbr  ~> ^u%[vm]f%[ield]q%[ueue]o%[bject]$
+menu  ~> `uvm_field_queue_object
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_queue_string
+--
+word  ~> =sv#uvm#uvm_macros#field_queue_string() 
+abbr  ~> ^u%[vm]f%[ield]q%[ueue]s%[tring]$
+menu  ~> `uvm_field_queue_string
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_queue_enum
+--
+word  ~> =sv#uvm#uvm_macros#field_queue_enum() 
+abbr  ~> ^u%[vm]f%[ield]q%[ueue]e%[num]$
+menu  ~> `uvm_field_queue_enum
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_aa_int_string
+--
+word  ~> =sv#uvm#uvm_macros#field_aa_int_string() 
+abbr  ~> ^u%[vm]f%[ield]a%[a]i%[nt]s%[tring]$
+menu  ~> `uvm_field_aa_int_string
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_aa_object_string
+--
+word  ~> =sv#uvm#uvm_macros#field_aa_object_string() 
+abbr  ~> ^u%[vm]f%[ield]a%[a]o%[bject]s%[tring]$
+menu  ~> `uvm_field_aa_object_string
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_aa_string_string
+--
+word  ~> =sv#uvm#uvm_macros#field_aa_string_string() 
+abbr  ~> ^u%[vm]f%[ield]a%[a]s%[tring]s%[tring]$
+menu  ~> `uvm_field_aa_string_string
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_aa_object_int
+--
+word  ~> =sv#uvm#uvm_macros#field_aa_object_int() 
+abbr  ~> ^u%[vm]f%[ield]a%[a]o%[bject]i%[nt]$
+menu  ~> `uvm_field_aa_object_int
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_aa_int_int
+--
+word  ~> =sv#uvm#uvm_macros#field_aa_int_int() 
+abbr  ~> ^u%[vm]f%[ield]a%[a]i%[nt]i%[nt]$
+menu  ~> `uvm_field_aa_int_int
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_aa_int_int_unsigned
+--
+word  ~> =sv#uvm#uvm_macros#field_aa_int_int_unsigned() 
+abbr  ~> ^u%[vm]f%[ield]a%[a]i%[nt]i%[nt]u%[nsigned]$
+menu  ~> `uvm_field_aa_int_int_unsigned
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_aa_int_integer
+--
+word  ~> =sv#uvm#uvm_macros#field_aa_int_integer() 
+abbr  ~> ^u%[vm]f%[ield]a%[a]i%[nt]i%[nteger]$
+menu  ~> `uvm_field_aa_int_integer
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_aa_int_integer_unsigned
+--
+word  ~> =sv#uvm#uvm_macros#field_aa_int_integer_unsigned() 
+abbr  ~> ^u%[vm]f%[ield]a%[a]i%[nt]i%[nteger]u%[nsigned]$
+menu  ~> `uvm_field_aa_int_integer_unsigned
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_aa_int_byte
+--
+word  ~> =sv#uvm#uvm_macros#field_aa_int_byte() 
+abbr  ~> ^u%[vm]f%[ield]a%[a]i%[nt]b%[yte]$
+menu  ~> `uvm_field_aa_int_byte
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_aa_int_byte_unsigned
+--
+word  ~> =sv#uvm#uvm_macros#field_aa_int_byte_unsigned() 
+abbr  ~> ^u%[vm]f%[ield]a%[a]i%[nt]b%[yte]u%[nsigned]$
+menu  ~> `uvm_field_aa_int_byte_unsigned
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_aa_int_shortint
+--
+word  ~> =sv#uvm#uvm_macros#field_aa_int_shortint() 
+abbr  ~> ^u%[vm]f%[ield]a%[a]i%[nt]s%[hortint]$
+menu  ~> `uvm_field_aa_int_shortint
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_aa_int_shortint_unsigned
+--
+word  ~> =sv#uvm#uvm_macros#field_aa_int_shortint_unsigned() 
+abbr  ~> ^u%[vm]f%[ield]a%[a]i%[nt]s%[hortint]u%[nsigned]$
+menu  ~> `uvm_field_aa_int_shortint_unsigned
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_aa_int_longint
+--
+word  ~> =sv#uvm#uvm_macros#field_aa_int_longint() 
+abbr  ~> ^u%[vm]f%[ield]a%[a]i%[nt]l%[ongint]$
+menu  ~> `uvm_field_aa_int_longint
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_aa_int_longint_unsigned
+--
+word  ~> =sv#uvm#uvm_macros#field_aa_int_longint_unsigned() 
+abbr  ~> ^u%[vm]f%[ield]a%[a]i%[nt]l%[ongint]u%[nsigned]$
+menu  ~> `uvm_field_aa_int_longint_unsigned
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_aa_int_key
+--
+word  ~> =sv#uvm#uvm_macros#field_aa_int_key() 
+abbr  ~> ^u%[vm]f%[ield]a%[a]i%[nt]k%[ey]$
+menu  ~> `uvm_field_aa_int_key
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+# `uvm_field_aa_int_enumkey
+--
+word  ~> =sv#uvm#uvm_macros#field_aa_int_enumkey() 
+abbr  ~> ^u%[vm]f%[ield]a%[a]i%[nt]e%[numkey]$
+menu  ~> `uvm_field_aa_int_enumkey
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+word  ~> `uvm_analysis_imp_decl (maa=common#mov_thru_user_mark#get_template('a', 'PORT_NAME'))`aa
+abbr  ~> ^u%[vm]a%[nalysis]i%[mp]d%[ecl]$
+menu  ~> `uvm_analysis_imp_decl
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+##===============================================================================
+## Sequence and Do action macros
+##===============================================================================
+
+# `uvm_sequence_utils_begin
+word  ~> =sv#uvm#uvm_macros#sequence_utils_begin() 
+abbr  ~> ^u%[vm]s%[equence]u%[tils]b%[egin]$
+menu  ~> `uvm_sequence_utils_begin
+info  ~>The sequence macros can be used in non-parameterized <uvm_sequence> extensions to pre-register the sequence with a given <uvm_sequencer> type.
+    \For sequences that do not use any `uvm_field macros 
+    \ 
+    \    `uvm_sequence_utils(TYPE_NAME,SQR_TYPE_NAME) 
+    \ 
+    \For sequences employing with field macros 
+    \ 
+    \    `uvm_sequence_utils_begin(TYPE_NAME,SQR_TYPE_NAME) 
+    \      `uvm_field_* macro invocations here 
+    \    `uvm_sequence_utils_end 
+    \ 
+    \The sequence-specific macros perform the same function as the set of `uvm_object_*_utils macros except that they also register the sequence’s type, TYPE_NAME, with the given sequencer type, SQR_TYPE_NAME, and define the p_sequencer variable and m_set_p_sequencer method. 
+    \ 
+    \Use `uvm_sequence_utils[_begin] for non-parameterized classes and `uvm_sequence_param_utils[_begin] for parameterized classes. 
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+# `uvm_sequence_utils
+word  ~> =sv#uvm#uvm_macros#sequence_utils() 
+abbr  ~> ^u%[vm]s%[equence]u%[tils]$
+menu  ~> `uvm_sequence_utils
+info  ~>The sequence macros can be used in non-parameterized <uvm_sequence> extensions to pre-register the sequence with a given <uvm_sequencer> type.
+    \For sequences that do not use any `uvm_field macros 
+    \ 
+    \    `uvm_sequence_utils(TYPE_NAME,SQR_TYPE_NAME) 
+    \ 
+    \For sequences employing with field macros 
+    \ 
+    \    `uvm_sequence_utils_begin(TYPE_NAME,SQR_TYPE_NAME) 
+    \      `uvm_field_* macro invocations here 
+    \    `uvm_sequence_utils_end 
+    \ 
+    \The sequence-specific macros perform the same function as the set of `uvm_object_*_utils macros except that they also register the sequence’s type, TYPE_NAME, with the given sequencer type, SQR_TYPE_NAME, and define the p_sequencer variable and m_set_p_sequencer method. 
+    \ 
+    \Use `uvm_sequence_utils[_begin] for non-parameterized classes and `uvm_sequence_param_utils[_begin] for parameterized classes. 
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+# `uvm_update_sequence_lib
+word  ~> =sv#uvm#uvm_macros#update_sequence_lib() 
+abbr  ~> ^u%[vm]u%[pdate]s%[equence]l%[ib]$
+menu  ~> `uvm_update_sequence_lib
+info  ~>This macro populates the instance-specific sequence library for a sequencer.  It should be invoked inside the sequencer's constructor.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+# `uvm_update_sequence_lib_and_item
+word  ~> =sv#uvm#uvm_macros#update_sequence_lib_and_item() 
+abbr  ~> ^u%[vm]u%[pdate]s%[equence]l%[ib]a%[nd]i%[tem]$
+menu  ~> `uvm_update_sequence_lib_and_item
+info  ~>This macro populates the instance specific sequence library for a sequencer, and it registers the given USER_ITEM as an instance override for the simple sequence’s item variable.
+    \ 
+    \The macro should be invoked inside the sequencer’s constructor. 
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+# `uvm_sequencer_utils
+word  ~> =sv#uvm#uvm_macros#sequencer_utils() 
+abbr  ~> ^u%[vm]s%[equencer]u%[tils]$
+menu  ~> `uvm_sequencer_utils
+info  ~>The sequencer macros are used in uvm_sequencer-based class declarations in one of four ways.
+    \ 
+    \For simple sequencers, no field macros 
+    \ 
+    \`uvm_sequencer_utils(SQR_TYPE_NAME) 
+    \ 
+    \For simple sequencers, with field macros 
+    \ 
+    \`uvm_sequencer_utils_begin(SQR_TYPE_NAME) `uvm_field_* macros here `uvm_sequencer_utils_end 
+    \ 
+    \For parameterized sequencers, no field macros 
+    \ 
+    \`uvm_sequencer_param_utils(SQR_TYPE_NAME) 
+    \ 
+    \For parameterized sequencers, with field macros 
+    \ 
+    \`uvm_sequencer_param_utils_begin(SQR_TYPE_NAME) `uvm_field_* macros here `uvm_sequencer_utils_end 
+    \ 
+    \The sequencer-specific macros perform the same function as the set of `uvm_componenent_*utils macros except that they also declare the plumbing necessary for creating the sequencer’s sequence library.  This includes: 
+    \ 
+    \1.  Declaring the type-based static queue of strings registered on the sequencer type. 
+    \ 
+    \2.  Declaring the static function to add strings to item #1 above. 
+    \ 
+    \3.  Declaring the static function to remove strings to item #1 above. 
+    \ 
+    \4.  Declaring the function to populate the instance specific sequence library for a sequencer. 
+    \ 
+    \Use `uvm_sequencer_utils[_begin] for non-parameterized classes and `uvm_sequencer_param_utils[_begin] for parameterized classes. 
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+# `uvm_sequencer_utils_begin
+word  ~> =sv#uvm#uvm_macros#sequencer_utils_begin() 
+abbr  ~> ^u%[vm]s%[equencer]u%[tils]b%[egin]$
+menu  ~> `uvm_sequencer_utils_begin
+info  ~>The sequencer macros are used in uvm_sequencer-based class declarations in one of four ways.
+    \ 
+    \For simple sequencers, no field macros 
+    \ 
+    \`uvm_sequencer_utils(SQR_TYPE_NAME) 
+    \ 
+    \For simple sequencers, with field macros 
+    \ 
+    \`uvm_sequencer_utils_begin(SQR_TYPE_NAME) `uvm_field_* macros here `uvm_sequencer_utils_end 
+    \ 
+    \For parameterized sequencers, no field macros 
+    \ 
+    \`uvm_sequencer_param_utils(SQR_TYPE_NAME) 
+    \ 
+    \For parameterized sequencers, with field macros 
+    \ 
+    \`uvm_sequencer_param_utils_begin(SQR_TYPE_NAME) `uvm_field_* macros here `uvm_sequencer_utils_end 
+    \ 
+    \The sequencer-specific macros perform the same function as the set of `uvm_componenent_*utils macros except that they also declare the plumbing necessary for creating the sequencer’s sequence library.  This includes: 
+    \ 
+    \1.  Declaring the type-based static queue of strings registered on the sequencer type. 
+    \ 
+    \2.  Declaring the static function to add strings to item #1 above. 
+    \ 
+    \3.  Declaring the static function to remove strings to item #1 above. 
+    \ 
+    \4.  Declaring the function to populate the instance specific sequence library for a sequencer. 
+    \ 
+    \Use `uvm_sequencer_utils[_begin] for non-parameterized classes and `uvm_sequencer_param_utils[_begin] for parameterized classes. 
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+# `uvm_sequencer_param_utils
+word  ~> =sv#uvm#uvm_macros#sequencer_param_utils() 
+abbr  ~> ^u%[vm]s%[equencer]p%[aram]u%[tils]$
+menu  ~> `uvm_sequencer_param_utils
+info  ~>The sequencer macros are used in uvm_sequencer-based class declarations in one of four ways.
+    \ 
+    \For simple sequencers, no field macros 
+    \ 
+    \`uvm_sequencer_utils(SQR_TYPE_NAME) 
+    \ 
+    \For simple sequencers, with field macros 
+    \ 
+    \`uvm_sequencer_utils_begin(SQR_TYPE_NAME) `uvm_field_* macros here `uvm_sequencer_utils_end 
+    \ 
+    \For parameterized sequencers, no field macros 
+    \ 
+    \`uvm_sequencer_param_utils(SQR_TYPE_NAME) 
+    \ 
+    \For parameterized sequencers, with field macros 
+    \ 
+    \`uvm_sequencer_param_utils_begin(SQR_TYPE_NAME) `uvm_field_* macros here `uvm_sequencer_utils_end 
+    \ 
+    \The sequencer-specific macros perform the same function as the set of `uvm_componenent_*utils macros except that they also declare the plumbing necessary for creating the sequencer’s sequence library.  This includes: 
+    \ 
+    \1.  Declaring the type-based static queue of strings registered on the sequencer type. 
+    \ 
+    \2.  Declaring the static function to add strings to item #1 above. 
+    \ 
+    \3.  Declaring the static function to remove strings to item #1 above. 
+    \ 
+    \4.  Declaring the function to populate the instance specific sequence library for a sequencer. 
+    \ 
+    \Use `uvm_sequencer_utils[_begin] for non-parameterized classes and `uvm_sequencer_param_utils[_begin] for parameterized classes. 
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+# `uvm_sequencer_param_utils_begin
+word  ~> =sv#uvm#uvm_macros#sequencer_param_utils_begin() 
+abbr  ~> ^u%[vm]s%[equencer]p%[aram]u%[tils]b%[egin]$
+menu  ~> `uvm_sequencer_param_utils_begin
+info  ~>The sequencer macros are used in uvm_sequencer-based class declarations in one of four ways.
+    \ 
+    \For simple sequencers, no field macros 
+    \ 
+    \`uvm_sequencer_utils(SQR_TYPE_NAME) 
+    \ 
+    \For simple sequencers, with field macros 
+    \ 
+    \`uvm_sequencer_utils_begin(SQR_TYPE_NAME) `uvm_field_* macros here `uvm_sequencer_utils_end 
+    \ 
+    \For parameterized sequencers, no field macros 
+    \ 
+    \`uvm_sequencer_param_utils(SQR_TYPE_NAME) 
+    \ 
+    \For parameterized sequencers, with field macros 
+    \ 
+    \`uvm_sequencer_param_utils_begin(SQR_TYPE_NAME) `uvm_field_* macros here `uvm_sequencer_utils_end 
+    \ 
+    \The sequencer-specific macros perform the same function as the set of `uvm_componenent_*utils macros except that they also declare the plumbing necessary for creating the sequencer’s sequence library.  This includes: 
+    \ 
+    \1.  Declaring the type-based static queue of strings registered on the sequencer type. 
+    \ 
+    \2.  Declaring the static function to add strings to item #1 above. 
+    \ 
+    \3.  Declaring the static function to remove strings to item #1 above. 
+    \ 
+    \4.  Declaring the function to populate the instance specific sequence library for a sequencer. 
+    \ 
+    \Use `uvm_sequencer_utils[_begin] for non-parameterized classes and `uvm_sequencer_param_utils[_begin] for parameterized classes. 
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+# `uvm_declare_p_sequencer
+word  ~> `uvm_declare_p_sequencer(maa)`aa 
+abbr  ~> ^u%[vm]d%[eclare]p%[sequencer]$
+menu  ~> `uvm_sequencer_param_utils_begin
+# info  ~> TODO
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+##-------------------------------------------------------------------------------
+## Sequence Action Macros
+##-------------------------------------------------------------------------------
+
+# `uvm_do
+word  ~> =sv#uvm#uvm_macros#do() 
+abbr  ~> ^u%[vm]d%[o]$
+menu  ~> `uvm_do
+info  ~>This macro takes as an argument a uvm_sequence_item variable or object. uvm_sequence_item’s are randomized at the time the sequencer grants the do request.  This is called late-randomization or late-generation.  In the case of a sequence a sub-sequence is spawned.  In the case of an item, the item is sent to the driver through the associated sequencer.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `uvm_do_pri
+word  ~> =sv#uvm#uvm_macros#do_pri() 
+abbr  ~> ^u%[vm]d%[o]p%[ri]$
+menu  ~> `uvm_do_pri
+info  ~>This is the same as `uvm_do except that the sequene item or sequence is executed with the priority specified in the argument
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `uvm_do_with
+word  ~> =sv#uvm#uvm_macros#do_with() 
+abbr  ~> ^u%[vm]d%[o]w%[ith]$
+menu  ~> `uvm_do_with
+info  ~>This is the same as `uvm_do except that the constraint block in the 2nd argument is applied to the item or sequence in a randomize with statement before execution.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `uvm_do_pri_with
+word  ~> =sv#uvm#uvm_macros#do_pri_with() 
+abbr  ~> ^u%[vm]d%[o]p%[ri]w%[ith]$
+menu  ~> `uvm_do_pri_with
+info  ~>This is the same as `uvm_do_pri except that the given constraint block is applied to the item or sequence in a randomize with statement before execution.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `uvm_send
+word  ~> =sv#uvm#uvm_macros#send() 
+abbr  ~> ^u%[vm]s%[end]$
+menu  ~> `uvm_send
+info  ~>This macro processes the item or sequence that has been created using `uvm_create.  The processing is done without randomization.  Essentially, an `uvm_do without the create or randomization.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `uvm_send_pri
+word  ~> =sv#uvm#uvm_macros#send_pri() 
+abbr  ~> ^u%[vm]s%[end]p%[ri]$
+menu  ~> `uvm_send_pri
+info  ~>This is the same as `uvm_send except that the sequene item or sequence is executed with the priority specified in the argument.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `uvm_rand_send
+word  ~> =sv#uvm#uvm_macros#rand_send() 
+abbr  ~> ^u%[vm]r%[and]s%[end]$
+menu  ~> `uvm_rand_send
+info  ~>This macro processes the item or sequence that has been already been allocated (possibly with `uvm_create).  The processing is done with randomization.  Essentially, an `uvm_do without the create.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `uvm_rand_send_pri
+word  ~> =sv#uvm#uvm_macros#rand_send_pri() 
+abbr  ~> ^u%[vm]r%[and]s%[end]p%[ri]$
+menu  ~> `uvm_rand_send_pri
+info  ~>This is the same as `uvm_rand_send except that the sequene item or sequence is executed with the priority specified in the argument.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `uvm_rand_send_with
+word  ~> =sv#uvm#uvm_macros#rand_send_with() 
+abbr  ~> ^u%[vm]r%[and]s%[end]w%[ith]$
+menu  ~> `uvm_rand_send_with
+info  ~>This is the same as `uvm_rand_send except that the given constraint block is applied to the item or sequence in a randomize with statement before execution.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `uvm_rand_send_pri_with
+word  ~> =sv#uvm#uvm_macros#rand_send_pri_with() 
+abbr  ~> ^u%[vm]r%[and]s%[end]p%[ri]w%[ith]$
+menu  ~> `uvm_rand_send_pri_with
+info  ~>This is the same as `uvm_rand_send_pri except that the given constraint block is applied to the item or sequence in a randomize with statement before execution.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+##-------------------------------------------------------------------------------
+## Sequence on Sequencer Action Macros
+##-------------------------------------------------------------------------------
+
+# `uvm_create_on
+word  ~> =sv#uvm#uvm_macros#create_on() 
+abbr  ~> ^u%[vm]c%[reate]o%[n]$
+menu  ~> `uvm_create_on
+info  ~>This is the same as `uvm_create except that it also sets the parent sequence to the sequence in which the macro is invoked, and it sets the sequencer to the specified SEQUENCER_REF argument.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `uvm_do_on
+word  ~> =sv#uvm#uvm_macros#do_on() 
+abbr  ~> ^u%[vm]d%[o]o%[n]$
+menu  ~> `uvm_do_on
+info  ~>This is the same as `uvm_do except that it also sets the parent sequence to the sequence in which the macro is invoked, and it sets the sequencer to the specified SEQUENCER_REF argument.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `uvm_do_on_pri
+word  ~> =sv#uvm#uvm_macros#do_on_pri() 
+abbr  ~> ^u%[vm]d%[o]o%[n]p%[ri]$
+menu  ~> `uvm_do_on_pri
+info  ~>This is the same as `uvm_do_pri except that it also sets the parent sequence to the sequence in which the macro is invoked, and it sets the sequencer to the specified SEQUENCER_REF argument.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `uvm_do_on_with
+word  ~> =sv#uvm#uvm_macros#do_on_with() 
+abbr  ~> ^u%[vm]d%[o]o%[n]w%[ith]$
+menu  ~> `uvm_do_on_with
+info  ~>This is the same as `uvm_do_with except that it also sets the parent sequence to the sequence in which the macro is invoked, and it sets the sequencer to the specified SEQUENCER_REF argument.  The user must supply brackets around the constraints.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `uvm_do_on_pri_with
+word  ~> =sv#uvm#uvm_macros#do_on_pri_with() 
+abbr  ~> ^u%[vm]d%[o]o%[n]p%[ri]w%[ith]$
+menu  ~> `uvm_do_on_pri_with
+info  ~>This is the same as `uvm_do_pri_with except that it also sets the parent sequence to the sequence in which the macro is invoked, and it sets the sequencer to the specified SEQUENCER_REF argument.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+##-------------------------------------------------------------------------------
+## Report Macros
+##-------------------------------------------------------------------------------
+# `uvm_info
+word  ~> `uvm_info(get_full_name(), $psprintf("maa", ),UVM_LOW)`aa
+abbr  ~> ^u%[vm]i%[nfo]$
+menu  ~> `uvm_info
+info  ~> Calls uvm_report_info if VERBOSITY is lower than the configured verbosity of the associated reporter.  ID is given as the message tag and MSG is given as the message text.  The file and line are also sent to the uvm_report_info call.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `uvm_info ## DEBUG
+word  ~> =sv#uvm#debug#uvm_info() 
+abbr  ~> ^u%[vm]i%[nfo]d%[ebug]$
+menu  ~> `uvm_info [DEBUG]
+# info  ~> TBD
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `uvm_warning
+word  ~> `uvm_warning(get_full_name(), $psprintf("maa", ))`aa
+abbr  ~> ^u%[vm]w%[arning]$
+menu  ~> `uvm_warning
+info  ~> Calls uvm_report_warning with a verbosity of UVM_NONE.  The message can not be turned off using the reporter’s verbosity setting, but can be turned off by setting the action for the message.  ID is given as the message tag and MSG is given as the message text.  The file and line are also sent to the uvm_report_warning call.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `uvm_error
+word  ~> `uvm_error(get_full_name(), $psprintf("maa", ))`aa
+abbr  ~> ^u%[vm]e%[rror]$
+menu  ~> `uvm_error
+info  ~> Calls uvm_report_error with a verbosity of UVM_NONE.  The message can not be turned off using the reporter’s verbosity setting, but can be turned off by setting the action for the message.  ID is given as the message tag and MSG is given as the message text.  The file and line are also sent to the uvm_report_error call.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+ 
+# `uvm_fatal
+word  ~> `uvm_fatal(get_full_name(), $psprintf("maa", ))`aa
+abbr  ~> ^u%[vm]f%[atal]$
+menu  ~> `uvm_fatal
+info  ~> Calls uvm_report_fatal with a verbosity of UVM_NONE.  The message can not be turned off using the reporter’s verbosity setting, but can be turned off by setting the action for the message.  ID is given as the message tag and MSG is given as the message text.  The file and line are also sent to the uvm_report_fatal call.
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+# `uvm_register_cb
+word  ~> =sv#uvm#uvm_callbacks#uvm_register_cb() 
+abbr  ~> ^u%[vm]r%[egister]c%[b]$
+menu  ~> `uvm_register_cb
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+
+# `uvm_do_callbacks
+word  ~> =sv#uvm#uvm_callbacks#uvm_do_callbacks() 
+abbr  ~> ^u%[vm]d%[o]c%[all]%[backs]$
+menu  ~> `uvm_do_callbacks
+info  ~>
+kind  ~> m
+icase ~>
+dup   ~>
+--
+

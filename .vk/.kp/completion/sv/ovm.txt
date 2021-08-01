@@ -1,0 +1,148 @@
+# word	        the text that will be inserted, mandatory
+# abbr	        abbreviation of "word"; when not empty it is used in
+# 	        the menu instead of "word"
+# menu	        extra text for the popup menu, displayed after "word"
+# 	        or "abbr"
+# info	        more information about the item, can be displayed in a
+# 	        preview window
+# kind	        single letter indicating the type of completion
+# icase	        when non-zero case is to be ignored when comparing
+# 	        items to be equal; when omitted zero is used, thus
+# 	        items that only differ in case are added
+# dup	        when non-zero this match will be added even when an
+# 	        item with the same word is already present.
+# 
+# <abbr pattern> : start with 'o' for multiple line, 'j' for single line, 'k' for short keyword names
+# 
+#################################################################################
+# OVM
+#################################################################################
+# Sequence Item
+--
+word  ~> =sv#sv#sv#complete('sv#ovm#ovm#sequence_item', -1) 
+abbr  ~> ^o%[vm]s%[equence]i%[tem]$
+menu  ~> ^o%[vm]vm_sequence_item
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+# Sequencer
+--
+word  ~> =sv#sv#sv#complete('sv#ovm#ovm#sequencer', -1) 
+abbr  ~> ^o%[vm]s%[equence]r$
+menu  ~> ^o%[vm]vm_sequencer
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+# Sequence
+--
+word  ~> =sv#sv#sv#complete('sv#ovm#ovm#sequence', -1) 
+abbr  ~> ^o%[vm]s%[equence]$
+menu  ~> ^o%[vm]vm_sequence
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+# Component
+--
+word  ~> =sv#sv#sv#complete('sv#ovm#ovm#component', -1) 
+abbr  ~> ^o%[vm]c%[omponent]$
+menu  ~> ^o%[vm]vm_component
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+# Callback
+--
+word  ~> =sv#sv#sv#complete('sv#ovm#ovm#callback', -1) 
+abbr  ~> ^o%[vm]c%[allback]$
+menu  ~> ^o%[vm]vm_callback
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+# Driver
+--
+word  ~> =sv#sv#sv#complete('sv#ovm#ovm#driver', -1) 
+abbr  ~> ^o%[vm]d%[river]$
+menu  ~> ^o%[vm]vm_driver
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+# Scoreboard
+--
+word  ~> =sv#sv#sv#complete('sv#ovm#ovm#scoreboard', -1) 
+abbr  ~> ^o%[vm]s%[coreboard]$
+menu  ~> ^o%[vm]vm_scoreboard
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+# Environment
+--
+word  ~> =sv#sv#sv#complete('sv#ovm#ovm#env', -1) 
+abbr  ~> ^o%[vm]e%[nv]$
+menu  ~> ^o%[vm]vm_env
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+# Agent
+--
+word  ~> =sv#sv#sv#complete('sv#ovm#ovm#agent', -1) 
+abbr  ~> ^o%[vm]a%[gent]$
+menu  ~> ^o%[vm]vm_agent
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+# Object
+--
+word  ~> =sv#sv#sv#complete('sv#ovm#ovm#object', -1) 
+abbr  ~> ^o%[vm]o%[bject]$
+menu  ~> ^o%[vm]vm_object
+info  ~>
+kind  ~> c
+icase ~>
+dup   ~>
+--
+# type_id::create()
+--
+word  ~> =sv#ovm#ovm#type_id_create() 
+abbr  ~> ^o%[vm]t%[ype]i%[d]c%[reate]$
+menu  ~> type_id::create()
+info  ~>
+kind  ~>  
+icase ~>
+dup   ~>
+--
+# call to connect
+--
+word  ~> connect(maa)`aa
+abbr  ~> ^c%[onnect]$
+menu  ~> .connect(...)
+info  ~>
+kind  ~>  
+icase ~>
+dup   ~>
+--
+# constraint block
+--
+word  ~> constraint c_maa { 
+         \   
+         \}`aa
+abbr  ~> ^c%[onstraint]$
+menu  ~> constraint
+info  ~>
+kind  ~>  
+icase ~>
+dup   ~>
+--

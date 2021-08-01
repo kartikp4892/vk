@@ -1,0 +1,88 @@
+# word	        the text that will be inserted, mandatory
+# abbr	        abbreviation of "word"; when not empty it is used in
+# 	        the menu instead of "word"
+# menu	        extra text for the popup menu, displayed after "word"
+# 	        or "abbr"
+## info	        more information about the item, can be displayed in a
+# 	        preview window
+# kind	        single letter indicating the type of completion
+# icase	        when non-zero case is to be ignored when comparing
+# 	        items to be equal; when omitted zero is used, thus
+# 	        items that only differ in case are added
+# dup	        when non-zero this match will be added even when an
+# 	        item with the same word is already present.
+# 
+
+# HTML
+word  ~> =html#htags#paired('html','') 
+abbr  ~> thtml
+menu  ~> <html>
+--
+# <!DOCTYPE html>
+word  ~> =html#htags#doctype_html() 
+abbr  ~> dh
+menu  ~> <!DOCTYPE html>
+--
+# BODY
+word  ~> =html#htags#paired('body','') 
+abbr  ~> tbody
+menu  ~> <html>
+--
+# FORM
+word  ~> =html#htags#paired('form','action="mza" method="post"') 
+abbr  ~> tform
+menu  ~> <html>
+--
+# INPUT
+word  ~> =html#htags#single('input','type="mzatext" name="mxa"')`xa 
+abbr  ~> tinput
+menu  ~> <html>
+--
+# LABEL
+word  ~> =html#htags#paired('label','') 
+abbr  ~> tlabel
+menu  ~> <html>
+--
+#============================================================
+# Attributes
+#============================================================
+# Form attributes
+word  ~> action="maa"`aa
+abbr  ~> aaction
+menu  ~> action=""
+--
+word  ~> method="maa"`aa
+abbr  ~> amethod
+menu  ~> method=""
+--
+word  ~> enctype="maa"`aa
+abbr  ~> aenctype
+menu  ~> enctype=""
+--
+word  ~> type="maa"`aa
+abbr  ~> atype
+menu  ~> type=""
+--
+word  ~> name="maa"`aa
+abbr  ~> aname
+menu  ~> name=""
+--
+word  ~> id="maa"`aa
+abbr  ~> aid
+menu  ~> id=""
+--
+word  ~> value="maa"`aa
+abbr  ~> avalue
+menu  ~> value=""
+--
+#============================================================
+# PHP
+#============================================================
+word  ~> print "maa<br>";`aa
+abbr  ~> print
+menu  ~> print
+--
+word  ~> echo "maa<br>";`aa
+abbr  ~> echo
+menu  ~> echo
+--

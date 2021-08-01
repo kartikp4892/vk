@@ -1,0 +1,311 @@
+# word	        the text that will be inserted, mandatory
+# abbr	        abbreviation of "word"; when not empty it is used in
+# 	        the menu instead of "word"
+# menu	        extra text for the popup menu, displayed after "word"
+# 	        or "abbr"
+## info	        more information about the item, can be displayed in a
+# 	        preview window
+# kind	        single letter indicating the type of completion
+# icase	        when non-zero case is to be ignored when comparing
+# 	        items to be equal; when omitted zero is used, thus
+# 	        items that only differ in case are added
+# dup	        when non-zero this match will be added even when an
+# 	        item with the same word is already present.
+# 
+word  ~> chomp (maa)`aa
+abbr  ~> chomp
+menu  ~> chomp
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> chop (maa)`aa
+abbr  ~> chop
+menu  ~> chop
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> print ("maa");`aa
+abbr  ~> print
+menu  ~> print
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> printf ("maa");`aa
+abbr  ~> printf
+menu  ~> printf
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> sprintf ("maa", mba);`aa
+abbr  ~> sprintf
+menu  ~> sprintf
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+word  ~> #!/usr/bin/perl; 
+abbr  ~> library
+menu  ~> #!/usr/bin/perl
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> use warnings;
+abbr  ~> uw
+menu  ~> warnings
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> use strict;
+abbr  ~> us
+menu  ~> strict
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =perl#perl#incfor () 
+abbr  ~> fi
+menu  ~> for ++
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =perl#perl#decfor () 
+abbr  ~> fd
+menu  ~> for --
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =perl#perl#foreach () 
+abbr  ~> fe
+menu  ~> foreach
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =perl#perl#while () 
+abbr  ~> while
+menu  ~> while
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =perl#perl#while () 
+abbr  ~> wc
+menu  ~> while-continue
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =perl#perl#if () 
+abbr  ~> if
+menu  ~> if
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =perl#perl#elsif () 
+abbr  ~> ef
+menu  ~> elsif
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =perl#perl#else () 
+abbr  ~> else
+menu  ~> else
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> <STDIN>
+abbr  ~> stdin
+menu  ~> STDIN
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> grep (/maa/, mba)`aa
+abbr  ~> grep
+menu  ~> grep
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> split (/maa/, mba)`aa
+abbr  ~> split
+menu  ~> split
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> join ("maa", mba)`aa
+abbr  ~> join
+menu  ~> join
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =perl#perl#unless () 
+abbr  ~> unless
+menu  ~> unless
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =perl#perl#until () 
+abbr  ~> until
+menu  ~> until
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =perl#perl#sub () 
+abbr  ~> sub
+menu  ~> sub
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =perl#perl#try () 
+abbr  ~> try
+menu  ~> try-catch
+--
+
+word  ~> push (@maa, mba)`aa
+abbr  ~> push
+menu  ~> push
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> pop (@maa)`aa
+abbr  ~> pop
+menu  ~> pop
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> shift (@maa)`aa
+abbr  ~> shift
+menu  ~> shift
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =perl#perl#sub_shift() 
+abbr  ~> sshift
+menu  ~> sub shift
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> unshift (@maa, mba)`aa
+abbr  ~> unshift
+menu  ~> unshift
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+word  ~> =perl#perl#open() 
+abbr  ~> open
+menu  ~> open
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+word  ~> map {maa} `aa
+abbr  ~> map
+menu  ~> map
+--
+word  ~> return 
+abbr  ~> return
+menu  ~> return
+--
+
+#-------------------------------------------------------------------------------
+# OOPS
+#-------------------------------------------------------------------------------
+word  ~> =perl#oop#new() 
+abbr  ~> ^o[op]n%[ew]
+menu  ~> new
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
+#-------------------------------------------------------------------------------
+# OOP Sub
+#-------------------------------------------------------------------------------
+word  ~> =perl#oop#sub() 
+abbr  ~> ^o[op]s%[ub]
+menu  ~> new
+#info  ~> 
+#kind  ~> 
+#icase ~> 
+#dup   ~>
+--
+
